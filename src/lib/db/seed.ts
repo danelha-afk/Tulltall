@@ -4,7 +4,7 @@
  */
 import type { Db } from "./client";
 import kommunerDoc from "../../../content/kommuner.json";
-import { seedQuestions } from "../../../content/questions/index";
+import { seedQuestions, seedReviewOnlyIds } from "../../../content/questions/index";
 import { parseQuestion, type QuestionStatus } from "../game/schema";
 import { saveQuestion } from "./questions";
 import { validateQuestion } from "../qa/validate";
@@ -57,7 +57,7 @@ export async function seedQuestionBank(db: Db): Promise<{ inserted: number; inva
     const q = parsed.value;
     if (existingIds.has(q.id)) continue;
     const qa = validateQuestion(q, { existing: allPrompts.filter((p) => p.id !== q.id), today: q.lastVerified });
-    const status = qa.ok ? seedStatusFor(q.risk) : "review_required";
+    const status = seedReviewOnlyIds.has(q.id) || !qa.ok ? "review_required" : seedStatusFor(q.risk);
     await saveQuestion(db, q, {
       status,
       actor: "seed",

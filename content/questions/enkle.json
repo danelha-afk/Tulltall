@@ -1,0 +1,716 @@
+[
+  {
+    "id": "enkel-kriminalitet-aldri-lavere",
+    "category": "misconception",
+    "topic": "kriminalitet",
+    "tags": [
+      "kriminalitet",
+      "anmeldte lovbrudd",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Kriminaliteten i Norge har aldri vært lavere enn nå.",
+      "answer": false,
+      "correction": "Lavest var det i 2021, med 51,7 anmeldte lovbrudd per 1000 innbyggere. I 2024 var tallet 61,5."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – lavest var det i 2021.",
+      "explanation": "Det ble anmeldt færrest lovbrudd i 2021. Siden har tallet gått litt opp igjen.",
+      "deepDive": "Statistikken teller lovbrudd som er anmeldt til politiet, ikke all kriminalitet. Mye blir aldri meldt, og nye typer som nettsvindel har blitt vanligere. Tallene sier derfor noe om anmeldelser, ikke om hvor trygt det er. Siden årtusenskiftet har tallet gått betydelig ned.",
+      "caveats": [
+        "Gjelder anmeldte lovbrudd per innbygger. Ikke all kriminalitet."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Anmeldte lovbrudd og ofre",
+        "url": "https://www.ssb.no/sosiale-forhold-og-kriminalitet/kriminalitet-og-rettsvesen/statistikk/anmeldte-lovbrudd-og-ofre/artikler/aldri-for-er-det-anmeldt-flere-bedragerier",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2021 og 2024",
+    "calculation": "Lovbrudd per 1000 innbyggere: 51,7 i 2021 (laveste), 59,8 i 2023 og 61,5 i 2024 (SSB).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Har kriminaliteten i Norge aldri vært lavere? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fengsel-menn",
+    "category": "current",
+    "topic": "kriminalitet",
+    "tags": [
+      "fengsel",
+      "kjønn",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Nesten alle som sitter i fengsel i Norge, er menn.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – bare rundt 6 av 100 er kvinner.",
+      "explanation": "Kvinner er omtrent 5–6 prosent av de innsatte i norske fengsler.",
+      "deepDive": "Tallet viser hvem som sitter innesperret akkurat nå. Det forteller ikke hvorfor fordelingen er slik, og heller ikke noe om enkeltpersoner.",
+      "caveats": [
+        "Omtrentlig andel. Varierer litt fra år til år."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Stortinget",
+        "title": "Innstilling 318 S (2022–2023)",
+        "url": "https://www.stortinget.no/globalassets/pdf/innstillinger/stortinget/2022-2023/inns-202223-318s.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2023–2026",
+    "calculation": "Stortingets innstilling 2023: «om lag seks prosent» kvinner. LDO 2026: 5–6 prosent. Altså rundt 6 av 100.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Er nesten alle i fengsel menn? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 2
+  },
+  {
+    "id": "enkel-innvandrere-i-jobb",
+    "category": "current",
+    "topic": "innvandring",
+    "tags": [
+      "innvandring",
+      "sysselsetting",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Over halvparten av innvandrerne i Norge er i jobb.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – omtrent to av tre er i jobb.",
+      "explanation": "Mot slutten av 2025 var 67,5 prosent av innvandrerne mellom 20 og 66 år i jobb.",
+      "deepDive": "Innvandrere er en blandet gruppe: arbeidsinnvandrere, flyktninger, familiegjenforente og studenter. Hvor mange som er i jobb, varierer mellom gruppene og med hvor lenge man har bodd i Norge. Snittet skjuler derfor store forskjeller.",
+      "caveats": [
+        "Gjelder alderen 20–66 år, registerbasert.",
+        "Tallet for hele befolkningen er høyere."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Sysselsetting blant innvandrere, registerbasert",
+        "url": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/statistikk/sysselsetting-blant-innvandrere-registerbasert/artikler",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "4. kvartal 2025",
+    "calculation": "Sysselsettingsandel innvandrere 20–66 år: 67,5 % (SSB, 4. kvartal 2025).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Er over halvparten av innvandrerne i jobb? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-norskfodte-ikke-innvandrere",
+    "category": "misconception",
+    "topic": "innvandring",
+    "tags": [
+      "innvandring",
+      "definisjon",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Norskfødte med innvandrerforeldre regnes som innvandrere i statistikken.",
+      "answer": false,
+      "correction": "Innvandrere er født i utlandet. Barn født i Norge av innvandrere er en egen gruppe i SSBs statistikk."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – de er en egen gruppe.",
+      "explanation": "En innvandrer er selv født i utlandet. Barn født i Norge av to innvandrere kalles «norskfødte med innvandrerforeldre».",
+      "deepDive": "SSB deler befolkningen i flere grupper, og det påvirker tallene du ser i nyhetene. Når noen sier «innvandrere», må du sjekke om norskfødte med innvandrerforeldre er med eller ikke.",
+      "caveats": [
+        "Definisjonen er SSBs. Andre kan telle på andre måter."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Innvandrere og norskfødte med innvandrerforeldre",
+        "url": "https://www.ssb.no/befolkning/innvandrere/statistikk/innvandrere-og-norskfodte-med-innvandrerforeldre/artikler/redusert-vekst-i-bosatte-innvandrere",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Gjeldende definisjon",
+    "calculation": "Definisjon: innvandrer = født i utlandet av to utenlandsfødte foreldre (SSB).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Er norskfødte barn av innvandrere «innvandrere»? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-matmoms-25",
+    "category": "misconception",
+    "topic": "skatt",
+    "tags": [
+      "skatt",
+      "moms",
+      "mat",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Det er 25 prosent moms på mat i butikken.",
+      "answer": false,
+      "correction": "Matmomsen er 15 prosent. De 25 prosentene gjelder ellers, og for mat som serveres på restaurant."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – matmomsen er 15 prosent.",
+      "explanation": "Mat i butikken har lavere moms enn de fleste andre varer. På restaurant er det 25 prosent.",
+      "deepDive": "Moms er en skatt som ligger i prisen du betaler. Vanlig sats er 25 prosent, men mat du kjøper i butikk har redusert sats på 15 prosent. Når maten serveres, for eksempel på kafé, gjelder den vanlige satsen.",
+      "caveats": [
+        "Satsene kan endres i statsbudsjettet. Sjekket mot gjeldende regler høsten 2026."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Skatteetaten",
+        "title": "Mva på omsetning eller servering av mat- og drikkevarer",
+        "url": "https://www.skatteetaten.no/nn/rettskjelder/type/kunngjoringer/mva-pa-omsetning-eller-servering-av-mat--og-drikkevarer/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2026",
+    "calculation": "Redusert sats 15 % på næringsmidler; alminnelig sats 25 % (også ved servering).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Er det 25 prosent moms på mat i butikken? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-skatteoppgjor-penger-tilbake",
+    "category": "current",
+    "topic": "skatt",
+    "tags": [
+      "skatt",
+      "skatteoppgjør",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "De fleste får penger tilbake på skatten.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – de fleste får skatt til gode.",
+      "explanation": "Våren 2026 regnet Skatteetaten med at om lag 2,7 millioner ville få penger tilbake, i snitt 15 200 kroner.",
+      "deepDive": "Mange betaler litt for mye skatt gjennom året og får differansen tilbake når skattemeldingen er behandlet. Noen får i stedet restskatt, altså en regning. Tallene var foreløpige til alle skattemeldingene var ferdig behandlet.",
+      "caveats": [
+        "Foreløpige tall fra skattemeldingene. Endelig antall kan avvike."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Skatteetaten",
+        "title": "2,7 millioner ligger an til å få skatt til gode",
+        "url": "https://www.skatteetaten.no/en/press/nyhetsrommet/27-millioner-ligger-an-til-a-fa-skatt-til-gode-nar-skattemeldingene-er-behandlet/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Skatteoppgjøret 2026 (foreløpige tall)",
+    "calculation": "Foreløpig: 2,7 millioner skatt til gode, snitt 15 200 kr, til sammen 42 milliarder kr (Skatteetaten).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Får de fleste penger tilbake på skatten? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 2
+  },
+  {
+    "id": "enkel-barnehage-gratis",
+    "category": "misconception",
+    "topic": "barn og familie",
+    "tags": [
+      "barnehage",
+      "velferd",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Barnehage er gratis i Norge.",
+      "answer": false,
+      "correction": "Maksprisen for en heltidsplass er 1 200 kroner i måneden, og ingen betaler mer enn 6 prosent av inntekten."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – men prisen har et tak.",
+      "explanation": "Foreldre betaler en makspris på 1 200 kroner i måneden for en heltidsplass. Ingen skal betale mer enn 6 prosent av inntekten.",
+      "deepDive": "Resten av kostnaden dekkes av stat og kommune. Noen steder er prisen lavere enn det landsdekkende taket.",
+      "caveats": [
+        "Maksprisen kan endres i statsbudsjettet.",
+        "Noen kommuner oppgir lavere priser."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Regjeringen",
+        "title": "Regjeringa vidarefører den historiske låge maksprisen i barnehage",
+        "url": "https://www.regjeringen.no/no/aktuelt/regjeringa-vidareforer-den-historiske-lage-maksprisen-i-barnehage/id3174270/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2026",
+    "calculation": "Makspris 1 200 kr per måned (heltidsplass); ingen husholdning betaler mer enn 6 % av inntekten.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Er barnehage gratis i Norge? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-barnehage-de-fleste",
+    "category": "current",
+    "topic": "barn og familie",
+    "tags": [
+      "barnehage",
+      "barn",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "De fleste barn mellom 1 og 5 år går i barnehage.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – nesten alle gjør det.",
+      "explanation": "I 2025 gikk 94,5 prosent av barna mellom 1 og 5 år i barnehage.",
+      "deepDive": "Blant 1–2-åringene var det 89,7 prosent, og blant 3–5-åringene 97,5 prosent. I 2000 var andelen for 1–5-åringer 62 prosent.",
+      "caveats": [
+        "Gjelder barn 1–5 år. Ikke barn under ett år."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Barnehager",
+        "url": "https://www.ssb.no/utdanning/faktaside/barnehager",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "Barnehagedekning 1–5 år: 94,5 % (89,7 % for 1–2 år, 97,5 % for 3–5 år), 2025.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Går de fleste barn i barnehage? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-fruktbarhet-over-to",
+    "category": "misconception",
+    "topic": "barn og familie",
+    "tags": [
+      "fødsler",
+      "barn",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Hver kvinne i Norge får i snitt over to barn.",
+      "answer": false,
+      "correction": "I 2025 fikk hver kvinne i snitt 1,48 barn."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – det er omtrent 1,5 barn.",
+      "explanation": "I 2025 fikk hver kvinne i snitt 1,48 barn, opp fra 1,44 året før.",
+      "deepDive": "Tallet kalles samlet fruktbarhetstall. Det sier hvor mange barn en kvinne ville fått hvis hun fikk like mange barn som kvinner gjør i dag. For at befolkningen skal holde seg stabil uten innvandring, trengs det litt over to.",
+      "caveats": [
+        "Et regnestykke for ett år, ikke hvor mange barn kvinner faktisk ender opp med."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Fruktbarheten fortsetter å øke",
+        "url": "https://www.ssb.no/befolkning/fodte-og-dode/statistikk/fodte/artikler/fruktbarheten-fortsetter-a-oke",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "Samlet fruktbarhetstall 2025: 1,48 (2024: 1,44).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Får hver kvinne over to barn? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-doedsaarsak-hjerte-vs-kreft",
+    "category": "misconception",
+    "topic": "helse",
+    "tags": [
+      "dødsårsaker",
+      "kreft",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Hjerte- og karsykdom er den vanligste dødsårsaken i Norge.",
+      "answer": false,
+      "correction": "Kreft er vanligst. I 2025 døde 11 703 av kreft."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – kreft er vanligst.",
+      "explanation": "Kreft ligger foran hjerte- og karsykdom. Demens er nummer tre.",
+      "deepDive": "Dødsårsaker telles etter hovedårsak. FHI skriver at andelen som dør av kreft og hjerte- og karsykdom aldri har vært lavere i nyere tid.",
+      "caveats": [
+        "Rekkefølgen er gjennomgående lik, men tallene justeres når registeret er ferdig."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "FHI",
+        "title": "Dette døde vi av i 2025",
+        "url": "https://www.fhi.no/nyheter/2026/dette-dode-vi-av-i-2025/",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "FHI",
+        "title": "Kreft fortsatt vanligste dødsårsaken – færre dør av hjerte- og karsykdommer",
+        "url": "https://www.fhi.no/nyheter/2025/dodsarsaker-2024-forelopige-tall",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "Kreftdødsfall 2025: 11 703 (FHI kreftnøkkeltall).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Er hjerte- og karsykdom den vanligste dødsårsaken? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-hjertekar-faerre-siden-1990",
+    "category": "current",
+    "topic": "helse",
+    "tags": [
+      "hjerte",
+      "dødsårsaker",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Færre dør av hjerte- og karsykdom nå enn i 1990.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – tallet er nesten halvert.",
+      "explanation": "I 1990 døde 21 614 av hjerte- og karsykdom. I 2024 var tallet omtrent 10 000.",
+      "deepDive": "Færre dør, selv om vi er blitt flere og eldre. FHI skriver at dødeligheten er på sitt laveste noensinne. Tallene alene forklarer ikke hvorfor.",
+      "caveats": [
+        "2024-tallet er foreløpig (4 791 kvinner og 5 234 menn).",
+        "Kodepraksis kan ha endret seg siden 1990."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "FHI",
+        "title": "Kreft fortsatt vanligste dødsårsaken – færre dør av hjerte- og karsykdommer",
+        "url": "https://www.fhi.no/nyheter/2025/dodsarsaker-2024-forelopige-tall",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "SSB",
+        "title": "Dødsårsaker 1990 (historisk statistikk)",
+        "url": "https://www.ssb.no/a/histstat/us/su_199149.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1990 og 2024",
+    "calculation": "1990: 21 614 døde av hjerte- og karsykdom. 2024 (foreløpig): 4 791 + 5 234 = 10 025.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Dør færre av hjerte- og karsykdom nå enn i 1990? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 2
+  },
+  {
+    "id": "enkel-hpv-gutter-og-jenter",
+    "category": "current",
+    "topic": "helse",
+    "tags": [
+      "vaksine",
+      "hpv",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Både jenter og gutter får HPV-vaksine på skolen.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – gutter fikk tilbudet fra 2018.",
+      "explanation": "Gutter i 7. klasse har fått HPV-vaksine i barnevaksinasjonsprogrammet siden høsten 2018. Jenter fikk den fra før.",
+      "deepDive": "Vaksinen beskytter mot HPV-virus, som kan gi livmorhalskreft og enkelte andre kreftformer. Vaksinen er frivillig.",
+      "caveats": [
+        "Dekningen for gutter født i 2011 var rundt 90 prosent for første dose."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Helsedirektoratet",
+        "title": "Handlingsprogram for gynekologisk kreft – profylakse",
+        "url": "https://www.helsedirektoratet.no/retningslinjer/gynekologisk-kreft--handlingsprogram/premaligne-lidelser-i-cervix-uteri/profylakse",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Fra høsten 2018",
+    "calculation": "Gutter i 7. klasse fra høsten 2018; dekning gutter født 2011: 90 % dose 1.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Får både jenter og gutter HPV-vaksine på skolen? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-influensavaksine-over-65",
+    "category": "misconception",
+    "topic": "helse",
+    "tags": [
+      "vaksine",
+      "influensa",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "De fleste over 65 år tar ikke influensavaksine.",
+      "answer": false,
+      "correction": "Sesongen 2025/26 tok 69 prosent av dem over 65 år vaksinen."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – nesten sju av ti tar den.",
+      "explanation": "Sesongen 2025/26 tok 69 prosent av dem over 65 år vaksinen. Året før var det 66 prosent.",
+      "deepDive": "Influensavaksine anbefales til eldre og til risikogrupper. Vaksinen er frivillig, og dekningen har økt litt det siste året.",
+      "caveats": [
+        "Tall for hele befolkningen er ikke brukt her."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "FHI",
+        "title": "Flere eldre velger vaksine",
+        "url": "https://www.fhi.no/nyheter/2026/flere-eldre-velger-vaksine/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Sesongen 2025/26",
+    "calculation": "Vaksinedekning 65+: 69 % (2025/26), 66 % (2024/25).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Tar de fleste over 65 influensavaksine? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-doktorgrad-kvinner",
+    "category": "misconception",
+    "topic": "likestilling",
+    "tags": [
+      "utdanning",
+      "doktorgrad",
+      "enkel"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Menn tok flest doktorgrader i Norge i 2025.",
+      "answer": false,
+      "correction": "53 prosent av doktorgradene i 2025 ble tatt av kvinner (998 av 1 878)."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – flest var kvinner.",
+      "explanation": "Av 1 878 doktorgrader i 2025 ble 998 tatt av kvinner og 880 av menn.",
+      "deepDive": "Kvinner er i flertall innen medisin, helsefag og samfunnsvitenskap. Innen teknologi er bare 33 prosent kvinner.",
+      "caveats": [
+        "Gjelder doktorgrader avlagt i Norge, uansett statsborgerskap."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Rekordmange avla doktorgrad i 2025",
+        "url": "https://www.ssb.no/teknologi-og-innovasjon/forskning-og-innovasjon-i-naeringslivet/statistikk/forskerpersonale/artikler/rekordmange-avla-doktorgrad-i-2025",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "1 878 doktorgrader; 998 kvinner og 880 menn (53 % kvinner). Teknologi: 33 % kvinner.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Tok menn flest doktorgrader i 2025? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-fedrekvote-foerst",
+    "category": "fun",
+    "topic": "likestilling",
+    "tags": [
+      "foreldrepermisjon",
+      "fedrekvote",
+      "enkel"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Norge var først i verden med fedrekvote.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – fedrekvoten kom i 1993.",
+      "explanation": "Fra 1993 ble fire uker av permisjonen reservert for far, og Norge var først i verden med dette.",
+      "deepDive": "Fedrekvoten betyr at en del av foreldrepermisjonen bare kan tas av far. Hvis han ikke bruker den, faller den bort. Kvoten er blitt lengre siden den ble innført.",
+      "caveats": [
+        "«Først i verden» er hentet fra Store norske leksikon."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Store norske leksikon",
+        "title": "Folketrygden",
+        "url": "https://snl.no/folketrygden",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1993",
+    "calculation": "Fedrekvote innført 1. april 1993: 4 uker.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall fra offisiell kilde gjengitt i søkeresultat. Kildesiden kunne ikke åpnes (nettverksblokkering i utviklingsmiljøet); kontrolleres mot tabell/publikasjon før godkjenning."
+    },
+    "shareText": "Var Norge først i verden med fedrekvote? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  }
+]

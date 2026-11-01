@@ -2,7 +2,7 @@
  * Validerer seed-banken: skjema, semantikk og redaksjonelle regler.
  * Kjør: npm run content:validate
  */
-import { seedQuestions } from "../content/questions/index";
+import { seedQuestions, seedReviewOnlyIds } from "../content/questions/index";
 import { parseQuestion } from "../src/lib/game/schema";
 import { validateQuestion } from "../src/lib/qa/validate";
 import { seedStatusFor } from "../src/lib/db/seed";
@@ -26,7 +26,7 @@ for (const raw of seedQuestions) {
   existing.push({ id: q.id, prompt: q.prompt });
   const key = `${q.category}/${q.payload.format}`;
   counts[key] = (counts[key] ?? 0) + 1;
-  const status = qa.ok ? seedStatusFor(q.risk) : "review_required";
+  const status = qa.ok && !seedReviewOnlyIds.has(q.id) ? seedStatusFor(q.risk) : "review_required";
   statusCounts[status] = (statusCounts[status] ?? 0) + 1;
   if (!qa.ok) {
     failed++;
