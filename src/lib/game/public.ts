@@ -4,6 +4,7 @@
 import type { Payload, QuestionContent } from "./schema";
 import { correctRankOrder } from "./scoring";
 import { seededRandom, shuffle } from "./prng";
+import { estimateOptions } from "./options";
 
 export type PublicPayload =
   | { format: "truefalse"; statement: string }
@@ -15,6 +16,8 @@ export type PublicPayload =
       scale: "linear" | "log";
       step: number;
       start: number;
+      /** Fire svaralternativer (stigende) hvor ett er fasit. Tom liste = bare målebåndet. */
+      options: number[];
       survey?: { question: string; population: string; fieldwork: string; n?: number };
     }
   | {
@@ -91,6 +94,7 @@ export function toPublic(q: QuestionContent, seed = q.id): PublicQuestion {
         scale: p.scale,
         step: p.step,
         start: neutralStart(p),
+        options: estimateOptions(p, rand),
         survey: p.survey,
       };
       break;

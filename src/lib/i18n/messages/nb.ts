@@ -57,7 +57,7 @@ export const nb = {
     progressShort: "{n} av {total}",
     instructions: {
       truefalse: "Stemmer det?",
-      estimate: "Gjett tallet",
+      estimate: "Velg tallet du tror på",
       compare: "Trykk på den du tror er størst",
       compareLowest: "Trykk på den du tror er minst",
       rank: "Sett i riktig rekkefølge",
@@ -95,6 +95,8 @@ export const nb = {
     tallHint: "Det stemmer",
     swipeHint: "Dra kortet mot venstre for tull, høyre for tall",
     lockIn: "Svar",
+    pickOne: "Velg ett av tallene",
+    pickFirst: "Velg et tall først",
     next: "Neste spørsmål",
     finish: "Se resultatet",
     loading: "Henter fasiten …",

@@ -41,6 +41,10 @@ Enhetstestene fordeler seg slik:
 - Admin: «Navn og lister» for å skjule spillere eller nullstille navn.
 - E-postinnlogging (konto som følger deg mellom enheter) er ikke bygget ennå.
 
+## Tallspørsmål med svaralternativer
+
+«Gjett tallet» har fire svaralternativer (`src/lib/game/options.ts`), laget på serveren: fasit ligger på tilfeldig plass, alle tall rundes like grovt som fasit, og avstanden varierer. Poengene regnes som før (nærhet; 100 for riktig alternativ). For fasit nær kanten av skalaen (f.eks. 85 av 100 %) rommer ikke skalaen alle plasser; da brukes de plassene som finnes. Bare «Gjett tallet» er endret; «Hvor ender streken?» (Trend) har fortsatt bare dra-grafen.
+
 ## Må gjøres før lansering (ikke ferdig)
 
 1. **SSB live:** `data.ssb.no` var blokkert i utviklingsmiljøet. Klienten er skrevet mot den offisielle OpenAPI-spesifikasjonen og testet med JSON-stat-fiksturer, men **aldri kjørt mot ekte API**. Katalogoppføringene er merket `verified: false`. Kjør `weekly-content.yml` manuelt med «force», les rapporten og juster utvalgsreglene i `catalog.ts` hvis de ikke treffer.

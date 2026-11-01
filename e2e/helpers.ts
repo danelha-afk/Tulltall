@@ -4,8 +4,14 @@ import { expect, type Page } from "@playwright/test";
 export async function answerCurrent(page: Page) {
   const tall = page.getByRole("button", { name: "Stemmer", exact: true });
   const lock = page.getByRole("button", { name: "Svar", exact: true });
+  const option = page.getByTestId("estimate-option");
   if (await tall.count()) {
     await tall.first().click();
+  } else if (await option.count()) {
+    // Tallspørsmål med svaralternativer: velg ett, trykk Svar.
+    await option.nth(1).click();
+    await expect(lock).toBeEnabled();
+    await lock.click();
   } else if (await lock.count()) {
     const slider = page.locator("[role=slider]").first();
     if (await slider.count()) {

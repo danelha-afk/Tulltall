@@ -219,7 +219,7 @@ export function GamePlayer({ gameId, challengeCode, single = false }: { gameId?:
     <div ref={topRef} className="mx-auto max-w-2xl px-4 pt-4 pb-16 scroll-mt-16">
       {/* Fremdrift */}
       {session.questions.length > 1 ? (
-        <div className="flex items-center justify-between gap-3 mb-5" aria-label={t("game.progressLabel", { n: index, total: session.questions.length })}>
+        <div className="flex items-center justify-between gap-3 mb-3" aria-label={t("game.progressLabel", { n: index, total: session.questions.length })}>
           <PunchHoles pattern={pattern} current={index} size={14} />
           <span className="font-bold tabular text-blekk-2">{t("game.progressShort", { n: index + 1, total: session.questions.length })}</span>
         </div>
@@ -237,7 +237,7 @@ export function GamePlayer({ gameId, challengeCode, single = false }: { gameId?:
           <p className="font-black font-wide uppercase text-kobolt text-[1.05rem] tracking-wide mb-2">{instruction}</p>
           {/* … og én stor plass for spørsmålet. */}
           {showPrompt ? (
-            <h2 className="font-extrabold text-[clamp(1.6rem,6.8vw,2.4rem)] leading-[1.12] mb-6 text-balance">{q.prompt}</h2>
+            <h2 className="font-extrabold text-[clamp(1.6rem,6.8vw,2.4rem)] leading-[1.12] mb-4 text-balance">{q.prompt}</h2>
           ) : null}
 
           {q.payload.format === "truefalse" ? <TrueFalse q={q as never} {...common} /> : null}

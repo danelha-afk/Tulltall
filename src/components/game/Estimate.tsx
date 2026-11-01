@@ -23,6 +23,13 @@ export function Estimate({ q, onSubmit, busy, reveal }: FormatProps<"estimate">)
   const [width, setWidth] = useState(320);
   const drag = useRef<{ x: number; pos: number } | null>(null);
   const [zoom, setZoom] = useState(ZOOM);
+  // Svaralternativer: velg ett av dem (eller dra båndet). «touched» = spilleren har valgt noe.
+  const hasOptions = p.options.length >= 3;
+  const [picked, setPicked] = useState<number | null>(null);
+  const [touched, setTouched] = useState(!hasOptions);
+  const posRef = useRef(pos);
+  posRef.current = pos;
+  const anim = useRef<{ stop: () => void } | null>(null);
 
   useLayoutEffect(() => {
     const el = wrap.current;
@@ -39,14 +46,30 @@ export function Estimate({ q, onSubmit, busy, reveal }: FormatProps<"estimate">)
   );
 
   const setFromPos = (np: number) => {
+    anim.current?.stop();
     const c = Math.min(1, Math.max(0, np));
     setPos(c);
     setValue(quantize(fromPos(c, p.min, p.max, p.scale)));
+    setPicked(null);
+    setTouched(true);
   };
   const setFromValue = (v: number) => {
+    anim.current?.stop();
     const q2 = quantize(v);
     setValue(q2);
     setPos(toPos(q2, p.min, p.max, p.scale));
+    setPicked(null);
+    setTouched(true);
+  };
+  // Et alternativ brukes nøyaktig som det er (ikke avrundet til skalaens steg), og båndet glir dit.
+  const pickOption = (v: number) => {
+    anim.current?.stop();
+    setPicked(v);
+    setValue(v);
+    setTouched(true);
+    const target = toPos(v, p.min, p.max, p.scale);
+    if (reduced) setPos(target);
+    else anim.current = animate(posRef.current, target, { duration: 0.35, ease: [0.16, 1, 0.3, 1], onUpdate: setPos });
   };
 
   // Avsløring: rull båndet til fasit.
@@ -106,8 +129,8 @@ export function Estimate({ q, onSubmit, busy, reveal }: FormatProps<"estimate">)
         <p className="kicker inline-block bg-rosa border-2 border-blekk rounded-full px-3 py-1 mb-3">{t("game.surveyBadge")}</p>
       ) : null}
 
-      {/* Stort tall */}
-      <div className="text-center my-4" aria-hidden>
+      {/* Stort tall (med alternativer vises valget i stedet på selve målebåndet, så alt får plass på én skjerm) */}
+      <div className={`text-center my-4 ${hasOptions && !reveal ? "hidden" : ""}`} aria-hidden>
         {reveal && answer !== null ? (
           <div>
             <span className="kicker text-kobolt">{t("game.answer")}</span>
@@ -159,9 +182,9 @@ export function Estimate({ q, onSubmit, busy, reveal }: FormatProps<"estimate">)
           if (locked) return;
           setFromPos(pos + (e.deltaY + e.deltaX) / strip / 2);
         }}
-        className={`relative h-28 overflow-hidden rounded-xl border-[2.5px] border-blekk bg-syre select-none touch-none ${
-          locked ? "" : "cursor-ew-resize"
-        }`}
+        className={`relative overflow-hidden rounded-xl border-[2.5px] border-blekk bg-syre select-none touch-none ${
+          hasOptions && !reveal ? "h-[clamp(5.5rem,13svh,7rem)]" : "h-28"
+        } ${locked ? "" : "cursor-ew-resize"}`}
       >
         <div className="absolute inset-y-0" style={{ width: strip, transform: `translateX(${offset}px)` }}>
           {ticks.map((tk) => {
@@ -210,9 +233,50 @@ export function Estimate({ q, onSubmit, busy, reveal }: FormatProps<"estimate">)
         ) : null}
         <div className="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-syre to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-syre to-transparent" />
+        {hasOptions && !reveal && touched ? (
+          <div className="pointer-events-none absolute bottom-1.5 left-1/2 -translate-x-1/2" aria-hidden>
+            <span className="block whitespace-nowrap rounded-full border-2 border-blekk bg-papir px-3 py-0.5 font-black tabular text-lg leading-tight">
+              {formatValue(value, unit)}
+            </span>
+          </div>
+        ) : null}
       </div>
 
-      {!reveal ? (
+      {!reveal && hasOptions ? (
+        <>
+          <div className="mt-3 grid grid-cols-2 gap-2.5" role="group" aria-label={t("game.pickOne")}>
+            {p.options.map((o) => {
+              const on = picked === o;
+              return (
+                <button
+                  key={o}
+                  type="button"
+                  data-testid="estimate-option"
+                  aria-pressed={on}
+                  aria-label={formatValue(o, unit)}
+                  disabled={locked}
+                  onClick={() => pickOption(o)}
+                  className={`flex min-h-[clamp(3.25rem,8.5svh,4rem)] flex-col items-center justify-center rounded-2xl border-[2.5px] border-blekk px-2 shadow-[3px_3px_0_var(--color-blekk)] transition-transform active:translate-y-0.5 ${
+                    on ? "bg-kobolt text-papir" : "bg-papir"
+                  }`}
+                >
+                  <span className="font-black tabular text-[1.4rem] leading-none">
+                    {unit.prefix}
+                    {formatNumber(o, unit.decimals)}
+                    {isPct ? " %" : ""}
+                  </span>
+                  {unit.suffix && !isPct ? <span className="mt-0.5 text-xs font-bold uppercase leading-none opacity-80">{unit.suffix}</span> : null}
+                </button>
+              );
+            })}
+          </div>
+          <div className="mt-3">
+            <button type="button" className="btn btn-primary w-full text-xl !min-h-14" disabled={locked || !touched} onClick={() => onSubmit({ format: "estimate", value })}>
+              {touched ? t("game.lockIn") : t("game.pickFirst")}
+            </button>
+          </div>
+        </>
+      ) : !reveal ? (
         <>
           <p className="text-center mt-2 text-blekk-2 font-semibold">{t("game.estimateHint")}</p>
           <div className="mt-4 flex items-center justify-center gap-3">

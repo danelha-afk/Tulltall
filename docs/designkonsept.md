@@ -63,7 +63,7 @@ Alle skriftene er lisensiert under SIL Open Font License og lastes lokalt (ingen
 | Format | Interaksjon | Avsløring |
 |---|---|---|
 | Tull eller tall? | **Stempelet:** stemple påstanden, eller dra dokumentet mot venstre/høyre | Fasitstempelet slår ned over dokumentet. Ved alvorlige temaer tones det inn i stedet. |
-| Gjett tallet | **Målebåndet:** et langt bånd glir under en fast nål (dra, piltaster, eller skriv tallet) | Båndet zoomer ut til både gjetning og fasit synes, og tallet ruller fra gjetningen til fasit. |
+| Gjett tallet | **Målebåndet** med **fire svaralternativer**: trykk på et tall, båndet glir dit, trykk Svar. Båndet kan fortsatt dras. Spørsmål, alternativer og Svar skal alltid stå på én skjerm (testes i `e2e/fit.spec.ts`) | Båndet zoomer ut til både gjetning og fasit synes, og tallet ruller fra gjetningen til fasit. |
 | Hvem er størst? | **Duellen:** trykk på et tårn | Tårnene vokser til sine faktiske verdier, og vinneren får stempel. |
 | Ranger riktig | **Stabelen:** papirstrimler med dra-håndtak og opp/ned-knapper | Strimlene glir til riktig plass med ✓ eller ↑n/↓n. |
 | Tidsmaskinen | Dra endepunktet på kurven | Den ekte kurven tegner seg gjennom årene du ikke så. |

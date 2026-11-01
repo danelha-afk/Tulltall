@@ -51,8 +51,9 @@ test.describe("spillet", () => {
   test("enkeltspørsmål kan deles og spilles", async ({ page }) => {
     await page.goto("/s/antall-kommuner");
     await expect(page.getByRole("heading", { name: "Hvor mange kommuner har Norge?" })).toBeVisible();
-    await page.locator("[role=slider]").first().focus();
-    await page.keyboard.press("ArrowRight");
+    // Svaralternativer: Svar er avslått til man har valgt ett.
+    await expect(page.getByRole("button", { name: "Svar", exact: true })).toHaveCount(0);
+    await page.getByTestId("estimate-option").first().click();
     await page.getByRole("button", { name: "Svar", exact: true }).click();
     await expect(page.getByText("357 kommuner – og 15 fylker.")).toBeVisible({ timeout: 15_000 });
     await page.getByRole("button", { name: /Se resultatet/ }).click();
