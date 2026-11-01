@@ -137,14 +137,22 @@ export async function runMigrations(db: Db): Promise<string[]> {
   });
 }
 
-/** Tilkoblingsstreng: DATABASE_URL, eller POSTGRES_URL som Vercels Supabase-integrasjon setter automatisk. */
-export function databaseUrl(): string | undefined {
-  const raw = process.env.DATABASE_URL || process.env.POSTGRES_URL;
-  // Usynlige mellomrom/linjeskift fra innliming ødelegger passordet – fjern dem.
-  return raw ? raw.replace(/\s+/g, "") || undefined : undefined;
+/** Alle databaseadresser appen kan finne (uten mellomrom), i prioritert rekkefølge. */
+export function databaseUrls(): { name: string; url: string }[] {
+  const out: { name: string; url: string }[] = [];
+  for (const name of ["DATABASE_URL", "POSTGRES_URL"]) {
+    const url = (process.env[name] ?? "").replace(/\s+/g, "");
+    if (url && !out.some((o) => o.url === url)) out.push({ name, url });
+  }
+  return out;
 }
 
-type GlobalWithDb = typeof globalThis & { __tulltallDb?: Promise<Db> };
+/** Første adresse (brukes av skript). I appen prøves alle i getDb(). */
+export function databaseUrl(): string | undefined {
+  return databaseUrls()[0]?.url;
+}
+
+type GlobalWithDb = typeof globalThis & { __tulltallDb?: Promise<Db>; __tulltallDbSource?: string };
 
 /**
  * Felles databaseforbindelse for prosessen.
@@ -155,8 +163,28 @@ export function getDb(): Promise<Db> {
   const g = globalThis as GlobalWithDb;
   if (!g.__tulltallDb) {
     g.__tulltallDb = (async () => {
-      const url = databaseUrl();
-      const db = url ? await createPostgresDb(url) : await createPgliteDb(process.env.PGLITE_DIR ?? ".data/pglite");
+      const candidates = databaseUrls();
+      let db: Db | undefined;
+      let lastError: unknown;
+      // Prøv hver adresse (DATABASE_URL, deretter POSTGRES_URL) og bruk den første som faktisk virker.
+      for (const c of candidates) {
+        let attempt: Db | undefined;
+        try {
+          attempt = await createPostgresDb(c.url);
+          await attempt.one(`SELECT 1`);
+          db = attempt;
+          (globalThis as GlobalWithDb).__tulltallDbSource = c.name;
+          break;
+        } catch (err) {
+          lastError = err;
+          await attempt?.close().catch(() => undefined);
+        }
+      }
+      if (!db) {
+        if (candidates.length) throw lastError;
+        db = await createPgliteDb(process.env.PGLITE_DIR ?? ".data/pglite");
+      }
+      const url = candidates.length ? candidates[0].url : undefined;
       const autoMigrate = !url || process.env.AUTO_MIGRATE === "true";
       if (autoMigrate) {
         await runMigrations(db);
