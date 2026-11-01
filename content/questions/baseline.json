@@ -1,0 +1,940 @@
+[
+  {
+    "id": "enkel-bl-norge-likestilt",
+    "category": "current",
+    "topic": "likestilling",
+    "tags": [
+      "likestilling",
+      "internasjonalt",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Norge er blant de tre mest likestilte landene i verden.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – Norge er nummer tre.",
+      "explanation": "Norge kom på tredjeplass i World Economic Forums likestillingsrapport for 2026.",
+      "deepDive": "Indeksen sammenligner kvinner og menn på tvers av land. Den sier ikke noe om andre grupper, og i Norge har utviklingen flatet ut på flere områder.",
+      "caveats": [
+        "Én indeks fra én organisasjon."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "World Economic Forum",
+        "title": "Global Gender Gap Report 2026",
+        "url": "https://www.weforum.org/publications/global-gender-gap-report-2026/digest/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2026",
+    "calculation": "Plass 3 i World Economic Forums likestillingsindeks 2026.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Er Norge blant de tre mest likestilte landene? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-storting-kvinner",
+    "category": "misconception",
+    "topic": "likestilling",
+    "tags": [
+      "politikk",
+      "storting",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Det sitter flere kvinner enn menn på Stortinget.",
+      "answer": false,
+      "correction": "Etter valget i 2025 er 41,4 prosent av representantene kvinner. Rekorden er 45 prosent, fra 2021."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – menn er i flertall.",
+      "explanation": "Etter valget i 2025 er 41,4 prosent av representantene kvinner. Rekorden er 45 prosent, fra 2021.",
+      "deepDive": "Kvinneandelen lå under ti prosent fram til 1969 og har ligget rundt 40 prosent siden 1990-tallet. I kommunestyrene er den omtrent 41 prosent.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "08219: Stortingsvalet. Valde representantar, etter kjønn 1945–2025",
+        "url": "https://www.ssb.no/statbank/table/08219",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2021 og 2025",
+    "calculation": "Kvinneandel på Stortinget: 41,4 % (2025), 45 % (2021).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Sitter det flere kvinner enn menn på Stortinget? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-bl-karakterer-jenter",
+    "category": "current",
+    "topic": "utdanning",
+    "tags": [
+      "skole",
+      "kjønn",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Jenter har bedre karakterer enn gutter i grunnskolen.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – og slik har det vært siden 2009.",
+      "explanation": "Jenter har hatt omtrent fire grunnskolepoeng mer enn gutter hvert år siden 2009.",
+      "deepDive": "Forskerne vet ikke sikkert hvorfor. Forskjellen er omtrent like stor for barn av foreldre med lav og høy utdanning. Blant elever med under 30 poeng er det omtrent 2,5 ganger så mange gutter som jenter.",
+      "caveats": [
+        "Gjelder gjennomsnittet. Mange gutter gjør det like bra som jenter."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "07495: Grunnskolepoeng, etter kjønn og foreldrenes utdanningsnivå 2009–2026",
+        "url": "https://www.ssb.no/statbank/table/07495",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2009–2026",
+    "calculation": "Jenter ca. 4 grunnskolepoeng over gutter hvert år fra 2009 (SSB tabell 07495).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Har jenter bedre karakterer enn gutter? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-bl-neet-menn",
+    "category": "current",
+    "topic": "arbeid",
+    "tags": [
+      "unge",
+      "utenforskap",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Nå er flere unge menn enn unge kvinner utenfor jobb og skole.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – det snudde rundt 2024.",
+      "explanation": "Fram til 2019 var andelen høyest blant unge kvinner. Siden 2024 er den høyest blant unge menn.",
+      "deepDive": "I 2025 var 10,1 prosent av 15–29-åringene verken i arbeid, utdanning eller tiltak. Tallet bygger på registerdata og kan ikke sammenlignes direkte med EUs tall.",
+      "caveats": [
+        "Gjelder alderen 15–29 år."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "13556: Prioritert arbeidsstyrkestatus (inkl. NEET) for personer 15–29 år 2008–2025",
+        "url": "https://www.ssb.no/statbank/table/13556",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2008–2025",
+    "calculation": "Andel 15–29 år utenfor arbeid, utdanning og tiltak: 10,1 % (2025). Høyest blant kvinner til 2019, blant menn siden 2024.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Er flere unge menn enn kvinner utenfor jobb og skole? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-fedrekvote-de-fleste",
+    "category": "current",
+    "topic": "likestilling",
+    "tags": [
+      "foreldrepermisjon",
+      "fedre",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "De fleste fedre tar ut hele fedrekvoten.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – to av tre gjør det.",
+      "explanation": "I 2024 tok 67,5 prosent av fedrene hele fedrekvoten eller mer. Mødre tar likevel mer permisjon enn fedre.",
+      "deepDive": "Tallet gjelder barn født omtrent tre år tidligere. For barn født i 2021 tok mødrene i snitt omtrent 34 uker permisjon og fedrene omtrent 15 uker. Bare omtrent én av fem fedre tar mer enn kvoten.",
+      "caveats": [
+        "Ulike målinger gir ulike tall. Dette er SSBs indikator."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "09293: Indikatorer for kjønnslikestilling. Grunnlagstall 2008–2024",
+        "url": "https://www.ssb.no/statbank/table/09293",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "Nav",
+        "title": "Foreldrepenger",
+        "url": "https://www.nav.no/foreldrepenger",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2024",
+    "calculation": "Fedre som tok hele fedrekvoten eller mer: 67,5 % (SSB-indikator 2024). Barn født 2021: mødre ca. 34 uker, fedre ca. 15 uker.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Tar de fleste fedre ut hele fedrekvoten? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-deltid-kvinner",
+    "category": "current",
+    "topic": "likestilling",
+    "tags": [
+      "arbeid",
+      "deltid",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Flere kvinner enn menn jobber deltid.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – men forskjellen har blitt mindre.",
+      "explanation": "I 2025 jobbet 33,1 prosent av kvinnene og 16,9 prosent av mennene deltid. For kvinner var tallet 40,9 prosent i 2011.",
+      "deepDive": "Deltid er vanligst i kvinnedominerte yrker i helse, omsorg og skole. Målingen av deltid ble endret i 2015, så tallene før og etter er ikke helt sammenlignbare.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "09790: Sysselsatte. Årsgjennomsnitt, etter kjønn, yrke, statistikkvariabel og år",
+        "url": "https://www.ssb.no/statbank/table/09790",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2011 og 2025",
+    "calculation": "Deltidsandel: kvinner 40,9 % (2011) og 33,1 % (2025); menn 13,6 % (2011) og 16,9 % (2025).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Jobber flere kvinner enn menn deltid? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-toppledere-menn",
+    "category": "current",
+    "topic": "likestilling",
+    "tags": [
+      "ledelse",
+      "arbeid",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "De fleste toppledere i Norge er menn.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 28 prosent er kvinner.",
+      "explanation": "Kvinneandelen blant toppledere er 28 prosent, og den øker med omtrent et halvt prosentpoeng i året.",
+      "deepDive": "Blant ledere samlet er 39,3 prosent kvinner (2024). Kvinner er i flertall blant lederne i kommunene (66 prosent) og i staten (58 prosent), men utgjør under en tredjedel i privat sektor.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "14160: Lønnstakere, jobber og arbeidstid",
+        "url": "https://www.ssb.no/statbank/table/14160",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2021–2026",
+    "calculation": "Kvinneandel toppledere: 28 %. Ledere samlet: 39,3 % (2024). Kommuner 66 %, stat 58 %.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Er de fleste toppledere menn? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-barnloese-menn",
+    "category": "misconception",
+    "topic": "barn og familie",
+    "tags": [
+      "barnløshet",
+      "kjønn",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Flere menn enn kvinner forblir barnløse.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 27 mot 15 prosent.",
+      "explanation": "Av dem som er født i 1979, var 27 prosent av mennene og 15 prosent av kvinnene barnløse som 45-åringer.",
+      "deepDive": "Blant menn med lavest inntekt er barnløsheten mye høyere enn blant dem med høyest inntekt: 72 mot 11 prosent ved 40 år, blant menn født 1977–1979. Ønsket antall barn er nesten likt for menn og kvinner.",
+      "caveats": [
+        "Gjelder én årgang."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Barne- og familiedepartementet",
+        "title": "NOU 2026: 2 Politikk for nye generasjoner",
+        "url": "https://www.regjeringen.no/no/dokumenter/nou-2026-2/id3148337/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Født 1979",
+    "calculation": "Barnløse ved 45 år: menn 27 %, kvinner 15 % (kull 1979). Blant menn født 1977–1979, 40 år: 72 % (lavest inntekt) mot 11 % (høyest).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Blir flere menn enn kvinner barnløse? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-sykefravaer-kvinner",
+    "category": "current",
+    "topic": "helse",
+    "tags": [
+      "sykefravær",
+      "kjønn",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Kvinner har høyere sykefravær enn menn.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – og slik har det vært siden 2001.",
+      "explanation": "Kvinner har hatt 50 til 70 prosent høyere sykefravær enn menn siden 2001.",
+      "deepDive": "Kvinnehelseutvalget knytter forskjellen blant annet til graviditet, belastning i kvinnedominerte yrker og helseplager det er forsket lite på.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "12441: Sykefravær for lønnstakere, etter kjønn og sykefraværstype 2001–2025",
+        "url": "https://www.ssb.no/statbank/table/12441",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2001–2025",
+    "calculation": "Sykefravær kvinner/menn: forholdstall fra ca. 1,5 til ca. 1,65 (2025), altså 50–70 % høyere.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Har kvinner høyere sykefravær enn menn? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-hoyere-utdanning-kvinner",
+    "category": "current",
+    "topic": "utdanning",
+    "tags": [
+      "utdanning",
+      "kjønn",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Flere kvinner enn menn har høyere utdanning.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – kvinner har oftere høyere utdanning.",
+      "explanation": "I 2024 hadde 43,2 prosent av kvinnene og 32,5 prosent av mennene høyere utdanning.",
+      "deepDive": "Sosial bakgrunn betyr minst like mye som kjønn. I 2025 studerte 56,1 prosent av 19–24-åringene der minst én forelder hadde lang høyere utdanning, mot 23,0 prosent der foreldrene bare hadde grunnskole.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "09293: Indikatorer for kjønnslikestilling. Grunnlagstall 2008–2024",
+        "url": "https://www.ssb.no/statbank/table/09293",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2024",
+    "calculation": "Høyere utdanning 2024: kvinner 43,2 %, menn 32,5 %. 19–24 år 2025: 56,1 % (foreldre med lang høyere utdanning) mot 23,0 % (grunnskole).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Har flere kvinner enn menn høyere utdanning? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-bl-voldtekt-forekomst",
+    "category": "current",
+    "topic": "vold",
+    "tags": [
+      "vold",
+      "voldtekt",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Over hver femte kvinne i Norge har blitt utsatt for voldtekt.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 22 prosent oppgir det.",
+      "explanation": "I en stor undersøkelse fra 2023 oppga 22 prosent av kvinnene og 3 prosent av mennene at de har vært utsatt for voldtekt.",
+      "deepDive": "Halvparten av de utsatte var under 18 år første gang. Tallene er selvrapportert. Forskerne kan ikke avgjøre sikkert hvor mye av økningen siden 2014 som er reell, og hvor mye som skyldes at flere kjenner igjen egne erfaringer som voldtekt.",
+      "caveats": [
+        "Spørreundersøkelse. Gjelder hele livet, ikke bare siste år."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "NKVTS",
+        "title": "Omfang av vold og overgrep i den norske befolkningen (Rapport 1/2023)",
+        "url": "https://www.nkvts.no/content/uploads/2023/11/NKVTS_Rapport_1_23_Omfang_vold_overgrep.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2023",
+    "calculation": "Utsatt for voldtekt i løpet av livet: kvinner 22 %, menn 3 % (NKVTS 2023).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Har over hver femte kvinne blitt utsatt for voldtekt? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-voldtekt-oppklart",
+    "category": "current",
+    "topic": "vold",
+    "tags": [
+      "voldtekt",
+      "politi",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "De fleste anmeldte voldtektssaker blir ikke oppklart.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 70 prosent ble ikke oppklart i 2024.",
+      "explanation": "Av sakene politiet avgjorde i 2024, ble 70 prosent ikke oppklart, og 18 prosent endte med tiltale. I 2012 var tallene 63 og 27 prosent.",
+      "deepDive": "Anmeldte voldtekter økte kraftig fra 2014 til 2018 og har siden ligget rundt 2 200 til 2 500 per år.",
+      "caveats": [
+        "Gjelder ikke grov voldtekt og forsøk."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Lovbrudd etterforsket, etter politiets avgjørelse og type lovbrudd",
+        "url": "https://www.ssb.no/sosiale-forhold-og-kriminalitet/kriminalitet-og-rettsvesen/statistikk/etterforskede-lovbrudd",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2012 og 2024",
+    "calculation": "Avgjorte voldtektssaker (ikke grov voldtekt/forsøk): 2024: 70 % uoppklart, 18 % tiltale. 2012: 63 % og 27 %.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Blir de fleste voldtektssaker ikke oppklart? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-partnerdrap-kvinner",
+    "category": "current",
+    "topic": "kriminalitet",
+    "tags": [
+      "drap",
+      "partnervold",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Over halvparten av drepte kvinner er drept av en partner eller ekspartner.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 55 prosent i perioden 2015–2024.",
+      "explanation": "Av kvinnene som ble drept i Norge fra 2015 til 2024, ble 55 prosent drept av en nåværende eller tidligere partner.",
+      "deepDive": "Partnerdrapsutvalget fant at 231 personer ble drept av en nåværende eller tidligere partner fra 1990 til 2019, omtrent 86 prosent av dem kvinner. Også menn utsettes for vold i nære relasjoner: 226 menn bodde på krisesenter i 2025.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "Kripos",
+        "title": "Nasjonal drapsoversikt 2025",
+        "url": "https://www.politiet.no/globalassets/tall-og-fakta/drap/nasjonal-drapsoversikt-2025.pdf",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "Bufdir",
+        "title": "Menn på krisesenter",
+        "url": "https://www.bufdir.no/statistikk-og-analyse/krisesentrene/menn-krisesenter/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2015–2024",
+    "calculation": "55 % av drepte kvinner 2015–2024 drept av nåværende/tidligere partner (Kripos). 231 partnerdrap 1990–2019, 86 % kvinner. 226 menn på krisesenter 2025 (Bufdir).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Drepes over halvparten av drepte kvinner av en partner? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-hatkriminalitet",
+    "category": "current",
+    "topic": "kriminalitet",
+    "tags": [
+      "hatkriminalitet",
+      "politi",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Anmeldt hatkriminalitet er femdoblet siden 2014.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – til 1 123 saker i 2025.",
+      "explanation": "Politiet registrerte 1 123 anmeldelser i 2025, omtrent 4 prosent færre enn i 2024.",
+      "deepDive": "Hudfarge og etnisitet er det vanligste motivet. Politiet understreker at mørketallene er store, og at økningen også kan skyldes bedre registrering.",
+      "caveats": [
+        "Anmeldelser, ikke alle hendelser."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Oslo politidistrikt",
+        "title": "Anmeldt hatkriminalitet 2025",
+        "url": "https://politiet.no/globalassets/dokumenter-strategier-og-horinger/oslo/rapporter/hatkriminalitet-norge/anmeldt-hatkriminalitet-2025.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2014–2025",
+    "calculation": "Anmeldt hatkriminalitet: 1 123 i 2025, om lag 4 % ned fra 2024, femdoblet siden 2014.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Er anmeldt hatkriminalitet femdoblet siden 2014? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-fastlege-menn",
+    "category": "current",
+    "topic": "helse",
+    "tags": [
+      "fastlege",
+      "kjønn",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Kvinner går oftere til fastlegen enn menn.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – en tredjedel av mennene var ikke der i 2025.",
+      "explanation": "En tredjedel av mennene var ikke hos fastlegen i løpet av 2025. Blant 20–29-åringer gjaldt det 42,6 prosent av mennene og 23 prosent av kvinnene.",
+      "deepDive": "Forskjellen skyldes delvis at unge kvinner går til lege for prevensjon og svangerskap.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "09535: Konsultasjoner hos fastlegen, etter alder og kjønn 2010–2025",
+        "url": "https://www.ssb.no/statbank/table/09535",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "Ikke hos fastlegen i 2025: menn 1/3; 20–29 år: menn 42,6 %, kvinner 23 %.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Går kvinner oftere til fastlegen enn menn? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-uforetrygd-kvinner",
+    "category": "current",
+    "topic": "arbeid",
+    "tags": [
+      "uføretrygd",
+      "kjønn",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Kvinner er oftere uføretrygdet enn menn.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 13,0 mot 8,6 prosent.",
+      "explanation": "I 2025 hadde 13,0 prosent av kvinnene og 8,6 prosent av mennene mellom 18 og 67 år uføretrygd.",
+      "deepDive": "Blant 25–34-åringene har andelen nesten doblet seg på ti år, og blant 18–24-åringene er det flere menn enn kvinner. Økningen blant unge har bremset opp etter pandemiårene.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "11714: Uføretrygdede, etter kjønn og alder 2015–2025",
+        "url": "https://www.ssb.no/statbank/table/11714",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "Uføretrygdede 18–67 år 2025: kvinner 13,0 %, menn 8,6 %.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Er kvinner oftere uføretrygdet enn menn? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-innvandrerbakgrunn-unge",
+    "category": "current",
+    "topic": "innvandring",
+    "tags": [
+      "innvandring",
+      "unge",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Over hver femte 18–24-åring har innvandrerbakgrunn.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 22,5 prosent i 2026.",
+      "explanation": "Andelen har økt fra 15,8 prosent i 2016 til 22,5 prosent i 2026.",
+      "deepDive": "Innvandrerbakgrunn betyr at du selv er innvandrer, eller at du er født i Norge av to foreldre som er innvandrere. Andelen ventes å øke, fordi 72 prosent av de norskfødte med innvandrerforeldre var under 20 år i 2026.",
+      "caveats": [
+        "Gjelder 18–24-åringer, ikke hele befolkningen."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Innvandrere og norskfødte med innvandrerforeldre",
+        "url": "https://www.ssb.no/befolkning/innvandrere/statistikk/innvandrere-og-norskfodte-med-innvandrerforeldre",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2016 og 2026",
+    "calculation": "18–24 år med innvandrerbakgrunn: 15,8 % (2016), 22,5 % (2026).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Har over hver femte 18–24-åring innvandrerbakgrunn? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-bl-pakistansk-navn",
+    "category": "current",
+    "topic": "innvandring",
+    "tags": [
+      "diskriminering",
+      "arbeidsliv",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Et pakistansk navn på søknaden gir lavere sjanse for intervju.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – omtrent 25 prosent lavere sjanse.",
+      "explanation": "I et norsk forsøk fra 2012 ble søkere med pakistansk navn kalt inn til intervju omtrent 25 prosent sjeldnere enn søkere med norsk navn og lik søknad.",
+      "deepDive": "Forsøket sendte ut like søknader med ulike navn. Forskjellen var størst mot menn, større i privat enn i offentlig sektor, og størst der ansettelsen var lite formalisert.",
+      "caveats": [
+        "Forsøket er fra 2012."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Institutt for samfunnsforskning",
+        "title": "Diskrimineringens omfang og årsaker (Rapport 2012:1)",
+        "url": "https://imdi.no/contentassets/a5b5a2d62b424ee9aad5a718ac468a7f/rapport-2012.-diskrimineringens-omfang-og-arsaker-a-job-interview-by-25-per-cent/1780812",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2012",
+    "calculation": "Omtrent 25 % lavere sjanse for innkalling til intervju (Midtbøen & Rogstad 2012).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Gir et pakistansk navn lavere sjanse for intervju? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-kirkemedlem",
+    "category": "current",
+    "topic": "religion",
+    "tags": [
+      "religion",
+      "kirke",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 1,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "De fleste nordmenn er medlem av Den norske kirke.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – men andelen har falt.",
+      "explanation": "I 2025 var 60,9 prosent medlem av Den norske kirke, mot 72,7 prosent i 2015.",
+      "deepDive": "Fra 2021 telles bare medlemmer, ikke tilhørige, og det forklarer en del av nedgangen. Omtrent 800 000 er med i andre tros- og livssynssamfunn.",
+      "caveats": [
+        "Før 2021 ble også tilhørige regnet med."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Vekst i tros- og livssynssamfunn utenfor Den norske kirke",
+        "url": "https://www.ssb.no/kultur-og-fritid/religion-og-livssyn/statistikk/trus-og-livssynssamfunn-utanfor-den-norske-kyrkja/artikler/vekst-i-tros-og-livssynssamfunn-utenfor-den-norske-kirke",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2015 og 2025",
+    "calculation": "Medlemmer i Den norske kirke: 72,7 % (2015), 60,9 % (2025). Andre tros- og livssynssamfunn: omtrent 800 000.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Er de fleste nordmenn medlem av Den norske kirke? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-bl-fysisk-aktivitet",
+    "category": "misconception",
+    "topic": "helse",
+    "tags": [
+      "trening",
+      "fysisk aktivitet",
+      "enkel",
+      "samfunnsbaseline"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Voksne nordmenn er mindre fysisk aktive nå enn i 2008.",
+      "answer": false,
+      "correction": "Andelen som ikke når minimumet for fysisk aktivitet, falt fra 33,8 til 25,8 prosent. Endringen etter 2014 er usikker."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – færre er inaktive nå.",
+      "explanation": "Andelen voksne som ikke når minimumet for fysisk aktivitet, falt fra 33,8 prosent i 2008–2009 til 25,8 prosent i 2021–2022.",
+      "deepDive": "Økningen skyldes i stor grad at de mest aktive er blitt enda mer aktive, mens de minst aktive er like inaktive som før. Endringen etter 2014 er usikker.",
+      "caveats": [
+        "Endringen etter 2014 er usikker."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "FHI",
+        "title": "Fysisk inaktivitet, voksne",
+        "url": "https://www.fhi.no/is/ncd/fysisk-aktivitet/voksne/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2008–2022",
+    "calculation": "Voksne som ikke når minimumet: 33,8 % (2008–2009), 25,8 % (2021–2022).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra «Samfunnsbaseline: likestilling og mangfold i det norske samfunnet» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot kildens egen tabell/publikasjon (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Er voksne nordmenn mindre aktive nå enn i 2008? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  }
+]

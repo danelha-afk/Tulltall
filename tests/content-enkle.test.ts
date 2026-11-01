@@ -1,12 +1,15 @@
 import { describe, expect, it } from "vitest";
-import enkle from "../content/questions/enkle.json";
+import enkleFil from "../content/questions/enkle.json";
+import baselineFil from "../content/questions/baseline.json";
 import { seedReviewOnlyIds } from "../content/questions/index";
 import { parseQuestion } from "@/lib/game/schema";
 import { validateQuestion } from "@/lib/qa/validate";
 
+const enkle = [...enkleFil, ...baselineFil];
+
 describe("enkle spørsmål om sensitive temaer", () => {
   it("er gyldige, korte og starter alltid i godkjenningskøen", () => {
-    expect(enkle.length).toBeGreaterThanOrEqual(15);
+    expect(enkle.length).toBeGreaterThanOrEqual(35);
     for (const raw of enkle) {
       const parsed = parseQuestion(raw);
       expect(parsed.ok, raw.id).toBe(true);
