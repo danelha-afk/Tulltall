@@ -184,10 +184,13 @@ export function getDb(): Promise<Db> {
         if (candidates.length) throw lastError;
         db = await createPgliteDb(process.env.PGLITE_DIR ?? ".data/pglite");
       }
-      const url = candidates.length ? candidates[0].url : undefined;
-      const autoMigrate = !url || process.env.AUTO_MIGRATE === "true";
-      if (autoMigrate) {
-        await runMigrations(db);
+      // Migrering er idempotent og låst, så den kjøres alltid (billig når alt allerede er på plass).
+      await runMigrations(db);
+      const counts = await db.one<{ k: number; q: number }>(
+        `SELECT (SELECT count(*) FROM kommuner)::int AS k, (SELECT count(*) FROM questions)::int AS q`,
+      );
+      // Seed bare når databasen er tom (eller når AUTO_MIGRATE=true tvinger en kontroll), ellers hopper vi over.
+      if (!counts || counts.k === 0 || counts.q === 0 || process.env.AUTO_MIGRATE === "true" || db.kind === "pglite") {
         const { seedIfEmpty } = await import("./seed");
         await seedIfEmpty(db);
       }
