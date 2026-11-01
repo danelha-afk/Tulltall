@@ -34,9 +34,9 @@ export default function Privacy() {
 
         <h2>Spillernavn og topplister</h2>
         <p>
-          Alle får et tilfeldig spillernavn, for eksempel «Modig Elg 42». Du kan velge et eget navn, men det går gjennom et filter, og du bør ikke bruke
-          ditt eget navn. Du vises bare på topplistene hvis du selv trykker «Vis meg på listen». Da vises spillernavnet og poengene dine for alle. Du kan
-          slå det av igjen når som helst under «Min profil», og du kan slette profilen din der.
+          Alle får et tilfeldig spillernavn, for eksempel «Modig Elg 42». Når du har spilt dagens runde, vises spillernavnet og poengene dine på
+          topplistene for alle. Ingenting annet om deg vises. Du kan skjule deg når som helst under «Min profil» eller på resultatsiden, og du kan slette
+          profilen din der. Velger du et eget navn, går det gjennom et filter, og vises på samme måte. Du bør ikke bruke ditt eget navn.
         </p>
 
         <h2>Statistikk</h2>

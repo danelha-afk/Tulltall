@@ -12,7 +12,6 @@ export function TopList() {
   const [period, setPeriod] = useState<"day" | "week">("day");
   const [rows, setRows] = useState<TopRow[] | null>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
-  const [hasPlayer, setHasPlayer] = useState(false);
   const [busy, setBusy] = useState(false);
 
   const load = useCallback(
@@ -25,11 +24,10 @@ export function TopList() {
 
   useEffect(() => {
     const id = store.getPlayerId();
-    setHasPlayer(Boolean(id));
     if (id) api.profile({ playerId: id, action: "get" }).then((r) => setProfile(r.profile)).catch(() => undefined);
   }, []);
 
-  const join = async () => {
+  const showAgain = async () => {
     const id = store.getPlayerId();
     if (!id) return;
     setBusy(true);
@@ -93,15 +91,22 @@ export function TopList() {
         {period === "week" ? <p className="mt-3 text-sm text-blekk-2">{t("top.weekNote")}</p> : null}
 
         <div className="mt-6">
-          {profile?.today ? <p className="font-bold text-lg mb-3">{t("top.yourRank", { rank: profile.today.rank, total: profile.today.total })}</p> : null}
-          {profile?.showOnLists ? (
-            <p className="font-bold">
-              ✓ {t("top.joined")} · <Link href="/profil" className="underline underline-offset-4">{t("nav.profile")}</Link>
-            </p>
-          ) : hasPlayer && profile?.runs ? (
-            <button type="button" className="btn btn-primary text-lg" disabled={busy} onClick={() => void join()}>
-              {t("top.join")}
-            </button>
+          {profile?.today ? (
+            <>
+              <p className="font-bold text-lg mb-3">{t("top.yourRank", { rank: profile.today.rank, total: profile.today.total })}</p>
+              {profile.showOnLists ? (
+                <p className="font-bold">
+                  ✓ {t("top.joined")} · <Link href="/profil" className="underline underline-offset-4">{t("nav.profile")}</Link>
+                </p>
+              ) : (
+                <div>
+                  <p className="mb-3">{t("top.skjult")}</p>
+                  <button type="button" className="btn btn-primary text-lg" disabled={busy} onClick={() => void showAgain()}>
+                    {t("top.join")}
+                  </button>
+                </div>
+              )}
+            </>
           ) : (
             <Link href="/spill" className="btn btn-acid">
               {t("top.play")} →

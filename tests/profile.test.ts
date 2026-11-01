@@ -69,18 +69,17 @@ describe("profil og topplister", () => {
     const id = await ensurePlayer(db, null);
     const p = await getProfile(db, id);
     expect(p?.handle).toMatch(/ \d{2}$/);
-    expect(p?.showOnLists).toBe(false);
+    expect(p?.showOnLists).toBe(true);
   });
 
-  it("viser bare spillere som har sagt ja, sortert på poeng", async () => {
+  it("viser alle som har spilt (unntatt de som har skjult seg), sortert på poeng", async () => {
     const good = await play(null, true);
     const bad = await play(null, false);
     const hiddenOne = await play(null, true);
     const today = localDate();
-    expect(await topDaily(db, today)).toEqual([]);
 
-    await updateProfile(db, good, { showOnLists: true });
-    await updateProfile(db, bad, { showOnLists: true });
+    // Alle vises som standard; hiddenOne skjuler seg selv.
+    expect(await topDaily(db, today)).toHaveLength(3);
     await updateProfile(db, hiddenOne, { showOnLists: false });
     const rows = await topDaily(db, today);
     expect(rows.map((r) => r.rank)).toEqual([1, 2]);

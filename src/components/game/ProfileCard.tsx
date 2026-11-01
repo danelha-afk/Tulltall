@@ -5,7 +5,7 @@ import { t } from "@/lib/i18n";
 import { api } from "@/lib/client/api";
 import type { Profile } from "@/lib/profile/service";
 
-/** På resultatsiden: ditt spillernavn, din plassering, og ett trykk for å komme på topplisten. */
+/** På resultatsiden: ditt spillernavn og din plassering. Du står på topplisten som standard og kan skjule deg med ett trykk. */
 export function ProfileCard({ playerId }: { playerId: string }) {
   const [profile, setProfile] = useState<Profile | null>(null);
   const [busy, setBusy] = useState(false);
@@ -13,10 +13,10 @@ export function ProfileCard({ playerId }: { playerId: string }) {
     api.profile({ playerId, action: "get" }).then((r) => setProfile(r.profile)).catch(() => undefined);
   }, [playerId]);
   if (!profile) return null;
-  const join = async () => {
+  const setVisible = async (visible: boolean) => {
     setBusy(true);
     try {
-      const r = await api.profile({ playerId, action: "update", showOnLists: true });
+      const r = await api.profile({ playerId, action: "update", showOnLists: visible });
       setProfile(r.profile);
     } finally {
       setBusy(false);
@@ -29,14 +29,19 @@ export function ProfileCard({ playerId }: { playerId: string }) {
       {profile.today ? <p className="mt-1 text-lg">{t("top.yourRank", { rank: profile.today.rank, total: profile.today.total })}</p> : null}
       {profile.showOnLists ? (
         <p className="mt-4 font-bold">
-          ✓ {t("top.joined")} · <Link href="/profil" className="underline underline-offset-4">{t("nav.profile")}</Link>
+          ✓ {t("top.joined")} ·{" "}
+          <button type="button" disabled={busy} onClick={() => void setVisible(false)} className="underline underline-offset-4">
+            {t("top.hide")}
+          </button>
+          {" · "}
+          <Link href="/profil" className="underline underline-offset-4">{t("nav.profile")}</Link>
         </p>
       ) : (
         <>
-          <button type="button" className="btn btn-primary w-full mt-4 text-xl !min-h-14" disabled={busy} onClick={() => void join()}>
+          <p className="mt-4">{t("top.skjult")}</p>
+          <button type="button" className="btn btn-primary w-full mt-2 text-xl !min-h-14" disabled={busy} onClick={() => void setVisible(true)}>
             {t("top.join")}
           </button>
-          <p className="mt-2 text-sm text-blekk-2">{t("profile.showHint")}</p>
         </>
       )}
     </section>

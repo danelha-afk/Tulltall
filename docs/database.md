@@ -46,8 +46,8 @@ Migrasjoner ligger i `src/lib/db/migrations.ts` og kjøres med `npm run db:migra
 
 ## Spillerprofiler og topplister (migrasjon 0002)
 
-`players` har fått kolonnene `handle` (spillernavn), `handle_custom` (valgt selv), `show_on_lists` (frivillig, av som standard) og `hidden_by_admin`.
+`players` har fått kolonnene `handle` (spillernavn), `handle_custom` (valgt selv), `show_on_lists` (på som standard, spilleren kan skru av; migrasjon 0003) og `hidden_by_admin`.
 Alle får et tilfeldig navn (`Adjektiv Dyr NN`) første gang de spiller. Egne navn er unike uavhengig av store/små bokstaver (delvis unik indeks) og går gjennom
-filteret i `src/lib/profile/names.ts`. Topp 10 (`src/lib/toplist/queries.ts`) viser bare spillere med `show_on_lists AND NOT hidden_by_admin`.
+filteret i `src/lib/profile/names.ts`. Topp 10 (`src/lib/toplist/queries.ts`) viser spillere med `show_on_lists AND NOT hidden_by_admin` som har fullført dagens runde.
 Ukelisten er summen av dagspoeng mandag–søndag. Rangering for «din plassering» regnes blant alle som har fullført, ikke bare de som er synlige.
 

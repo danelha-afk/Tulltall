@@ -22,7 +22,7 @@ export function verifyAdminToken(token: string | undefined, now = Date.now()): b
 export function passwordMatches(input: string): boolean {
   const expected = serverEnv.adminPassword;
   if (!expected || expected.length < 10) return false; // admin er av hvis passord mangler eller er for kort
-  return safeEqual(sha256(input), sha256(expected));
+  return safeEqual(sha256(input.trim()), sha256(expected));
 }
 
 export async function isAdmin(): Promise<boolean> {

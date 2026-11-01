@@ -292,4 +292,12 @@ CREATE UNIQUE INDEX players_custom_handle_idx ON players (lower(handle)) WHERE h
 CREATE INDEX players_public_idx ON players (show_on_lists) WHERE show_on_lists AND NOT hidden_by_admin;
 `,
   },
+  {
+    id: "0003_lists_visible_by_default",
+    sql: /* sql */ `
+-- Topplistene skal vise de som har spilt: spillere vises som standard (med tilfeldig navn) og kan skjule seg selv.
+ALTER TABLE players ALTER COLUMN show_on_lists SET DEFAULT true;
+UPDATE players SET show_on_lists = true WHERE NOT handle_custom AND NOT show_on_lists;
+`,
+  },
 ];

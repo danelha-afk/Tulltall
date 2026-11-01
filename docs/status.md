@@ -37,7 +37,7 @@ Enhetstestene fordeler seg slik:
 ## Del B (ferdig): spillernavn, profil og Topp 10
 
 - Alle får et tilfeldig navn med én gang. Eget navn kan velges under `/profil` (filter + unikt navn). Ingen konto eller e-post kreves.
-- Topp 10 i dag og denne uken på forsiden. Man vises bare etter å ha trykket «Vis meg på listen».
+- Topp 10 i dag og denne uken på forsiden. Alle som har spilt dagens runde vises med sitt (tilfeldige) spillernavn; man kan skjule seg selv (resultatsiden eller «Min profil»). Migrasjon 0003 gjorde «synlig» til standard.
 - Admin: «Navn og lister» for å skjule spillere eller nullstille navn.
 - E-postinnlogging (konto som følger deg mellom enheter) er ikke bygget ennå.
 

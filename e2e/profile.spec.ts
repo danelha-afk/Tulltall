@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { playRound } from "./helpers";
 
-test("spilleren får navn med én gang og kan komme på topp 10 med ett trykk", async ({ page }) => {
+test("alle som har spilt står på topp 10 med navn, og kan skjule seg", async ({ page }) => {
   await page.goto("/");
   await page.getByRole("button", { name: /^Start/ }).click();
   await playRound(page);
@@ -10,14 +10,23 @@ test("spilleren får navn med én gang og kan komme på topp 10 med ett trykk", 
   await expect(handleEl).toBeVisible({ timeout: 15_000 });
   const handle = ((await handleEl.textContent()) ?? "").trim();
   expect(handle).toMatch(/\S+ \S+ \d{2}/);
+  await expect(page.getByText("Du står på listen").first()).toBeVisible();
 
-  await page.getByRole("button", { name: "Vis meg på listen" }).click();
-  await expect(page.getByText("Du er på listen").first()).toBeVisible();
-
+  // Ingen må trykke noe: navnet står på forsiden i dag og denne uken.
   await page.goto("/");
   await expect(page.getByRole("list", { name: "Topp 10 i dag" }).getByText(handle)).toBeVisible({ timeout: 15_000 });
   await page.getByRole("button", { name: "Uka" }).click();
   await expect(page.getByRole("list", { name: "Topp 10 denne uken" }).getByText(handle)).toBeVisible();
+
+  // Skjul meg: navnet forsvinner fra listen.
+  await page.goto("/profil");
+  await page.getByRole("checkbox", { name: /Vis meg på topplistene/ }).click(); // oppdateres etter serverkall
+  await expect(page.getByRole("checkbox", { name: /Vis meg på topplistene/ })).not.toBeChecked();
+  const listed = page.waitForResponse((r) => r.url().includes("/api/toplist?period=day"));
+  await page.goto("/");
+  await listed;
+  await expect(page.getByText("Du er skjult på listen")).toBeVisible();
+  await expect(page.getByRole("list", { name: "Topp 10 i dag" }).getByText(handle)).toHaveCount(0);
 });
 
 test("profilsiden: filter mot upassende navn, og eget navn kan lagres", async ({ page }) => {

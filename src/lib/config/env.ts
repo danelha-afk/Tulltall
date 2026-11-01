@@ -18,7 +18,8 @@ export const serverEnv = {
     return "dev-only-secret-not-for-production-use";
   },
   get adminPassword(): string | undefined {
-    return process.env.ADMIN_PASSWORD || undefined;
+    // Trim: et mellomrom eller linjeskift limt inn sammen med passordet i Vercel skal ikke låse deg ute.
+    return process.env.ADMIN_PASSWORD?.trim() || undefined;
   },
   get cronSecret(): string | undefined {
     return process.env.CRON_SECRET || undefined;
