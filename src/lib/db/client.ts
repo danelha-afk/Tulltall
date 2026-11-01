@@ -139,7 +139,9 @@ export async function runMigrations(db: Db): Promise<string[]> {
 
 /** Tilkoblingsstreng: DATABASE_URL, eller POSTGRES_URL som Vercels Supabase-integrasjon setter automatisk. */
 export function databaseUrl(): string | undefined {
-  return process.env.DATABASE_URL || process.env.POSTGRES_URL || undefined;
+  const raw = process.env.DATABASE_URL || process.env.POSTGRES_URL;
+  // Usynlige mellomrom/linjeskift fra innliming ødelegger passordet – fjern dem.
+  return raw ? raw.replace(/\s+/g, "") || undefined : undefined;
 }
 
 type GlobalWithDb = typeof globalThis & { __tulltallDb?: Promise<Db> };
