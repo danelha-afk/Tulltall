@@ -61,7 +61,7 @@ Ingen KI-vurdering kan overstyre en feil herfra.
 
 ## KI-merking
 
-Nettstedet opplyser i bunnteksten og på `/om#ki` at deler av innholdsproduksjonen er KI-assistert og kontrollert mot primærkilder.
+Ikke påkrevd så lenge en redaktør godkjenner før publisering (KI-forordningen art. 50 nr. 4). Én diskret setning står nederst på `/om`. Slås automatisk godkjenning på, bør merkingen vurderes på nytt.
 
 ## Ukentlig redaksjonelt arbeid (anslag)
 

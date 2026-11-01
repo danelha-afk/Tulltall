@@ -25,7 +25,6 @@ export function Compare({ q, onSubmit, busy, reveal }: FormatProps<"compare">) {
 
   return (
     <div>
-      <p className="text-center kicker text-blekk-2 mb-4">{p.indicator}</p>
       <div className={`grid gap-3 ${p.items.length === 2 ? "grid-cols-2" : p.items.length === 3 ? "grid-cols-3" : "grid-cols-2 sm:grid-cols-4"}`}>
         {p.items.map((item, i) => {
           const v = values.get(item.id);
@@ -42,7 +41,7 @@ export function Compare({ q, onSubmit, busy, reveal }: FormatProps<"compare">) {
                 setPicked(item.id);
                 onSubmit({ format: "compare", itemId: item.id });
               }}
-              className={`relative flex flex-col justify-end h-64 sm:h-72 rounded-2xl border-[2.5px] border-blekk bg-papir overflow-hidden text-left shadow-[4px_4px_0_var(--color-blekk)] transition-transform ${
+              className={`relative flex flex-col justify-end h-52 sm:h-64 rounded-2xl border-[2.5px] border-blekk bg-papir overflow-hidden text-left shadow-[4px_4px_0_var(--color-blekk)] transition-transform ${
                 !reveal && picked === null ? "hover:-translate-y-1 active:translate-y-0" : ""
               } ${isMine && !reveal ? "ring-4 ring-kobolt ring-offset-2 ring-offset-papir" : ""}`}
             >
@@ -73,7 +72,7 @@ export function Compare({ q, onSubmit, busy, reveal }: FormatProps<"compare">) {
                 <span
                   lang="nb"
                   className={`block font-black font-semi-condensed uppercase leading-[0.95] [overflow-wrap:anywhere] [hyphens:auto] ${
-                    p.items.length >= 3 ? "text-[clamp(0.9rem,3.7vw,1.35rem)]" : "text-[clamp(1.05rem,4.6vw,1.6rem)]"
+                    p.items.length >= 3 ? "text-[clamp(1rem,4.2vw,1.4rem)]" : "text-[clamp(1.25rem,5.6vw,1.8rem)]"
                   }`}
                 >
                   <span className={reveal ? "bg-papir px-1 box-decoration-clone" : ""}>{item.label}</span>

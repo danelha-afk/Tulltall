@@ -36,16 +36,12 @@ export function Rank({ q, onSubmit, busy, reveal }: FormatProps<"rank">) {
     setAnnounce(`${next[j].label}: plass ${j + 1} av ${next.length}`);
   };
   const locked = busy || Boolean(reveal);
-  const topLabel = p.order === "desc" ? t("game.top") : t("game.topAsc");
-  const bottomLabel = p.order === "desc" ? t("game.bottom") : t("game.bottomAsc");
 
   return (
     <div>
-      <p className="text-center kicker text-blekk-2 mb-1">{p.indicator}</p>
-      <p className="text-center text-sm text-blekk-2 mb-4">{p.order === "desc" ? t("game.rankHint") : t("game.rankHintAsc")}</p>
-      <div className="flex justify-between kicker text-blekk-3 px-1 mb-1" aria-hidden>
-        <span>▲ {topLabel}</span>
-      </div>
+      <p className="font-bold text-blekk-2 mb-2" aria-hidden>
+        ▲ {p.order === "desc" ? t("game.rankTop") : t("game.rankTopAsc")}
+      </p>
       <Reorder.Group axis="y" values={order} onReorder={locked ? () => undefined : setOrder} className="flex flex-col gap-2.5" as="ol">
         {order.map((item, idx) => (
           <RankRow
@@ -62,15 +58,12 @@ export function Rank({ q, onSubmit, busy, reveal }: FormatProps<"rank">) {
           />
         ))}
       </Reorder.Group>
-      <div className="flex justify-between kicker text-blekk-3 px-1 mt-1" aria-hidden>
-        <span>▼ {bottomLabel}</span>
-      </div>
       <p className="sr-only" aria-live="polite">
         {announce}
       </p>
       {!reveal ? (
         <div className="mt-6 flex justify-center">
-          <button type="button" className="btn btn-primary min-w-56 text-lg" disabled={locked} onClick={() => onSubmit({ format: "rank", order: order.map((o) => o.id) })}>
+          <button type="button" className="btn btn-primary min-w-56 text-xl !min-h-14" disabled={locked} onClick={() => onSubmit({ format: "rank", order: order.map((o) => o.id) })}>
             {t("game.lockIn")}
           </button>
         </div>
@@ -157,7 +150,7 @@ function RankRow({
           <span className="flex flex-col gap-1">
             <button
               type="button"
-              className="w-9 h-7 rounded-md border-2 border-blekk bg-papir disabled:opacity-30 font-black leading-none"
+              className="w-11 h-9 rounded-lg border-2 border-blekk bg-papir disabled:opacity-25 font-black text-lg leading-none"
               aria-label={t("game.moveUp", { label: item.label })}
               disabled={locked || idx === 0}
               onClick={() => onMove(idx, -1)}
@@ -166,7 +159,7 @@ function RankRow({
             </button>
             <button
               type="button"
-              className="w-9 h-7 rounded-md border-2 border-blekk bg-papir disabled:opacity-30 font-black leading-none"
+              className="w-11 h-9 rounded-lg border-2 border-blekk bg-papir disabled:opacity-25 font-black text-lg leading-none"
               aria-label={t("game.moveDown", { label: item.label })}
               disabled={locked || idx === total - 1}
               onClick={() => onMove(idx, 1)}

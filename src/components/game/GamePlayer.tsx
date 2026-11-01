@@ -205,40 +205,40 @@ export function GamePlayer({ gameId, challengeCode, single = false }: { gameId?:
   }
 
   const q = session.questions[index];
-  const formatLabel =
+  const instruction =
     q.payload.format === "estimate" && q.payload.survey
-      ? t("game.formats.survey")
+      ? t("game.instructions.survey")
       : q.payload.format === "compare" && q.payload.pick === "lowest"
-        ? t("game.formats.compareLowest")
-        : t(`game.formats.${q.format}` as "game.formats.truefalse");
+        ? t("game.instructions.compareLowest")
+        : t(`game.instructions.${q.format}` as "game.instructions.truefalse");
   const common = { onSubmit: (a: Answer) => void submit(a), busy, reveal };
+  // Tull eller tall: påstanden ER spørsmålet – vis den bare én gang (på kortet).
+  const showPrompt = q.payload.format !== "truefalse";
 
   return (
-    <div ref={topRef} className="mx-auto max-w-2xl px-4 pt-5 pb-16 scroll-mt-16">
-      {/* Fremdrift: hullkortet */}
+    <div ref={topRef} className="mx-auto max-w-2xl px-4 pt-4 pb-16 scroll-mt-16">
+      {/* Fremdrift */}
       {session.questions.length > 1 ? (
-        <div className="flex items-center justify-between gap-3 mb-6" aria-label={t("game.progressLabel", { n: index, total: session.questions.length })}>
-          <PunchHoles pattern={pattern} current={index} size={16} />
-          <span className="kicker tabular">
-            {index + 1}/{session.questions.length}
-          </span>
+        <div className="flex items-center justify-between gap-3 mb-5" aria-label={t("game.progressLabel", { n: index, total: session.questions.length })}>
+          <PunchHoles pattern={pattern} current={index} size={14} />
+          <span className="font-bold tabular text-blekk-2">{t("game.progressShort", { n: index + 1, total: session.questions.length })}</span>
         </div>
       ) : null}
 
       <AnimatePresence mode="wait">
         <motion.div
           key={q.id}
-          initial={reduced ? false : { opacity: 0, x: 40, rotate: 1.5 }}
-          animate={{ opacity: 1, x: 0, rotate: 0 }}
-          exit={reduced ? { opacity: 0 } : { opacity: 0, x: -60, rotate: -2 }}
-          transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+          initial={reduced ? false : { opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={reduced ? { opacity: 0 } : { opacity: 0, x: -60 }}
+          transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="flex flex-wrap items-center gap-2 mb-3">
-            <span className="kicker px-2.5 py-1 rounded-full border-2 border-blekk bg-blekk text-papir">{formatLabel}</span>
-            {q.kicker ? <span className="kicker px-2.5 py-1 rounded-full border-2 border-blekk">{q.kicker}</span> : null}
-            <span className="kicker text-blekk-3">{t(`game.categories.${q.category}` as "game.categories.fun")}</span>
-          </div>
-          <h2 className="font-black font-semi-condensed text-[clamp(1.55rem,6.4vw,2.5rem)] leading-[1.04] mb-6 text-balance">{q.prompt}</h2>
+          {/* Én fast plass for hva du skal gjøre … */}
+          <p className="font-black font-wide uppercase text-kobolt text-[1.05rem] tracking-wide mb-2">{instruction}</p>
+          {/* … og én stor plass for spørsmålet. */}
+          {showPrompt ? (
+            <h2 className="font-extrabold text-[clamp(1.6rem,6.8vw,2.4rem)] leading-[1.12] mb-6 text-balance">{q.prompt}</h2>
+          ) : null}
 
           {q.payload.format === "truefalse" ? <TrueFalse q={q as never} {...common} /> : null}
           {q.payload.format === "estimate" ? <Estimate q={q as never} {...common} /> : null}

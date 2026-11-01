@@ -18,7 +18,6 @@ export function Trend({ q, onSubmit, busy, reveal }: FormatProps<"trend">) {
   const reduced = useReducedMotion();
   const lastKnown = p.known[p.known.length - 1].value;
   const [guess, setGuess] = useState(lastKnown);
-  const [touched, setTouched] = useState(false);
   const svgRef = useRef<SVGSVGElement>(null);
   const dragging = useRef(false);
   const full = reveal && reveal.data.payload.format === "trend" ? reveal.data.payload.series : null;
@@ -44,7 +43,6 @@ export function Trend({ q, onSubmit, busy, reveal }: FormatProps<"trend">) {
     const rect = svg.getBoundingClientRect();
     const py = ((clientY - rect.top) / rect.height) * H;
     setGuess(snap(vFromY(py), p.step, p.min, p.max));
-    setTouched(true);
   };
 
   const onKey = (e: React.KeyboardEvent) => {
@@ -54,8 +52,7 @@ export function Trend({ q, onSubmit, busy, reveal }: FormatProps<"trend">) {
     if (e.key in d) {
       e.preventDefault();
       setGuess((g) => snap(g + d[e.key], p.step, p.min, p.max));
-      setTouched(true);
-    }
+      }
   };
 
   const lastPeriod = p.periods[n - 1];
@@ -184,9 +181,9 @@ export function Trend({ q, onSubmit, busy, reveal }: FormatProps<"trend">) {
       </div>
       {!reveal ? (
         <>
-          <p className="kicker text-blekk-3 text-center mt-2">{t("game.trendHint", { period: lastPeriod })}</p>
+          <p className="text-center mt-2 text-blekk-2 font-semibold">{t("game.trendHint", { period: lastPeriod })}</p>
           <div className="mt-5 flex justify-center">
-            <button type="button" className="btn btn-primary min-w-56 text-lg" disabled={locked || !touched} onClick={() => onSubmit({ format: "trend", value: guess })}>
+            <button type="button" className="btn btn-primary min-w-56 text-xl !min-h-14" disabled={locked} onClick={() => onSubmit({ format: "trend", value: guess })}>
               {t("game.lockIn")}
             </button>
           </div>

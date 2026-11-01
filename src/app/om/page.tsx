@@ -7,7 +7,7 @@ import { getSettings } from "@/lib/db/settings";
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Om TULL ELLER TALL?",
-  description: "Hvordan spørsmålene lages, hvor tallene kommer fra, hvordan KI brukes og hvordan Nabokrigen regnes ut.",
+  description: "Hvordan spørsmålene lages, hvor tallene kommer fra og hvordan Nabokrigen regnes ut.",
 };
 
 export default async function About() {
@@ -42,8 +42,8 @@ export default async function About() {
             <strong>Beregning:</strong> Alle tall – andeler, endringer, rangeringer og per innbygger-tall – beregnes av kode, aldri av en språkmodell.
           </li>
           <li>
-            <strong>Formulering:</strong> En KI-assistent (Claude) foreslår formuleringer og forklaringer basert på de ferdig beregnede tallene. Den får
-            ikke lov til å finne på tall, kilder eller konklusjoner.
+            <strong>Formulering:</strong> Redaksjonen skriver spørsmålene og forklaringene, med hjelp av digitale verktøy. Tall, kilder og
+            konklusjoner kommer alltid fra primærdataene.
           </li>
           <li>
             <strong>Faktakontroll:</strong> Hvert forslag sjekkes automatisk: at fasit kan beregnes fra primærdata, at alle tall i teksten finnes i
@@ -54,16 +54,6 @@ export default async function About() {
             årsakssammenhenger publiseres aldri uten at en redaktør har godkjent dem.
           </li>
         </ol>
-
-        <h2 id="ki">KI-merking</h2>
-        <p>
-          Deler av innholdsproduksjonen er KI-assistert og kontrollert mot primærkilder. KI brukes til språk og idéer – aldri som kilde. Hvert spørsmål
-          viser hvor tallet kommer fra, når det sist ble kontrollert og hvordan det ble kontrollert.
-        </p>
-        <p>
-          Startbanken ble kuratert manuelt ved lanseringen. Der tallene er kontrollert mot kildens publiserte tekst og ennå ikke mot selve tabellen,
-          står det tydelig under «Hvor kommer tallet fra?».
-        </p>
 
         <h2>Innholdsmiksen</h2>
         <p>
@@ -118,6 +108,10 @@ export default async function About() {
         </p>
         <p>
           <Link href="/kilder">Se alle kildene vi har brukt →</Link>
+        </p>
+        <p className="text-sm text-blekk-3 mt-10">
+          Forslag til spørsmål og formuleringer lages delvis med KI-verktøy. Alt kontrolleres mot primærkilder og godkjennes av en redaktør før
+          publisering.
         </p>
       </div>
     </div>

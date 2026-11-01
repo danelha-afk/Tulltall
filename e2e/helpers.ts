@@ -2,8 +2,8 @@ import { expect, type Page } from "@playwright/test";
 
 /** Svarer på gjeldende spørsmål uansett format (ikke nødvendigvis riktig). */
 export async function answerCurrent(page: Page) {
-  const tall = page.getByRole("button", { name: /^(TALL|Det stemmer)/ });
-  const lock = page.getByRole("button", { name: "Lås svaret" });
+  const tall = page.getByRole("button", { name: "Stemmer", exact: true });
+  const lock = page.getByRole("button", { name: "Svar", exact: true });
   if (await tall.count()) {
     await tall.first().click();
   } else if (await lock.count()) {
@@ -17,16 +17,16 @@ export async function answerCurrent(page: Page) {
   } else {
     await page.locator("button[aria-pressed]:not([disabled])").first().click();
   }
-  await expect(page.getByRole("button", { name: /Neste spørsmål|Se billetten din/ })).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByRole("button", { name: /Neste spørsmål|Se resultatet/ })).toBeVisible({ timeout: 15_000 });
 }
 
 export async function playRound(page: Page) {
   for (let i = 0; i < 15; i++) {
-    await expect(page.getByText(new RegExp(`^${i + 1}/\\d+$`))).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByText(new RegExp(`^${i + 1} av \\d+$`))).toBeVisible({ timeout: 15_000 });
     // Vent til forrige spørsmål har animert ut før vi svarer.
-    await expect(page.getByRole("button", { name: /Neste spørsmål|Se billetten din/ })).toHaveCount(0, { timeout: 15_000 });
+    await expect(page.getByRole("button", { name: /Neste spørsmål|Se resultatet/ })).toHaveCount(0, { timeout: 15_000 });
     await answerCurrent(page);
-    const finish = page.getByRole("button", { name: /Se billetten din/ });
+    const finish = page.getByRole("button", { name: /Se resultatet/ });
     if (await finish.count()) {
       await finish.click();
       return;

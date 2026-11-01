@@ -16,7 +16,7 @@ export function Logo({ size = "md", animate = true }: { size?: "sm" | "md" | "xl
     return () => clearInterval(id);
   }, [animate]);
 
-  const scale = size === "xl" ? "text-[clamp(3.6rem,17vw,8.5rem)]" : size === "md" ? "text-[2.1rem]" : "text-[1.35rem]";
+  const scale = size === "xl" ? "text-[clamp(3rem,15vw,8rem)]" : size === "md" ? "text-[2.1rem]" : "text-[1.35rem]";
   return (
     <span role="img" className={`relative inline-flex flex-col leading-[0.82] font-black font-wide uppercase select-none ${scale}`} aria-label="TULL ELLER TALL?">
       <span aria-hidden className="flex items-baseline">

@@ -16,7 +16,6 @@ export function Estimate({ q, onSubmit, busy, reveal }: FormatProps<"estimate">)
   const p = q.payload;
   const reduced = useReducedMotion();
   const [value, setValue] = useState(p.start);
-  const [touched, setTouched] = useState(false);
   const [typing, setTyping] = useState(false);
   const [typed, setTyped] = useState("");
   const [pos, setPos] = useState(toPos(p.start, p.min, p.max, p.scale));
@@ -43,13 +42,11 @@ export function Estimate({ q, onSubmit, busy, reveal }: FormatProps<"estimate">)
     const c = Math.min(1, Math.max(0, np));
     setPos(c);
     setValue(quantize(fromPos(c, p.min, p.max, p.scale)));
-    setTouched(true);
   };
   const setFromValue = (v: number) => {
     const q2 = quantize(v);
     setValue(q2);
     setPos(toPos(q2, p.min, p.max, p.scale));
-    setTouched(true);
   };
 
   // Avsløring: rull båndet til fasit.
@@ -217,9 +214,9 @@ export function Estimate({ q, onSubmit, busy, reveal }: FormatProps<"estimate">)
 
       {!reveal ? (
         <>
-          <p className="kicker text-blekk-3 text-center mt-2">{t("game.dragHint")}</p>
+          <p className="text-center mt-2 text-blekk-2 font-semibold">{t("game.estimateHint")}</p>
           <div className="mt-4 flex items-center justify-center gap-3">
-            <button type="button" className="btn btn-ghost w-12 !px-0" aria-label="Mindre" disabled={locked} onClick={() => (p.scale === "log" ? setFromPos(pos - 1 / 200) : setFromValue(value - p.step))}>
+            <button type="button" className="btn btn-ghost !w-16 !h-16 !px-0 text-3xl" aria-label="Mindre" disabled={locked} onClick={() => (p.scale === "log" ? setFromPos(pos - 1 / 200) : setFromValue(value - p.step))}>
               −
             </button>
             {typing ? (
@@ -250,16 +247,16 @@ export function Estimate({ q, onSubmit, busy, reveal }: FormatProps<"estimate">)
                 />
               </form>
             ) : (
-              <button type="button" className="kicker underline underline-offset-4 px-2" onClick={() => { setTyped(String(value)); setTyping(true); }}>
+              <button type="button" className="text-sm font-semibold underline underline-offset-4 px-2 text-blekk-2" onClick={() => { setTyped(String(value)); setTyping(true); }}>
                 {t("game.typeInstead")}
               </button>
             )}
-            <button type="button" className="btn btn-ghost w-12 !px-0" aria-label="Større" disabled={locked} onClick={() => (p.scale === "log" ? setFromPos(pos + 1 / 200) : setFromValue(value + p.step))}>
+            <button type="button" className="btn btn-ghost !w-16 !h-16 !px-0 text-3xl" aria-label="Større" disabled={locked} onClick={() => (p.scale === "log" ? setFromPos(pos + 1 / 200) : setFromValue(value + p.step))}>
               +
             </button>
           </div>
           <div className="mt-6 flex justify-center">
-            <button type="button" className="btn btn-primary min-w-56 text-lg" disabled={locked || !touched} onClick={() => onSubmit({ format: "estimate", value })}>
+            <button type="button" className="btn btn-primary min-w-56 text-xl !min-h-14" disabled={locked} onClick={() => onSubmit({ format: "estimate", value })}>
               {t("game.lockIn")}
             </button>
           </div>

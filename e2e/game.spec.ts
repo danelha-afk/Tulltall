@@ -5,7 +5,7 @@ import { playRound } from "./helpers";
 test.describe("spillet", () => {
   test("forsiden kan startes med ett trykk og har ingen alvorlige tilgjengelighetsfeil", async ({ page }) => {
     await page.goto("/");
-    await expect(page.getByRole("button", { name: /Start runden/ })).toBeVisible();
+    await expect(page.getByRole("button", { name: /^Start/ })).toBeVisible();
     const axe = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"]).analyze();
     const serious = axe.violations.filter((v) => v.impact === "serious" || v.impact === "critical");
     expect(serious, JSON.stringify(serious.map((v) => [v.id, v.nodes.map((n) => n.target)]), null, 2)).toEqual([]);
@@ -13,20 +13,20 @@ test.describe("spillet", () => {
 
   test("hele runden, venneduell og sammenligning", async ({ page, browser }) => {
     await page.goto("/");
-    await page.getByRole("button", { name: /Start runden/ }).click();
+    await page.getByRole("button", { name: /^Start/ }).click();
     await expect(page).toHaveURL(/\/spill$/);
-    await expect(page.getByText(/^1\/10$/)).toBeVisible();
+    await expect(page.getByText(/^1 av 10$/)).toBeVisible();
 
     const axe = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
     expect(axe.violations.filter((v) => v.impact === "critical")).toEqual([]);
 
     await playRound(page);
-    await expect(page.getByText(/av 10 treff/).first()).toBeVisible({ timeout: 15_000 });
-    await expect(page.getByRole("heading", { name: "Tror du noen klarer å slå deg?" })).toBeVisible();
+    await expect(page.getByText(/av 10 riktige/).first()).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByRole("heading", { name: "Utfordre en venn" })).toBeVisible();
 
     // Lag utfordring
     await page.getByPlaceholder("f.eks. Kari").fill("Testkari");
-    await page.getByRole("button", { name: "Lag utfordring" }).click();
+    await page.getByRole("button", { name: "Lag lenke" }).click();
     const link = await page.locator("text=/\\/u\\/[a-z0-9]{8}/").first().textContent();
     expect(link).toMatch(/\/u\/[a-z0-9]{8}/);
     const path = new URL(link!.trim()).pathname;
@@ -53,9 +53,9 @@ test.describe("spillet", () => {
     await expect(page.getByRole("heading", { name: "Hvor mange kommuner har Norge?" })).toBeVisible();
     await page.locator("[role=slider]").first().focus();
     await page.keyboard.press("ArrowRight");
-    await page.getByRole("button", { name: "Lås svaret" }).click();
+    await page.getByRole("button", { name: "Svar", exact: true }).click();
     await expect(page.getByText("357 kommuner – og 15 fylker.")).toBeVisible({ timeout: 15_000 });
-    await page.getByRole("button", { name: /Se billetten din/ }).click();
+    await page.getByRole("button", { name: /Se resultatet/ }).click();
     await expect(page.getByRole("link", { name: /Spill dagens runde/ })).toBeVisible();
   });
 
