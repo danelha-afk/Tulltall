@@ -280,4 +280,16 @@ INSERT INTO sources (id, name, url, license) VALUES
   ('manual', 'Manuelt kuratert', 'https://tulltall.no/kilder', NULL);
 `,
   },
+  {
+    id: "0002_profiles",
+    sql: /* sql */ `
+-- Spillerprofil: generert eller selvvalgt (filtrert) spillernavn, og frivillig visning på topplister.
+ALTER TABLE players ADD COLUMN handle text;
+ALTER TABLE players ADD COLUMN handle_custom boolean NOT NULL DEFAULT false;
+ALTER TABLE players ADD COLUMN show_on_lists boolean NOT NULL DEFAULT false;
+ALTER TABLE players ADD COLUMN hidden_by_admin boolean NOT NULL DEFAULT false;
+CREATE UNIQUE INDEX players_custom_handle_idx ON players (lower(handle)) WHERE handle_custom;
+CREATE INDEX players_public_idx ON players (show_on_lists) WHERE show_on_lists AND NOT hidden_by_admin;
+`,
+  },
 ];

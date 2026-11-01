@@ -34,6 +34,13 @@ Enhetstestene fordeler seg slik:
 | Datamotor | 5 |
 | Analysespørringer | 1 |
 
+## Del B (ferdig): spillernavn, profil og Topp 10
+
+- Alle får et tilfeldig navn med én gang. Eget navn kan velges under `/profil` (filter + unikt navn). Ingen konto eller e-post kreves.
+- Topp 10 i dag og denne uken på forsiden. Man vises bare etter å ha trykket «Vis meg på listen».
+- Admin: «Navn og lister» for å skjule spillere eller nullstille navn.
+- E-postinnlogging (konto som følger deg mellom enheter) er ikke bygget ennå.
+
 ## Må gjøres før lansering (ikke ferdig)
 
 1. **SSB live:** `data.ssb.no` var blokkert i utviklingsmiljøet. Klienten er skrevet mot den offisielle OpenAPI-spesifikasjonen og testet med JSON-stat-fiksturer, men **aldri kjørt mot ekte API**. Katalogoppføringene er merket `verified: false`. Kjør `weekly-content.yml` manuelt med «force», les rapporten og juster utvalgsreglene i `catalog.ts` hvis de ikke treffer.

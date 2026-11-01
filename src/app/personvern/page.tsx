@@ -32,6 +32,13 @@ export default function Privacy() {
           <li>Varselabonnement hvis du har bedt om varsler.</li>
         </ul>
 
+        <h2>Spillernavn og topplister</h2>
+        <p>
+          Alle får et tilfeldig spillernavn, for eksempel «Modig Elg 42». Du kan velge et eget navn, men det går gjennom et filter, og du bør ikke bruke
+          ditt eget navn. Du vises bare på topplistene hvis du selv trykker «Vis meg på listen». Da vises spillernavnet og poengene dine for alle. Du kan
+          slå det av igjen når som helst under «Min profil», og du kan slette profilen din der.
+        </p>
+
         <h2>Statistikk</h2>
         <p>
           Vi teller anonymt hendelser som «runde startet» og «runde fullført» uten noen ID. Bare hvis du sier ja til statistikk, kobles hendelsene til

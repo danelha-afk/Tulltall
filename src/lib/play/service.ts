@@ -9,6 +9,7 @@ import { toPublic, toReveal, type PublicQuestion, type RevealData } from "../gam
 import { AnswerSchema, scoreAnswer, summarize, type RoundSummary } from "../game/scoring";
 import { localDate, roundNumber } from "../game/dates";
 import { hmac, newId, safeEqual, shortCode, UUID_RE } from "../security/crypto";
+import { generateHandle, isAcceptableNickname } from "../profile/names";
 import { LIMITS } from "../security/ratelimit";
 import { brand } from "../config/brand";
 
@@ -101,7 +102,9 @@ export function sanitizeNickname(input: unknown): string | null {
     .replace(/\s+/g, " ")
     .trim()
     .slice(0, 24);
-  return cleaned.length >= 1 ? cleaned : null;
+  if (cleaned.length < 1) return null;
+  // Navn som vises for andre (utfordringer) må passere samme filter som spillernavn.
+  return cleaned.length >= 3 && !isAcceptableNickname(cleaned) ? null : cleaned;
 }
 
 function gameInfo(game: GameRow): GameInfo {
@@ -118,11 +121,11 @@ export async function ensurePlayer(db: Db, playerId: string | null | undefined):
     const row = await db.one<{ id: string }>(`UPDATE players SET last_seen_at = now() WHERE id = $1 RETURNING id`, [playerId]);
     if (row) return row.id;
     // Ukjent, men gyldig id (f.eks. etter databasetilbakestilling): opprett med samme id.
-    await db.query(`INSERT INTO players (id) VALUES ($1) ON CONFLICT (id) DO NOTHING`, [playerId]);
+    await db.query(`INSERT INTO players (id, handle) VALUES ($1, $2) ON CONFLICT (id) DO NOTHING`, [playerId, generateHandle(playerId)]);
     return playerId;
   }
   const id = newId();
-  await db.query(`INSERT INTO players (id) VALUES ($1)`, [id]);
+  await db.query(`INSERT INTO players (id, handle) VALUES ($1, $2)`, [id, generateHandle(id)]);
   return id;
 }
 

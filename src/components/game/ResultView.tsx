@@ -13,6 +13,7 @@ import { Stamp } from "@/components/ui/Stamp";
 import { AdSlot } from "@/components/site/AdSlot";
 import { ShareButton, copyText } from "./ShareButton";
 import { PushOptIn } from "./PushOptIn";
+import { ProfileCard } from "./ProfileCard";
 import type { ReviewItem } from "./GamePlayer";
 
 /** Resultatet: tittel, hull og «7 av 10 riktige» – og én tydelig vei videre: utfordre en venn. */
@@ -50,6 +51,8 @@ export function ResultView({ session, result, review, single }: { session: Start
           ) : null}
         </Ticket>
       </motion.div>
+
+      {session.game.kind === "daily" ? <ProfileCard playerId={session.playerId} /> : null}
 
       {result.kommune?.counted ? <p className="mt-6 text-center font-bold">{t("result.representing", { kommune: result.kommune.name })}</p> : null}
 

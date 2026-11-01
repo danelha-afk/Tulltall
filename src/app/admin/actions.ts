@@ -179,6 +179,24 @@ export async function saveSettingsAction(_prev: ActionState, form: FormData): Pr
   return { ok: true, message: "Innstillingene er lagret. Nye runder bruker dem fra neste planlegging." };
 }
 
+export async function hidePlayerAction(form: FormData) {
+  await requireAdmin();
+  const id = String(form.get("id"));
+  const hide = String(form.get("hide")) === "1";
+  if (!/^[0-9a-f-]{36}$/i.test(id)) return;
+  await (await getDb()).query(`UPDATE players SET hidden_by_admin = $2 WHERE id = $1`, [id, hide]);
+  revalidatePath("/admin/navn");
+}
+
+export async function resetPlayerNameAction(form: FormData) {
+  await requireAdmin();
+  const id = String(form.get("id"));
+  if (!/^[0-9a-f-]{36}$/i.test(id)) return;
+  const { updateProfile } = await import("@/lib/profile/service");
+  await updateProfile(await getDb(), id, { customName: null });
+  revalidatePath("/admin/navn");
+}
+
 export async function saveRevenueAction(form: FormData) {
   await requireAdmin();
   const month = String(form.get("month"));

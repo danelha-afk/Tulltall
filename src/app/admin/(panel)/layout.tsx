@@ -11,6 +11,7 @@ const NAV: [string, string][] = [
   ["/admin/ko", "Godkjenningskø"],
   ["/admin/sporsmal", "Spørsmålsbank"],
   ["/admin/runder", "Daglige runder"],
+  ["/admin/navn", "Navn og lister"],
   ["/admin/data", "Data og automatisering"],
   ["/admin/analyse", "Analyse og inntekter"],
   ["/admin/innstillinger", "Innstillinger"],

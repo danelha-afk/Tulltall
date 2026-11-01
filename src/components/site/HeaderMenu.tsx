@@ -21,6 +21,7 @@ export function HeaderMenu() {
   const links: [string, string][] = [
     ["/spill", t("nav.today")],
     ["/nabokrigen", t("nav.nabokrigen")],
+    ["/profil", t("nav.profile")],
     ["/historikk", t("nav.history")],
     ["/om", t("nav.about")],
     ["/kilder", t("nav.sources")],

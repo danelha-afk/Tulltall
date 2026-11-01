@@ -7,6 +7,7 @@ import { t } from "@/lib/i18n";
 import { Logo } from "@/components/ui/Logo";
 import { HomeTicket } from "@/components/home/HomeTicket";
 import { KommuneBadge } from "@/components/home/KommuneBadge";
+import { TopList } from "@/components/home/TopList";
 
 export const dynamic = "force-dynamic";
 
@@ -28,6 +29,8 @@ export default async function Home() {
           {game ? <HomeTicket gameId={game.id} date={today} count={game.question_ids.length} /> : <p className="font-bold text-lg">{t("home.noGame")}</p>}
         </div>
       </section>
+
+      <TopList />
 
       <section className="bg-korall border-b-[2.5px] border-blekk">
         <div className="mx-auto max-w-5xl px-4 py-12">
