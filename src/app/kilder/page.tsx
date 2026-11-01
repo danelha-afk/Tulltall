@@ -3,6 +3,7 @@ import { getDb } from "@/lib/db/client";
 import { localDate } from "@/lib/game/dates";
 import type { QuestionContent } from "@/lib/game/schema";
 import { t } from "@/lib/i18n";
+import { TodaySources } from "@/components/site/TodaySources";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
@@ -41,11 +42,9 @@ export default async function Sources() {
     <div className="mx-auto max-w-3xl px-4 py-12">
       <p className="kicker">Åpenhet</p>
       <h1 className="font-black font-wide uppercase text-[clamp(2.2rem,9vw,3.8rem)] leading-[0.9] mt-2">Kilder og metode</h1>
-      <p className="serif-soft text-lg mt-5">
-        Her er kildene bak alle spørsmål som har vært brukt i tidligere runder. Dagens runde vises ikke, så ingen får fasiten på forhånd. Hvert
-        spørsmål i spillet har i tillegg en egen «Hvor kommer tallet fra?»-boks.
-      </p>
-      {rows.length === 0 ? <p className="mt-10 font-bold">Kildelisten fylles opp etter hvert som rundene blir spilt.</p> : null}
+      <p className="serif-soft text-lg mt-5">{t("sources.intro")}</p>
+      <TodaySources />
+      {rows.length === 0 ? <p className="mt-10 font-bold">{t("sources.empty")}</p> : null}
       {[...byPublisher.entries()]
         .sort((a, b) => b[1].length - a[1].length)
         .map(([publisher, list]) => (

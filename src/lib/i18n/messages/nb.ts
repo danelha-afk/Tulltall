@@ -334,6 +334,14 @@ export const nb = {
   footer: {
     madeIn: "Laget i Norge med tall fra blant andre SSB.",
   },
+  sources: {
+    intro:
+      "Her er kildene bak alle spørsmål som har vært brukt i tidligere runder. Hvert spørsmål i spillet har i tillegg en egen «Hvor kommer tallet fra?»-boks.",
+    todayTitle: "Dagens runde",
+    todayLocked: "Kildene til dagens spørsmål dukker opp her når du har spilt ferdig dagens runde. Da har du fasiten uansett, og ingen får svaret på forhånd.",
+    play: "Spill dagens runde",
+    empty: "Kildelisten fylles opp etter hvert som rundene blir spilt.",
+  },
   offline: {
     title: "Du er frakoblet",
     text: "Spill du allerede har lastet og historikken din fungerer fortsatt. Nye runder krever nett.",
