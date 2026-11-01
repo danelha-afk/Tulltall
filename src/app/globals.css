@@ -1,0 +1,325 @@
+@import "tailwindcss";
+
+/*
+ * TULL ELLER TALL? – designsystem «Riso-arkade».
+ * Risograf-trykk (papir, overtrykk, rasterpunkter, feilregistrering) møter arkadens
+ * billetter, stempler og tellere. Se docs/designkonsept.md.
+ */
+
+@theme {
+  --color-papir: #f4ede0;
+  --color-papir-2: #e9dfcb;
+  --color-papir-3: #dccfb4;
+  --color-blekk: #17140f;
+  --color-blekk-2: #4a443b;
+  --color-blekk-3: #625a4f;
+  --color-kobolt: #2b3bff;
+  --color-kobolt-dyp: #1a22a8;
+  --color-korall: #ff5a36;
+  /* Mørkere korall for tekst på lyst papir (kontrast ≥ 4,5:1). */
+  --color-korall-dyp: #b8350f;
+  --color-syre: #e2f53b;
+  --color-rosa: #ffb4cf;
+  --color-mynte: #5be3b0;
+
+  --font-display: var(--font-archivo), "Arial Narrow", system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-mono: var(--font-martian), ui-monospace, monospace;
+
+  --ease-stamp: cubic-bezier(0.2, 1.6, 0.4, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  color-scheme: light;
+  --ink-shadow: 3px 3px 0 var(--color-blekk);
+  --ink-shadow-lg: 6px 6px 0 var(--color-blekk);
+  --grain: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.09 0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+@layer base {
+  html {
+    background: var(--color-papir);
+    color: var(--color-blekk);
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    min-height: 100dvh;
+    background: var(--color-papir);
+    font-family: var(--font-display);
+    font-stretch: 100%;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  /* Papirkorn over hele siden – svært lett, ingen påvirkning på lesbarhet. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 60;
+    background-image: var(--grain);
+    opacity: 0.07;
+    mix-blend-mode: multiply;
+  }
+  ::selection {
+    background: var(--color-syre);
+    color: var(--color-blekk);
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-kobolt);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  button {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
+/* ── Typografi ──────────────────────────────────────────── */
+@utility font-wide {
+  font-stretch: 125%;
+}
+@utility font-condensed {
+  font-stretch: 62%;
+}
+@utility font-semi-condensed {
+  font-stretch: 85%;
+  word-spacing: 0.08em;
+}
+@utility serif-soft {
+  font-family: var(--font-serif);
+  font-variation-settings: "SOFT" 100, "WONK" 1;
+}
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+@utility kicker {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Feilregistrert trykk: teksten «sklir» i en annen farge bak. */
+@utility misprint {
+  text-shadow:
+    0.06em 0.05em 0 var(--color-korall),
+    -0.03em -0.02em 0 color-mix(in srgb, var(--color-kobolt) 70%, transparent);
+}
+@utility misprint-blue {
+  text-shadow: 0.06em 0.05em 0 var(--color-kobolt);
+}
+
+/* ── Raster og overtrykk ────────────────────────────────── */
+@utility halftone {
+  background-image: radial-gradient(currentColor 22%, transparent 24%);
+  background-size: 7px 7px;
+}
+@utility halftone-fine {
+  background-image: radial-gradient(currentColor 18%, transparent 20%);
+  background-size: 4px 4px;
+}
+@utility overprint {
+  mix-blend-mode: multiply;
+}
+
+/* ── Billett: perforerte kanter og avrivningskanter ─────── */
+@utility ticket {
+  --notch: 14px;
+  background: var(--color-papir);
+  -webkit-mask:
+    radial-gradient(circle var(--notch) at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat,
+    radial-gradient(circle var(--notch) at 100% 50%, transparent 98%, #000) right / 51% 100% no-repeat;
+  mask:
+    radial-gradient(circle var(--notch) at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat,
+    radial-gradient(circle var(--notch) at 100% 50%, transparent 98%, #000) right / 51% 100% no-repeat;
+}
+@utility perforation {
+  background-image: radial-gradient(circle, var(--color-blekk) 1.6px, transparent 2px);
+  background-size: 10px 4px;
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 4px;
+}
+@utility zigzag-bottom {
+  -webkit-mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 16px 100%;
+  mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 16px 100%;
+}
+
+/* ── Knapper ───────────────────────────────────────────── */
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  padding: 0.75rem 1.25rem;
+  border: 2.5px solid var(--color-blekk);
+  border-radius: 999px;
+  font-weight: 800;
+  font-stretch: 112%;
+  letter-spacing: 0.01em;
+  box-shadow: var(--ink-shadow);
+  transition:
+    transform 120ms var(--ease-out-expo),
+    box-shadow 120ms var(--ease-out-expo),
+    background-color 150ms;
+  &:hover:not(:disabled) {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 var(--color-blekk);
+  }
+  &:active:not(:disabled) {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 0 var(--color-blekk);
+  }
+  &:disabled {
+    opacity: 0.45;
+    box-shadow: none;
+  }
+}
+@utility btn-primary {
+  background: var(--color-kobolt);
+  color: var(--color-papir);
+}
+@utility btn-hot {
+  background: var(--color-korall);
+  color: var(--color-blekk);
+}
+@utility btn-acid {
+  background: var(--color-syre);
+  color: var(--color-blekk);
+}
+@utility btn-ghost {
+  background: var(--color-papir);
+  color: var(--color-blekk);
+}
+
+/* ── Animasjoner ───────────────────────────────────────── */
+@keyframes wobble {
+  0%,
+  100% {
+    transform: rotate(-1.2deg);
+  }
+  50% {
+    transform: rotate(1.2deg);
+  }
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes blink-caret {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes pop-in {
+  from {
+    transform: scale(0.6) rotate(-8deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(var(--rot, -4deg));
+    opacity: 1;
+  }
+}
+@keyframes ink-spread {
+  from {
+    clip-path: circle(0% at 50% 50%);
+  }
+  to {
+    clip-path: circle(75% at 50% 50%);
+  }
+}
+@utility animate-wobble {
+  animation: wobble 3.2s ease-in-out infinite;
+}
+@utility animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Skjul for øyet, men ikke for skjermlesere. */
+@utility sr-only-focusable {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  &:focus {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    width: auto;
+    height: auto;
+    clip: auto;
+    z-index: 100;
+    background: var(--color-syre);
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--color-blekk);
+    border-radius: 999px;
+  }
+}
+
+/* Prosa (om-sider, metode) */
+.prose-tt {
+  font-family: var(--font-serif);
+  font-variation-settings: "SOFT" 60;
+  font-size: 1.075rem;
+  line-height: 1.6;
+}
+.prose-tt h2 {
+  font-family: var(--font-display);
+  font-stretch: 115%;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 2.25rem 0 0.75rem;
+  text-transform: uppercase;
+}
+.prose-tt h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.5rem;
+}
+.prose-tt p,
+.prose-tt ul,
+.prose-tt ol {
+  margin: 0 0 1rem;
+}
+.prose-tt ul {
+  list-style: square;
+  padding-left: 1.25rem;
+}
+.prose-tt ol {
+  list-style: decimal;
+  padding-left: 1.4rem;
+}
+.prose-tt a {
+  color: var(--color-kobolt);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+.prose-tt strong {
+  font-weight: 700;
+}

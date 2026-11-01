@@ -1,0 +1,1241 @@
+[
+  {
+    "id": "anmeldte-lovbrudd-per-1000",
+    "category": "misconception",
+    "topic": "kriminalitet",
+    "tags": [
+      "kriminalitet",
+      "anmeldte lovbrudd",
+      "tidsserie"
+    ],
+    "difficulty": 4,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Sjekk magefølelsen",
+    "prompt": "I 2014 ble det anmeldt 72,8 lovbrudd per 1000 innbyggere. Hvor lå tallet i 2025?",
+    "payload": {
+      "format": "trend",
+      "indicator": "Anmeldte lovbrudd per 1000 innbyggere (alle lovbruddsgrupper)",
+      "unit": {
+        "suffix": "per 1000",
+        "prefix": "",
+        "decimals": 1
+      },
+      "series": [
+        {
+          "period": "2014",
+          "value": 72.8
+        },
+        {
+          "period": "2021",
+          "value": 51.7
+        },
+        {
+          "period": "2024",
+          "value": 61.5
+        },
+        {
+          "period": "2025",
+          "value": 62.3
+        }
+      ],
+      "known": 1,
+      "min": 20,
+      "max": 120,
+      "step": 0.5,
+      "tolerance": 8
+    },
+    "reveal": {
+      "headline": "62,3 – lavere enn i 2014, men høyere enn bunnen i 2021.",
+      "explanation": "Antall anmeldte lovbrudd per 1000 innbyggere falt fra 72,8 i 2014 til 51,7 i 2021, og har siden økt til 62,3 i 2025. Begge deler stemmer: nivået er lavere enn for ti år siden, og det har økt de siste årene.",
+      "deepDive": "Anmeldte lovbrudd måler hva politiet registrerer, ikke hvor mye kriminalitet som faktisk skjer. Tallene påvirkes av hvor lett det er å anmelde (over en tredjedel ble anmeldt på nett i 2025), hvor villige folk og foretak er til å anmelde, og hva politiet prioriterer – for eksempel narkotikakontroller. Nedgangen fram til 2021 kan delvis gjenspeile færre anmeldelser og endret politiinnsats, og økningen etterpå kan delvis skyldes enklere anmeldelse. For å si noe om utsatthet for kriminalitet bør man også se på spørreundersøkelser om utsatthet og på hvilke lovbruddstyper som endrer seg. Svaret avhenger altså av hvilke lovbrudd og hvilken periode man ser på.",
+      "caveats": [
+        "Statistikken ble lagt om rundt ny straffelov i 2015, så sammenligninger over lange perioder må gjøres med forsiktighet."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Flere anmeldelser fra foretak i 2025",
+        "url": "https://www.ssb.no/sosiale-forhold-og-kriminalitet/kriminalitet-og-rettsvesen/statistikk/anmeldte-lovbrudd-og-ofre/artikler/flere-anmeldelser-fra-foretak-i-2025",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2014–2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall kontrollert mot SSB-tekst gjengitt i søkeresultater; må kontrolleres mot SSB-tabell før godkjenning."
+    },
+    "shareText": "Har anmeldt kriminalitet per innbygger økt siden 2014? Spå kurven.",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "anmeldte-lovbrudd-2005-2025",
+    "category": "misconception",
+    "topic": "kriminalitet",
+    "tags": [
+      "kriminalitet",
+      "anmeldte lovbrudd",
+      "antall-vs-andel"
+    ],
+    "difficulty": 3,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Sjekk magefølelsen",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Det ble anmeldt flere lovbrudd i Norge i 2025 enn i 2005.",
+      "answer": false,
+      "correction": "Om lag 348 500 lovbrudd ble anmeldt i 2025, mot om lag 394 000 i 2005."
+    },
+    "reveal": {
+      "headline": "Det stemmer ikke – selv om vi er blitt flere.",
+      "explanation": "Om lag 348 500 lovbrudd ble anmeldt i 2025, mot rundt 394 000 i 2005. I samme periode har folketallet økt med over 900 000, så nedgangen per innbygger er enda større.",
+      "deepDive": "Absolutte tall og tall per innbygger forteller ulike historier når befolkningen vokser. Samtidig er anmeldte lovbrudd ikke det samme som faktisk kriminalitet: anmeldelsestilbøyelighet, politiets prioriteringer (for eksempel kontroller som avdekker narkotika- og trafikklovbrudd) og nye lovbruddstyper som digital svindel påvirker tallene. Statistikken ble dessuten lagt om rundt ny straffelov i 2015.",
+      "caveats": [
+        "Tallene er avrundet. Ikke justert for befolkningsvekst."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Flere anmeldelser fra foretak i 2025",
+        "url": "https://www.ssb.no/sosiale-forhold-og-kriminalitet/kriminalitet-og-rettsvesen/statistikk/anmeldte-lovbrudd-og-ofre/artikler/flere-anmeldelser-fra-foretak-i-2025",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2005 og 2025",
+    "calculation": "Folketall om lag 4,6 millioner i 2005 og 5,63 millioner i 2026 (SSB).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "2005-tallet fra SSB-publikasjon gjengitt i søkeresultat; kontrolleres mot SSB-tabell før godkjenning."
+    },
+    "shareText": "Flere anmeldte lovbrudd i 2025 enn i 2005? Stemmer det?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "drapssaker-kripos",
+    "category": "misconception",
+    "topic": "kriminalitet",
+    "tags": [
+      "kriminalitet",
+      "drap",
+      "små tall"
+    ],
+    "difficulty": 3,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Alvorlig tema",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Kripos registrerte færre drapssaker i 2025 enn i noe annet år siden oversikten startet i 1990.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Det stemmer: 18 saker, det laveste i oversikten.",
+      "explanation": "Kripos registrerte 18 drapssaker med 19 ofre i 2025. Snittet for 1990–2025 er 28 saker per år, og toppåret var 1991 med 44 saker.",
+      "deepDive": "Når tallene er små, svinger de mye tilfeldig fra år til år. Kripos advarer selv mot å lese for mye ut av prosentvise endringer. Ett lavt år er ikke i seg selv en trend; 2023 og 2024 hadde 35 og 30 saker. Antall saker og antall ofre kan også gi ulike bilder, og saker kan omklassifiseres når de oppklares.",
+      "caveats": [
+        "Gjelder saker etter året drapet ble begått. En sak kan ha flere ofre."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Kripos / Politiet",
+        "title": "Nasjonal drapsoversikt",
+        "url": "https://www.politiet.no/globalassets/tall-og-fakta/drap/nasjonal-drapsoversikt-2024.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1990–2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "2025-oversikten kunne ikke hentes direkte; tall fra gjengivelser av Kripos. Må kontrolleres før godkjenning."
+    },
+    "shareText": "Var 2025 året med færrest drapssaker siden 1990? Stemmer det?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "ungdom-siktet-vold-2019-2024",
+    "category": "misconception",
+    "topic": "kriminalitet",
+    "tags": [
+      "kriminalitet",
+      "ungdom",
+      "siktede"
+    ],
+    "difficulty": 3,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Sjekk magefølelsen",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Flere 15–17-åringer ble siktet for vold og mishandling i 2024 enn i 2019.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Det stemmer: om lag 950 i 2019, 1 156 i 2024.",
+      "explanation": "Antallet 15–17-åringer som ble siktet for vold og mishandling økte fra om lag 950 i 2019 til 1 156 i 2024. Samlet anmeldt kriminalitet per innbygger er lavere enn for ti år siden – begge deler kan stemme samtidig.",
+      "deepDive": "Dette er antall personer, ikke en rate per innbygger, og årskullene varierer i størrelse. «Siktet» i SSBs statistikk er ikke det samme som dømt. Kriminologer peker på at økningen delvis kan skyldes større vilje til å anmelde vold blant unge, for eksempel fra skoler og foresatte. Selvrapporterte undersøkelser gir et mer stabilt bilde. De fleste unge som registreres hos politiet, registreres bare én gang.",
+      "caveats": [
+        "Gjelder oppklarte saker. Antall siktelser i aldersgruppen var 2 086 i 2024."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Stadig færre lovbrudd blir oppklart",
+        "url": "https://www.ssb.no/sosiale-forhold-og-kriminalitet/kriminalitet-og-rettsvesen/statistikk/etterforskede-lovbrudd/artikler/stadig-faerre-lovbrudd-blir-oppklart",
+        "tableId": "11453",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2019 og 2024",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "2019-tallet er oppgitt som «om lag» i kilden; kontrolleres mot tabell 11453 før godkjenning."
+    },
+    "shareText": "Har flere unge blitt siktet for vold de siste årene? Stemmer det?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "innvandring-krim-justering",
+    "category": "misconception",
+    "topic": "innvandring",
+    "tags": [
+      "innvandring",
+      "kriminalitet",
+      "metode",
+      "alder-og-kjønn"
+    ],
+    "difficulty": 5,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Likt med likt",
+    "prompt": "11,3 % av norskfødte med innvandrerforeldre ble registrert som gjerningsperson i 2010–2013. Hva blir andelen når gruppen får samme kjønns- og alderssammensetning som resten av befolkningen?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 6.8,
+      "min": 0,
+      "max": 15,
+      "scale": "linear",
+      "step": 0.1,
+      "tolerance": 1.5
+    },
+    "reveal": {
+      "headline": "6,8 prosent. Forskjellen ble mindre – men forsvant ikke.",
+      "explanation": "Mange i gruppen var unge menn, som oftere registreres for lovbrudd uansett bakgrunn. Justert for kjønn og alder falt andelen fra 11,3 til 6,8 prosent, mot 4,5 prosent i øvrig befolkning.",
+      "deepDive": "SSB beregnet hvor stor andelen ville vært dersom gruppen hadde hatt samme kjønns- og alderssammensetning som øvrig befolkning. For innvandrere falt andelen fra 6,7 til 5,8 prosent. Tallene gjelder personer registrert som siktet i oppklarte saker i 2010–2013, ikke domfellelser eller faktisk atferd. Den gjenværende forskjellen kan blant annet henge sammen med inntekt og levekår, bosted, oppvekstforhold, forskjeller i anmeldelse og politiets oppmerksomhet, eller forskjeller i atferd – dataene kan ikke skille mellom disse forklaringene. Statistikk om grupper sier ingenting om enkeltpersoner: det store flertallet i alle gruppene er ikke registrert for lovbrudd. Nyere SSB-tall for 2020–2023 måler antall siktelser (ikke personer) og tyder på at overrepresentasjonen blant unge menn har økt; disse tallene må leses med egne forbehold.",
+      "caveats": [
+        "Data fra 2010–2013 kan ikke uten videre overføres til i dag.",
+        "Andelen for øvrig befolkning (4,5 %) er hentet fra avisomtale av SSB-rapporten og må kontrolleres."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Innvandrere mindre overrepresentert blant siktede enn før",
+        "url": "https://www.ssb.no/sosiale-forhold-og-kriminalitet/artikler-og-publikasjoner/innvandrere-mindre-overrepresentert-blant-siktede-enn-for",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "SSB",
+        "title": "Siktelser og siktede personer etter innvandringsbakgrunn",
+        "url": "https://www.ssb.no/sosiale-forhold-og-kriminalitet/kriminalitet-og-rettsvesen/statistikk/etterforskede-lovbrudd/artikler/siktelser-og-siktede-personer-etter-innvandringsbakgrunn",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2010–2013 (SSB-rapport publisert 2017)",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Justerte andeler sitert fra SSB; 4,5 % fra sekundærkilde. Krever manuell kontroll mot rapport 2017/36."
+    },
+    "shareText": "Hva skjer med forskjeller i registrert kriminalitet når vi sammenligner likt med likt?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "metode-samtidig-utvikling",
+    "category": "misconception",
+    "topic": "metode",
+    "tags": [
+      "metode",
+      "korrelasjon-vs-kausalitet",
+      "innvandring",
+      "kriminalitet"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Statistikkens fallgruve",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Hvis både innvandringen og antall anmeldte lovbrudd øker i samme periode, viser det at innvandringen er årsaken til økningen.",
+      "answer": false,
+      "correction": "At to ting endrer seg samtidig, viser ikke at den ene forårsaker den andre."
+    },
+    "reveal": {
+      "headline": "Det stemmer ikke. Samtidig er ikke det samme som årsak.",
+      "explanation": "Mange ting endrer seg samtidig i et samfunn. For å si noe om årsaker må man vite hvem som er registrert, sammenligne grupper med samme alder og kjønn, og ta hensyn til endringer i anmeldelse og politiarbeid.",
+      "deepDive": "Dette er forskjellen på samtidig utvikling, statistisk sammenheng og dokumentert årsakssammenheng. To tidsserier som stiger sammen, kan ha felles bakenforliggende årsaker (for eksempel befolkningsvekst eller endret anmeldelsespraksis), eller det kan være tilfeldig. Det motsatte gjelder også: at to serier ikke følger hverandre, utelukker ikke at det finnes en sammenheng for enkelte lovbruddstyper eller grupper. SSB publiserer derfor tall for siktede personer etter innvandringsbakgrunn, kjønn og alder – og understreker at selv de ikke kan avgjøre årsaker alene.",
+      "caveats": [
+        "Spørsmålet handler om metode, ikke om hva tallene for innvandring og kriminalitet viser."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Siktelser og siktede personer etter innvandringsbakgrunn",
+        "url": "https://www.ssb.no/sosiale-forhold-og-kriminalitet/kriminalitet-og-rettsvesen/statistikk/etterforskede-lovbrudd/artikler/siktelser-og-siktede-personer-etter-innvandringsbakgrunn",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Metodespørsmål",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "primary-publication",
+      "note": "Metodisk prinsipp; kilden viser SSBs egne forbehold."
+    },
+    "shareText": "Hvis to ting øker samtidig – er den ene årsaken til den andre?",
+    "seasonMonths": [],
+    "dataQuality": 5
+  },
+  {
+    "id": "innvandrere-andel-2026",
+    "category": "misconception",
+    "topic": "innvandring",
+    "tags": [
+      "innvandring",
+      "befolkning",
+      "definisjon"
+    ],
+    "difficulty": 3,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Hvem er innvandrer?",
+    "prompt": "Hvor stor andel av befolkningen var innvandrere – født i utlandet av utenlandsfødte foreldre – per 1. januar 2026?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 17.5,
+      "min": 0,
+      "max": 60,
+      "scale": "linear",
+      "step": 0.5,
+      "tolerance": 4
+    },
+    "reveal": {
+      "headline": "17,5 prosent.",
+      "explanation": "987 120 innvandrere bodde i Norge 1. januar 2026, 17,5 prosent av befolkningen. I tillegg var 4,2 prosent norskfødte med innvandrerforeldre.",
+      "deepDive": "«Innvandrer» betyr født i utlandet av to utenlandsfødte foreldre – ikke utenlandsk statsborger. Mange innvandrere er norske statsborgere. Gruppen er svært sammensatt: den omfatter alt fra svenske og polske arbeidsinnvandrere til familiegjenforente og flyktninger, med ulik botid, alder og bakgrunn. Tall for hele gruppen sier derfor lite om enkeltpersoner eller undergrupper.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Innvandring og innvandrere – nøkkeltall",
+        "url": "https://www.ssb.no/innvandring-og-innvandrere/nokkeltall",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1. januar 2026",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSBs nøkkeltallsside slik den gjengis i søkeresultat."
+    },
+    "shareText": "Hvor stor andel av befolkningen er innvandrere? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "husarbeid-kvinner-1970-2022",
+    "category": "misconception",
+    "topic": "likestilling",
+    "tags": [
+      "husarbeid",
+      "kjønn",
+      "tidsbruk",
+      "generasjoner"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Hvem tar oppvasken?",
+    "prompt": "På 1970-tallet brukte kvinner 4 timer og 14 minutter på husarbeid en gjennomsnittsdag. Hvor mange minutter brukte de i 2022?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "min",
+        "prefix": "",
+        "decimals": 0
+      },
+      "answer": 83,
+      "min": 0,
+      "max": 300,
+      "scale": "linear",
+      "step": 1,
+      "tolerance": 25
+    },
+    "reveal": {
+      "headline": "83 minutter – nesten tre timer mindre enn på 70-tallet.",
+      "explanation": "Kvinner brukte 1 time og 23 minutter på husarbeid en gjennomsnittsdag i 2022, menn 52 minutter. Forskjellen mellom kjønnene er mye mindre enn før, men den er der fortsatt.",
+      "deepDive": "Husarbeid er her det smale begrepet: matlaging, rengjøring og klesvask. Regner man med omsorg, vedlikehold og innkjøp, brukte kvinner 3 timer og 18 minutter og menn 2 timer og 36 minutter i 2022. Menn bruker mer tid på vedlikehold. Tallene er snitt for alle dager og alle personer, også dem som ikke gjorde husarbeid den dagen.",
+      "caveats": [
+        "Aldersavgrensning og metode har endret seg noe mellom undersøkelsene."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Vi bruker stadig mindre tid på husarbeid",
+        "url": "https://www.ssb.no/kultur-og-fritid/tids-og-mediebruk/statistikk/tidsbruksundersokelsen/artikler/vi-bruker-stadig-mindre-tid-pa-husarbeid",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1970-tallet og 2022",
+    "calculation": "4 t 14 min = 254 min; 1 t 23 min = 83 min",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-artikkel om tidsbruksundersøkelsen."
+    },
+    "shareText": "Hvor mye tid bruker kvinner på husarbeid i dag – sammenlignet med 70-tallet?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "lonnsgap-median",
+    "category": "misconception",
+    "topic": "likestilling",
+    "tags": [
+      "lønn",
+      "kjønn",
+      "gjennomsnitt-vs-median",
+      "metode"
+    ],
+    "difficulty": 4,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Samme lønn, ulike tall",
+    "prompt": "Målt som gjennomsnittlig månedslønn tjente kvinner 87,9 % av det menn tjente i 2025. Hva blir tallet målt med medianlønn?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 93.4,
+      "min": 60,
+      "max": 110,
+      "scale": "linear",
+      "step": 0.1,
+      "tolerance": 3
+    },
+    "reveal": {
+      "headline": "93,4 prosent. Valget av mål flytter gapet med mange prosentpoeng.",
+      "explanation": "Målt med medianlønn utgjorde kvinners lønn 93,4 prosent av menns i 2025. Gjennomsnittet trekkes opp av svært høye lønninger, der det er flere menn.",
+      "deepDive": "Alle tallene er ujusterte: de sammenligner alle kvinner og menn uavhengig av yrke, sektor, utdanning og stillingsandel, omregnet til heltid. De viser derfor ikke om kvinner får lavere lønn for likt arbeid. Mye av gapet kan forklares statistisk med yrkesvalg, sektor og arbeidstid – men om disse forskjellene selv er rettferdige, for eksempel hvordan kvinnedominerte yrker verdsettes, er et verdispørsmål tallene ikke avgjør. Målt som avtalt månedslønn uten bonuser var tallet 90,2 prosent.",
+      "caveats": [
+        "Lønnsstatistikken måles per november hvert år."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Høyest lønnsvekst i toppen",
+        "url": "https://www.ssb.no/arbeid-og-lonn/lonn-og-arbeidskraftkostnader/statistikk/lonn/artikler/hoyest-lonnsvekst-i-toppen",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tallene finnes i flere gjengivelser av SSB; artikkel-URL bør dobbeltsjekkes."
+    },
+    "shareText": "Hvor stort er lønnsgapet? Det kommer an på hvordan du måler.",
+    "seasonMonths": [
+      3
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "studenter-kvinneandel-2025",
+    "category": "misconception",
+    "topic": "utdanning",
+    "tags": [
+      "utdanning",
+      "kjønn"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Campus",
+    "prompt": "Hvor stor andel av studentene ved universiteter og høgskoler var kvinner i 2025?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 60.8,
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "step": 0.5,
+      "tolerance": 6
+    },
+    "reveal": {
+      "headline": "Rundt 61 prosent. Tre av fem studenter er kvinner.",
+      "explanation": "196 658 av de 323 595 studentene i 2025 var kvinner. Blant 19–24-åringer var 46,3 prosent av kvinnene og 28,7 prosent av mennene studenter.",
+      "deepDive": "Tallene gjelder universitets- og høgskoleutdanning. Menn er overrepresentert i yrkesfag og fagskoler, så forskjellen i utdanning totalt er mindre enn forskjellen blant studenter. Noen menn starter dessuten senere, blant annet etter militærtjeneste.",
+      "caveats": [
+        "Kvinneandelen er beregnet fra SSBs antall."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Studenter i universitets- og høgskoleutdanning",
+        "url": "https://www.ssb.no/utdanning/hoyere-utdanning/statistikk/studenter-i-universitets-og-hogskoleutdanning",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "196 658 / 323 595 = 60,8 %",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "derived",
+      "note": "Antall fra SSB-tabell gjengitt i søkeresultat."
+    },
+    "shareText": "Hvor mange av studentene i Norge er kvinner? Gjett!",
+    "seasonMonths": [
+      8,
+      9
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "eldre-internett-daglig",
+    "category": "misconception",
+    "topic": "eldre",
+    "tags": [
+      "eldre",
+      "teknologi",
+      "internett",
+      "generasjoner"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Bestemor på nett",
+    "prompt": "Hvor stor andel av 67–79-åringene bruker internett en vanlig dag?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 0
+      },
+      "answer": 85,
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "step": 1,
+      "tolerance": 9
+    },
+    "reveal": {
+      "headline": "85 prosent. Seniorene er på nett.",
+      "explanation": "85 prosent av 67–79-åringene bruker internett en gjennomsnittsdag. Blant dem som er 80 år eller eldre, er andelen 60 prosent.",
+      "deepDive": "Tallene kommer fra en spørreundersøkelse (Norsk mediebarometer), der svarprosenten kan være lavere blant de eldste og de minst digitale. Daglig bruk sier heller ikke noe om hvor trygge folk føler seg med for eksempel nettbank eller offentlige tjenester.",
+      "caveats": [
+        "Publisert i «Seniorer i Norge 2024»; dataene er trolig fra 2023."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Seniorer i Norge 2024 – mediebruk",
+        "url": "https://www.ssb.no/kultur-og-fritid/tids-og-mediebruk/artikler/seniorer-i-norge-2024-mediebruk",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Trolig 2023 (publisert 2024)",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Datåret er ikke eksplisitt i kilden."
+    },
+    "shareText": "Hvor mange 67–79-åringer er på nett hver dag? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "ungdom-alkohol-trend",
+    "category": "misconception",
+    "topic": "ungdom",
+    "tags": [
+      "ungdom",
+      "alkohol",
+      "helse",
+      "generasjoner"
+    ],
+    "difficulty": 3,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Ungdommen i dag",
+    "prompt": "I 1999 hadde 78 % av 15–16-åringene drukket alkohol siste år. Hvor lå andelen i 2024?",
+    "payload": {
+      "format": "trend",
+      "indicator": "15–16-åringer som har drukket alkohol siste 12 måneder",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 0
+      },
+      "series": [
+        {
+          "period": "1999",
+          "value": 78
+        },
+        {
+          "period": "2003",
+          "value": 76
+        },
+        {
+          "period": "2015",
+          "value": 49
+        },
+        {
+          "period": "2024",
+          "value": 47
+        }
+      ],
+      "known": 2,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "tolerance": 8
+    },
+    "reveal": {
+      "headline": "47 prosent. Dagens unge drikker langt sjeldnere.",
+      "explanation": "Andelen 15–16-åringer som hadde drukket alkohol siste år, falt fra 78 prosent i 1999 til 49 prosent i 2015, og var 47 prosent i 2024.",
+      "deepDive": "Tallene kommer fra ESPAD, en skoleundersøkelse der elevene selv oppgir hva de har gjort. Elever som ikke er på skolen, er ikke med. Nedgangen siden 1999 er tydelig, men tallene har flatet ut det siste tiåret. Samtidig har bruken av snus og e-sigaretter økt blant unge, så «ungdommen i dag» er ikke ensartet.",
+      "caveats": [
+        "Undersøkelsen gjennomføres hvert fjerde til femte år."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "FHI",
+        "title": "Alkoholbruk blant ungdom",
+        "url": "https://www.fhi.no/le/alkohol/alkoholinorge/omsetning-og-bruk/alkoholbruk-blant-ungdom/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1999–2024 (ESPAD)",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot FHI-tekst gjengitt i søkeresultater."
+    },
+    "shareText": "Drikker ungdom mer eller mindre enn før? Spå kurven.",
+    "seasonMonths": [
+      5,
+      6
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "ungdom-esigarett-2019-2024",
+    "category": "current",
+    "topic": "ungdom",
+    "tags": [
+      "ungdom",
+      "helse",
+      "e-sigarett"
+    ],
+    "difficulty": 3,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Ungdommen i dag",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Andelen 15–16-åringer som hadde brukt e-sigarett siste 30 dager, nesten doblet seg fra 2019 til 2024.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Det stemmer: fra 11 til 20 prosent.",
+      "explanation": "20 prosent av 15–16-åringene oppga å ha brukt e-sigarett siste 30 dager i 2024, mot 11 prosent i 2019. Samtidig er røyking blant unge på historisk lave nivåer.",
+      "deepDive": "«Brukt siste 30 dager» inkluderer også sporadisk bruk og er ikke det samme som daglig bruk eller avhengighet. Tallene er selvrapporterte i en skoleundersøkelse (ESPAD). Regelmessig snusbruk økte i samme periode fra 12 til 14 prosent.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "FHI",
+        "title": "Flere ungdommer brukte snus og e-sigaretter i 2024 enn i 2019",
+        "url": "https://www.fhi.no/nyheter/2025/flere-ungdommer-brukte-snus-og-e-sigaretter-i-2024-enn-i-2019/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2019 og 2024",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Sitat fra FHI-nyhet."
+    },
+    "shareText": "Har e-sigarettbruken blant 15–16-åringer nesten doblet seg? Stemmer det?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "dagligroyking-trend",
+    "category": "misconception",
+    "topic": "helse",
+    "tags": [
+      "helse",
+      "røyking",
+      "tidsserie"
+    ],
+    "difficulty": 3,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Siste sigarett?",
+    "prompt": "42 % av voksne røykte daglig i 1973. Hvor stor var andelen i 2025?",
+    "payload": {
+      "format": "trend",
+      "indicator": "Andel voksne som røyker daglig",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 0
+      },
+      "series": [
+        {
+          "period": "1973",
+          "value": 42
+        },
+        {
+          "period": "2000",
+          "value": 32
+        },
+        {
+          "period": "2010",
+          "value": 19
+        },
+        {
+          "period": "2017",
+          "value": 11
+        },
+        {
+          "period": "2025",
+          "value": 7
+        }
+      ],
+      "known": 2,
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "tolerance": 5
+    },
+    "reveal": {
+      "headline": "7 prosent – en sjettedel av nivået i 1973.",
+      "explanation": "Andelen som røyker daglig har falt fra 42 prosent i 1973 til 7 prosent i 2025. I dag er snus mer utbredt enn røyk: 16 prosent bruker snus daglig.",
+      "deepDive": "Serien har et brudd: 1973–2017 er fra SSBs røykevaneundersøkelse (16–74 år), mens 2025 er fra Rusundersøkelsen (16–79 år). Tallene er selvrapporterte. Andelen som røyker av og til kommer i tillegg.",
+      "caveats": [
+        "Brudd i tidsserien i 2025 (ny undersøkelse og aldersgruppe)."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "1 av 4 snuser eller røyker daglig",
+        "url": "https://www.ssb.no/helse/helseforhold-og-levevaner/statistikk/royk-alkohol-og-andre-rusmidler/artikler/1-av-4-snuser-eller-royker-daglig",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1973–2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Punktene kontrollert mot SSB-tekster gjengitt i søkeresultater."
+    },
+    "shareText": "Hvor mange røyker daglig i Norge i dag? Spå kurven.",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "snus-vs-royk-2025",
+    "category": "current",
+    "topic": "helse",
+    "tags": [
+      "helse",
+      "snus",
+      "røyking"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Nikotinvaner",
+    "prompt": "Hva bruker flest voksne daglig i 2025?",
+    "payload": {
+      "format": "compare",
+      "indicator": "Andel av befolkningen 16–79 år som bruker daglig (2025)",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 0
+      },
+      "pick": "highest",
+      "items": [
+        {
+          "id": "snus",
+          "label": "Snus",
+          "value": 16
+        },
+        {
+          "id": "royk",
+          "label": "Sigaretter",
+          "value": 7
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Snus – mer enn dobbelt så utbredt som røyk.",
+      "explanation": "16 prosent av befolkningen 16–79 år brukte snus daglig i 2025, mens 7 prosent røykte daglig. 23 prosent brukte minst ett tobakks- eller nikotinprodukt daglig.",
+      "deepDive": "Tallene er fra Rusundersøkelsen, en utvalgsundersøkelse med statistisk usikkerhet. Måler man «regelmessig» bruk (daglig eller av og til), blir begge tallene høyere. Tallene sier ikke noe om helserisiko, som er ulik for de to produktene.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "1 av 4 snuser eller røyker daglig",
+        "url": "https://www.ssb.no/helse/helseforhold-og-levevaner/statistikk/royk-alkohol-og-andre-rusmidler/artikler/1-av-4-snuser-eller-royker-daglig",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Våren 2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Sitat fra SSB-artikkel."
+    },
+    "shareText": "Snus eller røyk – hva bruker flest nordmenn daglig?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "levealder-kjonnsgap",
+    "category": "misconception",
+    "topic": "befolkning",
+    "tags": [
+      "levealder",
+      "kjønn"
+    ],
+    "difficulty": 4,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Mennene tar igjen",
+    "prompt": "I 1990 kunne kvinner forvente å leve 6,4 år lenger enn menn. Hvor stor var forskjellen i 2025?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "år",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 3.2,
+      "min": 0,
+      "max": 10,
+      "scale": "linear",
+      "step": 0.1,
+      "tolerance": 0.9
+    },
+    "reveal": {
+      "headline": "Om lag 3,2 år – forskjellen er halvert.",
+      "explanation": "Forventet levealder var 84,85 år for kvinner og 81,61 år for menn i 2025, en forskjell på 3,24 år. I 1990 var forskjellen 6,4 år.",
+      "deepDive": "Forventet levealder er et beregnet mål: hvor lenge en nyfødt vil leve dersom dødeligheten på hvert alderstrinn forblir som i det aktuelle året. Det er ikke det samme som gjennomsnittsalderen til dem som døde. FHI oppgir forskjellen som 3,3 år; avrundingen avhenger av antall desimaler.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Svak økning i forventa levealder",
+        "url": "https://www.ssb.no/befolkning/fodte-og-dode/statistikk/dode/artikler/svak-okning-i-forventa-levealder",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "FHI",
+        "title": "Folkehelserapporten: Levealder",
+        "url": "https://www.fhi.no/he/folkehelserapporten/samfunn/levealder/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1990 og 2025",
+    "calculation": "84,85 − 81,61 = 3,24 år",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "derived",
+      "note": "Levealder fra SSB, 1990-gap fra FHI."
+    },
+    "shareText": "Hvor mye lenger lever kvinner enn menn i dag? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "trafikkdrepte-trend",
+    "category": "misconception",
+    "topic": "trafikk",
+    "tags": [
+      "trafikk",
+      "ulykker",
+      "tidsserie"
+    ],
+    "difficulty": 3,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Alvorlig tema",
+    "prompt": "560 mennesker omkom i vegtrafikken i 1970. Hvor mange omkom i 2024?",
+    "payload": {
+      "format": "trend",
+      "indicator": "Omkomne i vegtrafikken",
+      "unit": {
+        "suffix": "omkomne",
+        "prefix": "",
+        "decimals": 0
+      },
+      "series": [
+        {
+          "period": "1970",
+          "value": 560
+        },
+        {
+          "period": "2006",
+          "value": 242
+        },
+        {
+          "period": "2021",
+          "value": 80
+        },
+        {
+          "period": "2024",
+          "value": 87
+        }
+      ],
+      "known": 2,
+      "min": 0,
+      "max": 700,
+      "step": 1,
+      "tolerance": 45
+    },
+    "reveal": {
+      "headline": "87 – en sjettedel av antallet i 1970.",
+      "explanation": "87 personer omkom i vegtrafikken i 2024, mot 560 i 1970. Trafikkmengden er samtidig mangedoblet, så risikoen per kjørte kilometer har falt enda mer.",
+      "deepDive": "Hvert tall er et menneskeliv, og enkeltår svinger. Foreløpige tall for 2025 viser 111 omkomne – en økning fra året før – så nedgangen over tid betyr ikke at utviklingen går samme vei hvert år. Bedre veger, sikrere biler, bilbelte, fartsgrenser og redningstjenester trekkes ofte fram som forklaringer, men tallserien alene kan ikke vise hvor mye hver faktor betyr.",
+      "caveats": [
+        "2025-tallet (111) er foreløpig og er derfor ikke med i kurven."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Statens vegvesen",
+        "title": "111 omkomne i trafikken i år",
+        "url": "https://www.vegvesen.no/om-oss/presse/aktuelt/2026/01/111-omkomne-i-trafikken-i-ar",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "SSB",
+        "title": "Vegtrafikkulykker med personskade",
+        "url": "https://www.ssb.no/transport-og-reiseliv/landtransport/statistikk/vegtrafikkulykker-med-personskade",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1970–2024",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot Statens vegvesen og SSB-tekster gjengitt i søkeresultater."
+    },
+    "shareText": "Hvor mange omkommer i trafikken i dag, sammenlignet med 1970?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "barn-vedvarende-lavinntekt",
+    "category": "misconception",
+    "topic": "levekår",
+    "tags": [
+      "barn",
+      "inntekt",
+      "fattigdom",
+      "relativt-mål"
+    ],
+    "difficulty": 4,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Barn og økonomi",
+    "prompt": "Hvor stor andel av barn i Norge bodde i husholdninger med vedvarende lavinntekt i perioden 2022–2024?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 10.2,
+      "min": 0,
+      "max": 50,
+      "scale": "linear",
+      "step": 0.1,
+      "tolerance": 3.5
+    },
+    "reveal": {
+      "headline": "10,2 prosent – om lag én av ti.",
+      "explanation": "98 700 barn bodde i husholdninger med vedvarende lavinntekt i perioden 2022–2024, 10,2 prosent av alle barn. Andelen var 11,7 prosent i 2018–2020.",
+      "deepDive": "Vedvarende lavinntekt betyr at husholdningens inntekt etter skatt, justert for antall personer, i snitt over tre år var under 60 prosent av medianen. Det er et relativt mål: andelen kan øke selv om alle får bedre råd, hvis medianen øker mer. Endringer i befolkningssammensetningen påvirker også tallet; SSB peker på at mye av økningen de siste årene gjelder barn som har innvandret.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Flere barn med vedvarende lavinntekt i 2024",
+        "url": "https://www.ssb.no/inntekt-og-forbruk/inntekt-og-formue/artikler/flere-barn-med-vedvarende-lavinntekt-i-2024",
+        "tableId": "12944",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2022–2024",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-artikkel."
+    },
+    "shareText": "Hvor mange barn i Norge vokser opp med vedvarende lavinntekt? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "uforetrygd-andel-2025",
+    "category": "misconception",
+    "topic": "arbeid",
+    "tags": [
+      "trygd",
+      "arbeid",
+      "nav"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Arbeid og trygd",
+    "prompt": "Hvor stor andel av befolkningen 18–67 år mottok uføretrygd ved utgangen av 2025?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 10.5,
+      "min": 0,
+      "max": 50,
+      "scale": "linear",
+      "step": 0.5,
+      "tolerance": 4
+    },
+    "reveal": {
+      "headline": "10,5 prosent – og nokså stabilt siden 2020.",
+      "explanation": "374 900 personer mottok uføretrygd ved utgangen av 2025, 10,5 prosent av befolkningen 18–67 år. Andelen var uendret fra året før.",
+      "deepDive": "Mange uføre har gradert uføretrygd og jobber delvis. Andelen øker kraftig med alder, så endringer i befolkningens alderssammensetning påvirker tallet. Nav måler mottakere på et tidspunkt; SSB måler mottakere i løpet av året, og får derfor et litt høyere tall.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "Nav",
+        "title": "Lav vekst i antall uføretrygdede i 2025",
+        "url": "https://www.nav.no/no/nav-og-samfunn/statistikk/aap-nedsatt-arbeidsevne-og-uforetrygd-statistikk/nyheter/lav-vekst-i-antall-uforetrygdede-i-2025",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "31. desember 2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "primary-publication",
+      "note": "Sitat fra Navs statistikknyhet."
+    },
+    "shareText": "Hvor mange i arbeidsfør alder mottar uføretrygd? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 5
+  },
+  {
+    "id": "funksjonsnedsettelse-sysselsetting",
+    "category": "misconception",
+    "topic": "arbeid",
+    "tags": [
+      "funksjonsnedsettelse",
+      "arbeid",
+      "inkludering"
+    ],
+    "difficulty": 4,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Arbeidslivet for alle?",
+    "prompt": "73,4 % av alle 15–66-åringer var i jobb i 2. kvartal 2020. Hvor stor var andelen blant dem med nedsatt funksjonsevne?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 40.6,
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "step": 0.5,
+      "tolerance": 7
+    },
+    "reveal": {
+      "headline": "40,6 prosent.",
+      "explanation": "40,6 prosent av personer 15–66 år med nedsatt funksjonsevne var sysselsatt i 2. kvartal 2020, mot 73,4 prosent i hele befolkningen i samme alder.",
+      "deepDive": "Nedsatt funksjonsevne er selvrapportert og omfatter alt fra lette til store begrensninger. Forskjellen kan henge sammen med helsebegrensninger, manglende tilrettelegging, holdninger hos arbeidsgivere og hvordan velferdsordningene er innrettet – tallene alene skiller ikke mellom disse. 2020 var et pandemiår, og SSB har ikke publisert sammenlignbare tall etter at tilleggsundersøkelsen ble tatt ut av arbeidskraftundersøkelsen.",
+      "caveats": [
+        "Dette er de siste sammenlignbare tallene vi har funnet."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Nedgang i andelen sysselsatte med nedsatt funksjonsevne",
+        "url": "https://www.ssb.no/arbeid-og-lonn/artikler-og-publikasjoner/nedgang-i-andelen-sysselsatte-med-nedsatt-funksjonsevne",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2. kvartal 2020",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Sitat fra SSB-artikkel."
+    },
+    "shareText": "Hvor mange med nedsatt funksjonsevne er i jobb? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "innvandrere-sysselsatte-antall-andel",
+    "category": "misconception",
+    "topic": "innvandring",
+    "tags": [
+      "innvandring",
+      "arbeid",
+      "antall-vs-andel",
+      "metode"
+    ],
+    "difficulty": 4,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Antall eller andel?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Andelen sysselsatte blant innvandrere gikk svakt ned fra 2024 til 2025. Det betyr at færre innvandrere var i jobb.",
+      "answer": false,
+      "correction": "Antallet sysselsatte innvandrere økte med i underkant av 11 000, selv om andelen gikk ned til 67,5 prosent."
+    },
+    "reveal": {
+      "headline": "Det stemmer ikke. Andel og antall kan gå hver sin vei.",
+      "explanation": "Andelen sysselsatte innvandrere i alderen 20–66 år falt svakt til 67,5 prosent i 2025, men antallet i jobb økte med i underkant av 11 000.",
+      "deepDive": "Når mange nye innvandrere kommer i løpet av et år, og få av dem er i jobb det første året, øker nevneren raskere enn telleren. Da kan andelen falle selv om flere er i arbeid. Sysselsettingen varierer også mye etter innvandringsgrunn (arbeid, familie, flukt) og botid, mer enn etter landbakgrunn i seg selv.",
+      "caveats": [
+        "Registerbasert sysselsetting, 4. kvartal."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Svak nedgang i sysselsettinga blant innvandrarar",
+        "url": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/statistikk/sysselsetting-blant-innvandrere-registerbasert/artikler/svak-nedgang-i-sysselsettinga-blant-innvandrarar",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "4. kvartal 2024 – 4. kvartal 2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Sitat fra SSB-artikkel."
+    },
+    "shareText": "Hvis andelen i jobb faller – er det da færre i jobb? Stemmer det?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "voldsofre-kjonn-2025",
+    "category": "misconception",
+    "topic": "kriminalitet",
+    "tags": [
+      "kriminalitet",
+      "vold",
+      "ofre",
+      "kjønn"
+    ],
+    "difficulty": 4,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Alvorlig tema",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Flertallet av personene som ble registrert som ofre for anmeldt vold og mishandling i 2025, var menn.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Det stemmer – i den registrerte statistikken.",
+      "explanation": "Av 39 742 personer registrert som ofre for anmeldt vold og mishandling i 2025, var nesten 18 300 kvinner. Flertallet var altså menn.",
+      "deepDive": "Statistikken gjelder bare vold som er anmeldt og registrert. Mye vold, særlig i nære relasjoner, blir aldri anmeldt, og anmeldelsestilbøyeligheten varierer mellom voldstyper. Seksuallovbrudd, der kvinner er klart flest blant ofrene, er en egen lovbruddsgruppe og ikke med her. Økningen i 2025 skyldtes at flere kvinner ble registrert som ofre. Spørreundersøkelser om utsatthet kan gi et annet bilde for enkelte voldstyper.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Flere anmeldelser fra foretak i 2025",
+        "url": "https://www.ssb.no/sosiale-forhold-og-kriminalitet/kriminalitet-og-rettsvesen/statistikk/anmeldte-lovbrudd-og-ofre/artikler/flere-anmeldelser-fra-foretak-i-2025",
+        "tableId": "08638",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Totalen fra statistikkbanken og kvinnetallet fra SSB-artikkel, begge via søkeresultater."
+    },
+    "shareText": "Hvem er flest blant registrerte voldsofre – kvinner eller menn?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  }
+]

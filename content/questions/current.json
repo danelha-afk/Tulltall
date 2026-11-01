@@ -1,0 +1,223 @@
+[
+  {
+    "id": "kpi-2025",
+    "category": "current",
+    "topic": "økonomi",
+    "tags": ["priser", "inflasjon", "økonomi"],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "neutral",
+    "kicker": "Prisvekst",
+    "prompt": "Hvor mye steg konsumprisindeksen fra 2024 til 2025?",
+    "payload": {
+      "format": "estimate",
+      "unit": { "suffix": "%", "prefix": "", "decimals": 1 },
+      "answer": 3.1,
+      "min": 0,
+      "max": 15,
+      "scale": "linear",
+      "step": 0.1,
+      "tolerance": 1.2
+    },
+    "reveal": {
+      "headline": "3,1 prosent – samme som året før.",
+      "explanation": "Prisveksten fra 2024 til 2025 var 3,1 prosent målt ved konsumprisindeksen. Gjennom året varierte tolvmånedersveksten mellom 2,3 og 3,6 prosent.",
+      "caveats": ["Årsgjennomsnitt, ikke tolvmånedersveksten i desember."]
+    },
+    "sources": [
+      { "publisher": "SSB", "title": "Dyrere tjenester preget prisveksten i 2025", "url": "https://www.ssb.no/priser-og-prisindekser/konsumpriser/statistikk/konsumprisindeksen/artikler/dyrere-tjenester-preget-prisveksten-i-2025", "tableId": "03013", "accessed": "2026-11-01" }
+    ],
+    "referencePeriod": "2025 (årsgjennomsnitt mot 2024)",
+    "lastVerified": "2026-11-01",
+    "verification": { "method": "secondary-snippet", "note": "Sitat fra SSB-artikkel; kontrolleres automatisk mot tabell 03013." },
+    "shareText": "Hvor mye steg prisene i 2025? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 5
+  },
+  {
+    "id": "boligpriser-2025",
+    "category": "current",
+    "topic": "bolig",
+    "tags": ["bolig", "priser", "økonomi"],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Boligmarkedet",
+    "prompt": "Bransjen spådde 10 % boligprisvekst for 2025. Hvor mye steg boligprisene faktisk, ifølge Eiendom Norge?",
+    "payload": {
+      "format": "estimate",
+      "unit": { "suffix": "%", "prefix": "", "decimals": 1 },
+      "answer": 5,
+      "min": -10,
+      "max": 25,
+      "scale": "linear",
+      "step": 0.1,
+      "tolerance": 2.5
+    },
+    "reveal": {
+      "headline": "5 prosent – halvparten av spådommen.",
+      "explanation": "Boligprisene steg 5 prosent i 2025 ifølge Eiendom Norge. Stavanger-regionen hadde størst vekst med 14 prosent.",
+      "caveats": ["SSBs boligprisindeks bruker en annen metode og kan gi et annet tall. Nominelle priser – justert for prisvekst var økningen lavere."]
+    },
+    "sources": [
+      { "publisher": "Eiendom Norge", "title": "Prisstigning og rekordvolumer i 2025", "url": "https://eiendomnorge.no/nyheter/prisstigning-og-rekordvolumer-i-2025-article2995-919.html", "accessed": "2026-11-01" }
+    ],
+    "referencePeriod": "Desember 2024 – desember 2025",
+    "lastVerified": "2026-11-01",
+    "verification": { "method": "secondary-snippet", "note": "Sitat fra Eiendom Norge." },
+    "shareText": "Bransjen spådde 10 %. Hvor mye steg boligprisene i 2025?",
+    "seasonMonths": [1, 2],
+    "dataQuality": 3
+  },
+  {
+    "id": "ledighet-nav-vs-aku-2026",
+    "category": "current",
+    "topic": "arbeid",
+    "tags": ["arbeidsledighet", "metode", "økonomi"],
+    "difficulty": 4,
+    "risk": "low",
+    "tone": "neutral",
+    "kicker": "To tall for ledighet",
+    "prompt": "Nav registrerte 2,0 % helt ledige i oktober 2026. Hvor høy var arbeidsledigheten i SSBs arbeidskraftundersøkelse i august?",
+    "payload": {
+      "format": "estimate",
+      "unit": { "suffix": "%", "prefix": "", "decimals": 1 },
+      "answer": 4.5,
+      "min": 0,
+      "max": 15,
+      "scale": "linear",
+      "step": 0.1,
+      "tolerance": 1.2
+    },
+    "reveal": {
+      "headline": "4,5 prosent – mer enn dobbelt så høyt.",
+      "explanation": "Nav teller dem som er registrert som helt ledige. SSBs arbeidskraftundersøkelse spør et utvalg og teller alle som er uten jobb, har søkt og kan begynne – også studenter som ikke er registrert hos Nav.",
+      "caveats": ["Ulike måneder fordi AKU-tall for oktober ikke var publisert. AKU er en utvalgsundersøkelse med usikkerhet."]
+    },
+    "sources": [
+      { "publisher": "Nav", "title": "Liten økning i arbeidsledigheten i oktober", "url": "https://www.nav.no/no/nav-og-samfunn/statistikk/arbeidssokere-og-stillinger-statistikk/nyheter/liten-okning-i-arbeidsledigheten-i-oktober", "accessed": "2026-11-01" },
+      { "publisher": "SSB", "title": "Arbeidskraftundersøkelsen", "url": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/statistikk/arbeidskraftundersokelsen", "accessed": "2026-11-01" }
+    ],
+    "referencePeriod": "August og oktober 2026",
+    "lastVerified": "2026-11-01",
+    "verification": { "method": "secondary-snippet", "note": "Nav-tall og AKU-tall fra søkeresultater; AKU-tall revideres." },
+    "shareText": "Nav sier 2 % ledighet. Hva sier SSB? Gjett!",
+    "seasonMonths": [9, 10, 11],
+    "dataQuality": 4
+  },
+  {
+    "id": "folketall-2026",
+    "category": "current",
+    "topic": "befolkning",
+    "tags": ["befolkning"],
+    "difficulty": 2,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Hvor mange er vi?",
+    "prompt": "Hvor mange innbyggere hadde Norge 1. januar 2026?",
+    "payload": {
+      "format": "estimate",
+      "unit": { "suffix": "innbyggere", "prefix": "", "decimals": 0 },
+      "answer": 5627400,
+      "min": 3000000,
+      "max": 9000000,
+      "scale": "linear",
+      "step": 10000,
+      "tolerance": 250000
+    },
+    "reveal": {
+      "headline": "5 627 400 – og vi blir stadig flere.",
+      "explanation": "Norge hadde 5 627 400 innbyggere 1. januar 2026, om lag 33 100 flere enn ett år tidligere.",
+      "caveats": []
+    },
+    "sources": [
+      { "publisher": "SSB", "title": "Folketall", "url": "https://www.ssb.no/befolkning/folketall", "tableId": "07459", "accessed": "2026-11-01" }
+    ],
+    "referencePeriod": "1. januar 2026",
+    "lastVerified": "2026-11-01",
+    "verification": { "method": "secondary-snippet", "note": "Tallet stemmer med SSBs kvartalstall; kontrolleres automatisk mot 07459." },
+    "binding": {
+      "source": "ssb",
+      "tableId": "07459",
+      "selection": { "Region": ["0"], "Tid": ["2026"] },
+      "target": "answer",
+      "transform": "sum",
+      "toleranceRel": 0.002
+    },
+    "shareText": "Hvor mange bor i Norge? Gjett så nært du kan!",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "befolkningsvekst-2025",
+    "category": "current",
+    "topic": "befolkning",
+    "tags": ["befolkning", "innvandring", "fødsler"],
+    "difficulty": 3,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Hvorfor blir vi flere?",
+    "prompt": "Hva bidro mest til befolkningsveksten i 2025?",
+    "payload": {
+      "format": "compare",
+      "indicator": "Bidrag til befolkningsveksten i 2025 (personer)",
+      "unit": { "suffix": "personer", "prefix": "", "decimals": 0 },
+      "pick": "highest",
+      "items": [
+        { "id": "netto-innvandring", "label": "Nettoinnvandring", "sublabel": "innvandret minus utvandret", "value": 22324 },
+        { "id": "fodselsoverskudd", "label": "Fødselsoverskudd", "sublabel": "fødte minus døde", "value": 10360 }
+      ]
+    },
+    "reveal": {
+      "headline": "Nettoinnvandringen – omtrent dobbelt så stor.",
+      "explanation": "Nettoinnvandringen var 22 324 i 2025 (55 243 innvandret, 32 919 utvandret). Fødselsoverskuddet var 10 360: 55 400 fødte minus 45 040 døde.",
+      "deepDive": "Innvandringer omfatter alle som flytter til Norge, også nordmenn som flytter hjem, og utvandringer alle som flytter ut. Komponentene summerer ikke nødvendigvis eksakt til befolkningsveksten på grunn av korreksjoner i registeret. Fordelingen mellom fødselsoverskudd og nettoinnvandring varierer mye fra år til år.",
+      "caveats": ["Tallene er hentet fra omtaler som siterer SSB."]
+    },
+    "sources": [
+      { "publisher": "SSB", "title": "Folketall", "url": "https://www.ssb.no/befolkning/folketall", "accessed": "2026-11-01" }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "Nettoinnvandring: 55 243 − 32 919 = 22 324. Fødselsoverskudd: 55 400 − 45 040 = 10 360.",
+    "lastVerified": "2026-11-01",
+    "verification": { "method": "derived", "note": "Komponenter fra SSB via sekundærkilder; må kontrolleres mot SSB-tabell før godkjenning." },
+    "shareText": "Hvorfor vokser befolkningen – innvandring eller fødsler?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "levealder-menn-2025",
+    "category": "current",
+    "topic": "befolkning",
+    "tags": ["levealder"],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Hvor lenge lever vi?",
+    "prompt": "Hvor mange år kunne en nyfødt gutt forvente å leve, gitt dødeligheten i Norge i 2025?",
+    "payload": {
+      "format": "estimate",
+      "unit": { "suffix": "år", "prefix": "", "decimals": 1 },
+      "answer": 81.6,
+      "min": 60,
+      "max": 100,
+      "scale": "linear",
+      "step": 0.1,
+      "tolerance": 2
+    },
+    "reveal": {
+      "headline": "81,6 år. Jentene: 84,9.",
+      "explanation": "Forventet levealder ved fødsel var 81,61 år for menn og 84,85 år for kvinner i 2025 – en svak økning fra året før.",
+      "caveats": ["Forventet levealder er et beregnet mål, ikke en spådom for den enkelte."]
+    },
+    "sources": [
+      { "publisher": "SSB", "title": "Svak økning i forventa levealder", "url": "https://www.ssb.no/befolkning/fodte-og-dode/statistikk/dode/artikler/svak-okning-i-forventa-levealder", "accessed": "2026-11-01" }
+    ],
+    "referencePeriod": "2025",
+    "lastVerified": "2026-11-01",
+    "verification": { "method": "secondary-snippet", "note": "SSB-tall gjengitt i søkeresultat." },
+    "shareText": "Hvor lenge kan en nyfødt gutt i Norge forvente å leve? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 4
+  }
+]

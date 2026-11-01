@@ -1,0 +1,2591 @@
+[
+  {
+    "id": "babynavn-gutter-2025",
+    "category": "fun",
+    "topic": "navn",
+    "tags": [
+      "navn",
+      "barn"
+    ],
+    "difficulty": 4,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Navnelotteriet",
+    "prompt": "Ranger guttenavnene etter hvor mange nyfødte som fikk dem i 2025.",
+    "payload": {
+      "format": "rank",
+      "indicator": "Antall nyfødte gutter med navnet",
+      "unit": {
+        "suffix": "gutter",
+        "prefix": "",
+        "decimals": 0
+      },
+      "order": "desc",
+      "items": [
+        {
+          "id": "noah",
+          "label": "Noah",
+          "value": 477
+        },
+        {
+          "id": "jakob",
+          "label": "Jakob",
+          "value": 413
+        },
+        {
+          "id": "emil",
+          "label": "Emil",
+          "value": 405
+        },
+        {
+          "id": "oskar",
+          "label": "Oskar",
+          "value": 374
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Noah stakk av – resten var et fotofinish.",
+      "explanation": "Noah ble gitt til 477 nyfødte gutter i 2025. Bak ham skiller bare noen titalls babyer Jakob, Emil og Oskar.",
+      "caveats": [
+        "Hver skrivemåte telles som eget navn – Lucas og Lukas er to forskjellige navn i statistikken."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Navnestatistikk: guttenavn",
+        "url": "https://www.ssb.no/befolkning/navn/artikler/guttenavn",
+        "accessed": "2026-11-01",
+        "note": "Tall kontrollert mot gjengivelse av SSBs topplister."
+      }
+    ],
+    "referencePeriod": "Nyfødte i 2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-tall gjengitt i søkeresultater; skal kontrolleres mot SSBs navnetabell."
+    },
+    "shareText": "Hvilket guttenavn var mest populært i 2025? Ranger dem!",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "babynavn-jenter-2025",
+    "category": "fun",
+    "topic": "navn",
+    "tags": [
+      "navn",
+      "barn"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Navnelotteriet",
+    "prompt": "Hvilket jentenavn ble gitt til flest nyfødte i 2025?",
+    "payload": {
+      "format": "compare",
+      "indicator": "Antall nyfødte jenter med navnet i 2025",
+      "unit": {
+        "suffix": "jenter",
+        "prefix": "",
+        "decimals": 0
+      },
+      "pick": "highest",
+      "items": [
+        {
+          "id": "emma",
+          "label": "Emma",
+          "value": 386
+        },
+        {
+          "id": "olivia",
+          "label": "Olivia",
+          "value": 376
+        },
+        {
+          "id": "nora",
+          "label": "Nora",
+          "value": 366
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Emma – med bare ti babyer i margin.",
+      "explanation": "Emma var tilbake på toppen i 2025 med 386 nyfødte, rett foran Olivia (376) og Nora (366). Toppnavnene skifter plass nesten hvert år.",
+      "caveats": [
+        "Sofie og Sofia telles som to ulike navn."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Klikk.no (gjengir SSB)",
+        "title": "Navnestatistikk 2025: Mest populære navn i Norge",
+        "url": "https://www.klikk.no/foreldre/navnestatistikk-2025-mest-populaere-navn-i-norge-7599521",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "SSB",
+        "title": "Navnestatistikk",
+        "url": "https://www.ssb.no/befolkning/navn",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Nyfødte i 2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "SSB-tall lest fra Klikk.no sin gjengivelse."
+    },
+    "shareText": "Emma, Olivia eller Nora – hvem vant navnekampen i 2025?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "astrid-comeback-2025",
+    "category": "fun",
+    "topic": "navn",
+    "tags": [
+      "navn",
+      "historie",
+      "generasjoner"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Bestemors navn",
+    "prompt": "Tull eller tall?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "I 2025 kom Astrid inn på topp 10-lista over jentenavn – for første gang på rundt 80 år.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Tall! Astrid er tilbake.",
+      "explanation": "308 nyfødte jenter fikk navnet Astrid i 2025, nok til tiendeplass. Gamle navn kommer ofte tilbake når de har vært «ute» lenge nok til å føles friske igjen.",
+      "caveats": [
+        "«Rundt 80 år» er en avrundet formulering i omtalen av SSBs tall."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Klikk.no (gjengir SSB)",
+        "title": "Navnestatistikk 2025: Mest populære navn i Norge",
+        "url": "https://www.klikk.no/foreldre/navnestatistikk-2025-mest-populaere-navn-i-norge-7599521",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Nyfødte i 2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Sekundærkilde som gjengir SSB; skal kontrolleres mot SSBs navnetabell."
+    },
+    "shareText": "Et oldemor-navn er tilbake på topp 10. Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "etternavn-hansen",
+    "category": "fun",
+    "topic": "navn",
+    "tags": [
+      "navn"
+    ],
+    "difficulty": 2,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "-sen, -sen, -sen",
+    "prompt": "Hvilket etternavn var vanligst i Norge i 2013?",
+    "payload": {
+      "format": "compare",
+      "indicator": "Antall personer med etternavnet (2013)",
+      "unit": {
+        "suffix": "personer",
+        "prefix": "",
+        "decimals": 0
+      },
+      "pick": "highest",
+      "items": [
+        {
+          "id": "hansen",
+          "label": "Hansen",
+          "value": 53948
+        },
+        {
+          "id": "johansen",
+          "label": "Johansen",
+          "value": 50698
+        },
+        {
+          "id": "olsen",
+          "label": "Olsen",
+          "value": 50182
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Hansen – Norges uoffisielle nasjonalnavn.",
+      "explanation": "53 948 personer het Hansen i 2013. Johansen og Olsen fulgte tett, og alle tre stammer fra gamle farsnavn: Hans' sønn, Johans sønn, Ole sin sønn.",
+      "caveats": [
+        "2013 er siste år vi har kunnet bekrefte med årstall. Nyere tall viser samme rekkefølge."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Etternavn – 100 vanligste",
+        "url": "https://www.ssb.no/a/navn/alf/etter100.html",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2013",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSBs navnestatistikk slik den gjengis i søkeresultater."
+    },
+    "shareText": "Hansen, Johansen eller Olsen – hvem er flest?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "fritidsbygg-antall-2025",
+    "category": "fun",
+    "topic": "bolig",
+    "tags": [
+      "hytte",
+      "bolig"
+    ],
+    "difficulty": 4,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Hyttenasjonen",
+    "prompt": "Hvor mange fritidsbygg – hytter, sommerhus og lignende – var registrert i Norge i 2025?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "fritidsbygg",
+        "prefix": "",
+        "decimals": 0
+      },
+      "answer": 483631,
+      "min": 20000,
+      "max": 3000000,
+      "scale": "log",
+      "step": 1000,
+      "tolerance": 0.3
+    },
+    "reveal": {
+      "headline": "Nesten en halv million hytter.",
+      "explanation": "SSB registrerte 483 631 fritidsbygg i 2025 – omtrent én for hver ellevte nordmann. Litt over halvparten ligger i egne hytteområder.",
+      "caveats": [
+        "Tallet teller bygninger, ikke eiendommer. Andre SSB-publikasjoner oppgir lavere totaler avhengig av år og definisjon."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Fritidsbyggområder",
+        "url": "https://www.ssb.no/fritidsbyggomr",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-tabell gjengitt i søkeresultat."
+    },
+    "shareText": "Hvor mange hytter tror du det finnes i Norge?",
+    "seasonMonths": [
+      6,
+      7,
+      12
+    ],
+    "dataQuality": 3
+  },
+  {
+    "id": "elbilandel-nybil-trend",
+    "category": "fun",
+    "topic": "teknologi",
+    "tags": [
+      "bil",
+      "elbil",
+      "klima"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Elbilrevolusjonen",
+    "prompt": "Elbilandelen av nye personbiler har økt i årevis. Hvor endte den i 2025?",
+    "payload": {
+      "format": "trend",
+      "indicator": "Andel elbiler av nye personbiler",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "series": [
+        {
+          "period": "2021",
+          "value": 64.5
+        },
+        {
+          "period": "2022",
+          "value": 79.3
+        },
+        {
+          "period": "2023",
+          "value": 82.4
+        },
+        {
+          "period": "2024",
+          "value": 88.9
+        },
+        {
+          "period": "2025",
+          "value": 95.9
+        }
+      ],
+      "known": 3,
+      "min": 50,
+      "max": 100,
+      "step": 0.5,
+      "tolerance": 4
+    },
+    "reveal": {
+      "headline": "95,9 prosent. Bensinbilen er nærmest en sjeldenhet i bilbutikken.",
+      "explanation": "I 2025 var 95,9 prosent av alle nye personbiler i Norge elbiler. Fire år tidligere var andelen 64,5 prosent.",
+      "caveats": [
+        "Gjelder nye personbiler (OFV), ikke bruktimport. SSB, som tar med bruktimport, oppgir 94,7 prosent for 2025."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Norsk elbilforening (OFV-tall)",
+        "title": "Årsberetning 2025",
+        "url": "https://elbil.no/content/uploads/2026/06/Arsberetning-2025-1.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2021–2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Årstall kontrollert mot flere gjengivelser av OFVs registreringsstatistikk."
+    },
+    "shareText": "Hvor stor andel av nye biler i Norge var elbiler i 2025? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "elbil-bilparken-2025",
+    "category": "misconception",
+    "topic": "teknologi",
+    "tags": [
+      "bil",
+      "elbil",
+      "beholdning-vs-strøm"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Nybil ≠ bilpark",
+    "prompt": "Nesten alle nye biler er elbiler. Men hva med bilene på veien?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Ved utgangen av 2025 var over halvparten av alle personbiler i Norge elbiler.",
+      "answer": false,
+      "correction": "Elbilene utgjorde 32,2 prosent av personbilparken – 945 182 biler."
+    },
+    "reveal": {
+      "headline": "Tull. Omtrent én av tre.",
+      "explanation": "Ved utgangen av 2025 var 945 182 personbiler elektriske – 32,2 prosent av bilparken. Nybilsalget sier hva som kjøpes i år; bilparken består av biler kjøpt over mange år.",
+      "deepDive": "Dette er en klassisk forveksling av en strøm (nye biler per år) og en beholdning (alle biler i bruk). Selv om 95,9 prosent av nye biler i 2025 var elbiler, tar det mange år før eldre biler skrotes og bilparken endres tilsvarende.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Nysgjerrig på elbiler i Norge? Se siste elbilstatistikk her",
+        "url": "https://www.ssb.no/transport-og-reiseliv/landtransport/statistikk/bilparken/artikler/nysgjerrig-pa-elbiler-i-norge-se-siste-elbilstatistikk-her",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Utgangen av 2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-artikkelens tekst."
+    },
+    "shareText": "Er over halvparten av bilene på norske veier elbiler? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "elbil-eu-andel-2025",
+    "category": "fun",
+    "topic": "teknologi",
+    "tags": [
+      "bil",
+      "elbil",
+      "europa"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Norge vs. Europa",
+    "prompt": "I Norge var 95,9 % av nye personbiler elbiler i 2025. Hvor stor var andelen batterielektriske nye biler i EU?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 17.4,
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "step": 0.5,
+      "tolerance": 7
+    },
+    "reveal": {
+      "headline": "17,4 prosent. Norge er i en elbilklasse for seg.",
+      "explanation": "Batterielektriske biler fikk 17,4 prosent av markedet for nye personbiler i EU i 2025. Tar man med EFTA-landene og Storbritannia, blir andelen 19,5 prosent.",
+      "caveats": [
+        "EU-tallet gjelder rene batterielektriske biler (BEV) i EU-27."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "ACEA",
+        "title": "New car registrations: battery-electric 17.4% market share in 2025",
+        "url": "https://www.acea.auto/pc-registrations/new-car-registrations-1-8-in-2025-battery-electric-17-4-market-share/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot ACEAs pressemelding."
+    },
+    "shareText": "Norge: 96 % elbiler blant nye biler. Hva tror du EU lå på?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "kautokeino-kvitsoy-areal",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "kommune",
+      "areal",
+      "nabokrigen"
+    ],
+    "difficulty": 4,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Størst mot minst",
+    "prompt": "Kautokeino er Norges største kommune i areal, Kvitsøy den minste. Hvor mange ganger større er Kautokeino?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "ganger",
+        "prefix": "",
+        "decimals": 0
+      },
+      "answer": 1546,
+      "min": 2,
+      "max": 100000,
+      "scale": "log",
+      "step": 1,
+      "tolerance": 0.35
+    },
+    "reveal": {
+      "headline": "Over 1500 ganger. Kvitsøy får plass i Kautokeino mer enn tusen ganger.",
+      "explanation": "Kautokeino har et totalareal på 9 707 km², Kvitsøy 6,28 km². Det betyr at Kautokeino er rundt 1546 ganger så stor.",
+      "caveats": [
+        "Totalareal inkluderer ferskvann."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Kommuneareal: Guovdageaidnu – Kautokeino",
+        "url": "https://www.ssb.no/kommuneareal/guovdageaidnu-kautokeino",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "SSB",
+        "title": "Kommuneareal: Kvitsøy",
+        "url": "https://www.ssb.no/kommuneareal/kvitsoy",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Kommuneareal 2026",
+    "calculation": "9707,35 km² / 6,28 km² ≈ 1546",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "derived",
+      "note": "Begge arealer stemmer med SSBs kommunearealsider for 2026."
+    },
+    "shareText": "Hvor mange Kvitsøy-er får plass i Kautokeino?",
+    "seasonMonths": [],
+    "dataQuality": 5
+  },
+  {
+    "id": "utsira-innbyggere",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "kommune",
+      "befolkning",
+      "nabokrigen"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Minikommunen",
+    "prompt": "Utsira er Norges minste kommune i folketall. Hvor mange bor der?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "innbyggere",
+        "prefix": "",
+        "decimals": 0
+      },
+      "answer": 220,
+      "min": 10,
+      "max": 10000,
+      "scale": "log",
+      "step": 1,
+      "tolerance": 0.35
+    },
+    "reveal": {
+      "headline": "Rundt 220. Hele kommunen får plass i en middels stor kinosal.",
+      "explanation": "Utsira hadde 220 innbyggere i 1. kvartal 2026. Tallet svinger med noen få personer fra kvartal til kvartal.",
+      "caveats": [
+        "Folketallet var mellom 217 og 222 gjennom 2025."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Kommunefakta: Utsira",
+        "url": "https://www.ssb.no/kommunefakta/utsira",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1. kvartal 2026",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "SSB kommunefakta og SNL oppgir samme tall."
+    },
+    "shareText": "Hvor mange bor i Norges minste kommune?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "storste-kommuner-2025",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "kommune",
+      "befolkning",
+      "nabokrigen",
+      "rivalisering"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Byduell",
+    "prompt": "Ranger kommunene etter folketall per 1. januar 2025 – størst øverst.",
+    "payload": {
+      "format": "rank",
+      "indicator": "Folketall per 1. januar 2025",
+      "unit": {
+        "suffix": "innbyggere",
+        "prefix": "",
+        "decimals": 0
+      },
+      "order": "desc",
+      "items": [
+        {
+          "id": "bergen",
+          "label": "Bergen",
+          "value": 293709
+        },
+        {
+          "id": "trondheim",
+          "label": "Trondheim",
+          "value": 216518
+        },
+        {
+          "id": "stavanger",
+          "label": "Stavanger",
+          "value": 150123
+        },
+        {
+          "id": "baerum",
+          "label": "Bærum",
+          "value": 132358
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Bergen, Trondheim, Stavanger – og Bærum hakk i hæl.",
+      "explanation": "Etter Oslo er Bergen klart størst med 293 709 innbyggere. Bærum, som mange glemmer at er en egen kommune, er landets femte største.",
+      "caveats": [
+        "Gjelder kommuner, ikke tettsteder. Byområder strekker seg ofte inn i nabokommunene."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Norges 100 mest folkerike kommuner",
+        "url": "https://www.ssb.no/befolkning/folketall/artikler/norges-100-mest-folkerike-kommuner",
+        "tableId": "07459",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1. januar 2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-artikkel; kontrolleres automatisk mot tabell 07459."
+    },
+    "binding": {
+      "source": "ssb",
+      "tableId": "07459",
+      "selection": {
+        "Region": [
+          "4601",
+          "5001",
+          "1103",
+          "3201"
+        ],
+        "Tid": [
+          "2025"
+        ]
+      },
+      "target": "items",
+      "transform": "sum",
+      "toleranceRel": 0.001
+    },
+    "shareText": "Bergen, Trondheim, Stavanger, Bærum – klarer du rekkefølgen?",
+    "seasonMonths": [],
+    "dataQuality": 5
+  },
+  {
+    "id": "kystlinje-lengde",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "kyst",
+      "natur"
+    ],
+    "difficulty": 4,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Langt, langt, langt",
+    "prompt": "Hvor lang er Norges kystlinje når alle øyene regnes med?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "km",
+        "prefix": "",
+        "decimals": 0
+      },
+      "answer": 100915,
+      "min": 1000,
+      "max": 1000000,
+      "scale": "log",
+      "step": 100,
+      "tolerance": 0.4
+    },
+    "reveal": {
+      "headline": "Over 100 000 km – to og en halv gang rundt jorda.",
+      "explanation": "Kartverket har beregnet kystlinjen med øyer til 100 915 km. Uten fjorder og øyer er fastlandskysten bare noen tusen kilometer.",
+      "caveats": [
+        "Kystlengde avhenger av hvor nøyaktig man måler (kystlinjeparadokset). Store norske leksikon oppgir 102 936 km (2024)."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Kartverket (presentasjon via Sjøfartsdirektoratet)",
+        "title": "Fritidsbåtkonferansen 2015 – Kartverket sjødivisjonen",
+        "url": "https://www.sdir.no/globalassets/sjofartsdirektoratet/fartoy-og-sjofolk---dokumenter/fritidsbatkonferansen/2015/10_gudmund_joensson_fritidsbaatkonferansen_2015.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Kartverkets beregning (oppgitt 2015)",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Flere kilder oppgir litt ulike lengder; poengberegningen tåler forskjellen."
+    },
+    "shareText": "Hvor lang er norskekysten med alle øyene? Gjett!",
+    "seasonMonths": [
+      6,
+      7,
+      8
+    ],
+    "dataQuality": 3
+  },
+  {
+    "id": "antall-oyer",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "kyst",
+      "natur"
+    ],
+    "difficulty": 2,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Skjærgården",
+    "prompt": "Tull eller tall?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Kartverket har talt over 200 000 øyer langs norskekysten.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Tall! Rundt 239 000, faktisk.",
+      "explanation": "Kartverket har talt 239 057 øyer langs kysten. Selv små holmer på over ti kvadratmeter regnes med.",
+      "caveats": [
+        "Kildene definerer «øy» litt ulikt – noen tar med skjær, andre ikke."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Kartverket (presentasjon via Sjøfartsdirektoratet)",
+        "title": "Fritidsbåtkonferansen 2015 – Kartverket sjødivisjonen",
+        "url": "https://www.sdir.no/globalassets/sjofartsdirektoratet/fartoy-og-sjofolk---dokumenter/fritidsbatkonferansen/2015/10_gudmund_joensson_fritidsbaatkonferansen_2015.pdf",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "Store norske leksikon",
+        "title": "Øyer i Norge",
+        "url": "https://snl.no/Norges_øyer",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Kartverkets opptelling (oppgitt 2015)",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Påstanden er formulert med god margin fordi definisjonene varierer."
+    },
+    "shareText": "Over 200 000 øyer langs norskekysten? Tull eller tall?",
+    "seasonMonths": [
+      6,
+      7,
+      8
+    ],
+    "dataQuality": 3
+  },
+  {
+    "id": "hoyeste-fjell",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "fjell",
+      "natur"
+    ],
+    "difficulty": 4,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Toppturen",
+    "prompt": "Ranger fjelltoppene etter høyde – høyest øverst.",
+    "payload": {
+      "format": "rank",
+      "indicator": "Høyde over havet",
+      "unit": {
+        "suffix": "moh.",
+        "prefix": "",
+        "decimals": 0
+      },
+      "order": "desc",
+      "items": [
+        {
+          "id": "galdhopiggen",
+          "label": "Galdhøpiggen",
+          "value": 2469
+        },
+        {
+          "id": "glittertinden",
+          "label": "Glittertinden",
+          "value": 2452
+        },
+        {
+          "id": "storen",
+          "label": "Store Skagastølstind",
+          "value": 2405
+        },
+        {
+          "id": "styggedalstind",
+          "label": "Store Styggedalstind",
+          "value": 2387
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Galdhøpiggen vinner – men bare med 17 meter.",
+      "explanation": "Galdhøpiggen er 2469 meter, Glittertinden 2452. Først i 1842 ble det slått fast hvilken av dem som var høyest.",
+      "caveats": [
+        "Glittertinden oppgis ofte høyere når breen på toppen regnes med. Breen har krympet."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Store norske leksikon",
+        "title": "Norges høyeste fjell",
+        "url": "https://snl.no/Norges_høyeste_fjell",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Gjeldende høyder (SNL 2026)",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SNL."
+    },
+    "shareText": "Fire fjell, én rekkefølge. Klarer du toppturen?",
+    "seasonMonths": [
+      7,
+      8
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "lengste-fjorder",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "fjord",
+      "natur"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Fjordlandet",
+    "prompt": "Ranger fjordene etter lengde – lengst øverst.",
+    "payload": {
+      "format": "rank",
+      "indicator": "Lengde målt langs fjordens midtlinje",
+      "unit": {
+        "suffix": "km",
+        "prefix": "",
+        "decimals": 0
+      },
+      "order": "desc",
+      "items": [
+        {
+          "id": "sognefjorden",
+          "label": "Sognefjorden",
+          "value": 205
+        },
+        {
+          "id": "hardangerfjorden",
+          "label": "Hardangerfjorden",
+          "value": 180
+        },
+        {
+          "id": "trondheimsfjorden",
+          "label": "Trondheimsfjorden",
+          "value": 130
+        },
+        {
+          "id": "porsangerfjorden",
+          "label": "Porsangerfjorden",
+          "value": 120
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Sognefjorden – og Porsangerfjorden sniker seg inn på lista.",
+      "explanation": "Sognefjorden er 205 km lang. Mange glemmer Porsangerfjorden i Finnmark, som med 120 km er en av landets aller lengste.",
+      "caveats": [
+        "Fjordlengder avhenger av målemetode; andre kilder oppgir litt andre tall."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Store norske leksikon",
+        "title": "Norges lengste fjorder",
+        "url": "https://snl.no/Norges_lengste_fjorder",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "SNL, gjeldende",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SNLs liste."
+    },
+    "shareText": "Hvilken fjord er lengst? Fire kandidater, én fasit.",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "rossvatnet-femunden",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "innsjø",
+      "natur"
+    ],
+    "difficulty": 4,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Innsjøduell",
+    "prompt": "Mjøsa er Norges største innsjø. Men hvem er størst av disse to?",
+    "payload": {
+      "format": "compare",
+      "indicator": "Areal",
+      "unit": {
+        "suffix": "km²",
+        "prefix": "",
+        "decimals": 0
+      },
+      "pick": "highest",
+      "items": [
+        {
+          "id": "rossvatnet",
+          "label": "Røssvatnet",
+          "sublabel": "Nordland",
+          "value": 218
+        },
+        {
+          "id": "femunden",
+          "label": "Femunden",
+          "sublabel": "Innlandet / Trøndelag",
+          "value": 203
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Røssvatnet – med litt hjelp fra demningen.",
+      "explanation": "Røssvatnet er 218 km² og Femunden 203 km². Røssvatnet ble regulert i 1957, og arealet økte da fra 190 til 218 km².",
+      "caveats": [
+        "Femunden er landets største innsjø som ikke er regulert."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Store norske leksikon",
+        "title": "Norges største innsjøer",
+        "url": "https://snl.no/Norges_største_innsjøer",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "SNL, gjeldende",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SNL."
+    },
+    "shareText": "Røssvatnet eller Femunden – hvem er størst?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "isbreer-andel",
+    "category": "fun",
+    "topic": "natur",
+    "tags": [
+      "bre",
+      "klima",
+      "natur"
+    ],
+    "difficulty": 4,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Isbreene",
+    "prompt": "Hvor stor andel av landarealet i Fastlands-Norge er dekket av isbre?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 0.7,
+      "min": 0.1,
+      "max": 30,
+      "scale": "log",
+      "step": 0.1,
+      "tolerance": 0.55
+    },
+    "reveal": {
+      "headline": "0,7 prosent. Mindre enn mange tror.",
+      "explanation": "Breene dekker 2328 km², som er 0,7 prosent av landarealet i Fastlands-Norge. Ved forrige kartlegging var arealet større – breene krymper.",
+      "caveats": [
+        "NVE oppga tidligere rundt 2700 km² før den nye kartleggingen."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "NVE",
+        "title": "Fakta 2026: Breer i Norge",
+        "url": "https://publikasjoner.nve.no/fakta/2026/fakta2026_01.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Siste kartlegging (NVE faktaark 2026)",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot NVEs faktaark."
+    },
+    "shareText": "Hvor mye av Norge er dekket av isbre? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "elg-hjort-jakt",
+    "category": "fun",
+    "topic": "dyr",
+    "tags": [
+      "jakt",
+      "dyr"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Skogens konge?",
+    "prompt": "Hvilket dyr ble det felt flest av i jaktåret 2025–2026?",
+    "payload": {
+      "format": "compare",
+      "indicator": "Antall felte dyr, jaktåret 2025–2026",
+      "unit": {
+        "suffix": "dyr",
+        "prefix": "",
+        "decimals": 0
+      },
+      "pick": "highest",
+      "items": [
+        {
+          "id": "elg",
+          "label": "Elg",
+          "value": 26609
+        },
+        {
+          "id": "hjort",
+          "label": "Hjort",
+          "value": 50148
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Hjorten – nesten dobbelt så mange.",
+      "explanation": "Det ble felt 50 148 hjort og 26 609 elg i jaktåret 2025–2026. Elgen er kanskje skogens konge, men hjorten er flest i jaktstatistikken.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Faktaside: Jakt",
+        "url": "https://www.ssb.no/jord-skog-jakt-og-fiskeri/faktaside/jakt",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Jaktåret 2025–2026",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSBs faktaside."
+    },
+    "shareText": "Elg eller hjort – hva ble det felt flest av?",
+    "seasonMonths": [
+      9,
+      10,
+      11
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "kvinnelige-jegere",
+    "category": "fun",
+    "topic": "dyr",
+    "tags": [
+      "jakt",
+      "kjønn"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Jegerregisteret",
+    "prompt": "558 512 personer sto i Jegerregisteret i jaktåret 2025–2026. Hvor stor andel var kvinner?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 16.9,
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "step": 0.5,
+      "tolerance": 6
+    },
+    "reveal": {
+      "headline": "16,9 prosent – omtrent én av seks.",
+      "explanation": "16,9 prosent av de 558 512 i Jegerregisteret var kvinner. Å stå i registeret betyr ikke at man jakter aktivt.",
+      "caveats": [
+        "Bare en mindre del betaler jegeravgift i et gitt år."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Faktaside: Jakt",
+        "url": "https://www.ssb.no/jord-skog-jakt-og-fiskeri/faktaside/jakt",
+        "tableId": "03510",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Jaktåret 2025–2026",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSBs faktaside."
+    },
+    "shareText": "Hvor mange av Norges jegere er kvinner?",
+    "seasonMonths": [
+      8,
+      9,
+      10
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "sau-melkeku",
+    "category": "fun",
+    "topic": "dyr",
+    "tags": [
+      "landbruk",
+      "dyr"
+    ],
+    "difficulty": 1,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Bondens regnestykke",
+    "prompt": "Hvem er flest i Norge?",
+    "payload": {
+      "format": "compare",
+      "indicator": "Antall dyr per 1. mars 2025",
+      "unit": {
+        "suffix": "dyr",
+        "prefix": "",
+        "decimals": 0
+      },
+      "pick": "highest",
+      "items": [
+        {
+          "id": "sau",
+          "label": "Vinterfôra sauer",
+          "value": 885908
+        },
+        {
+          "id": "melkeku",
+          "label": "Melkekyr",
+          "value": 208064
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Sauene – over fire ganger så mange.",
+      "explanation": "Per 1. mars 2025 var det 885 908 vinterfôra sauer og 208 064 melkekyr. Om sommeren er det enda flere sauer på beite, fordi vårens lam ikke er med i tellingen.",
+      "caveats": [
+        "Gjelder dyr på gårder som søker produksjonstilskudd."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Jordbruk: husdyrhald",
+        "url": "https://www.ssb.no/jordhus",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1. mars 2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-tall gjengitt i søkeresultater."
+    },
+    "shareText": "Sauer eller melkekyr – hvem er flest i Norge?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "fruktbarhet-2025",
+    "category": "current",
+    "topic": "familie",
+    "tags": [
+      "barn",
+      "befolkning"
+    ],
+    "difficulty": 4,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Barnetallet",
+    "prompt": "Fruktbarheten falt til rekordlave 1,40 barn per kvinne i 2023. Hvor endte den i 2025?",
+    "payload": {
+      "format": "trend",
+      "indicator": "Samlet fruktbarhetstall (barn per kvinne)",
+      "unit": {
+        "suffix": "",
+        "prefix": "",
+        "decimals": 2
+      },
+      "series": [
+        {
+          "period": "2009",
+          "value": 1.98
+        },
+        {
+          "period": "2018",
+          "value": 1.56
+        },
+        {
+          "period": "2020",
+          "value": 1.48
+        },
+        {
+          "period": "2021",
+          "value": 1.55
+        },
+        {
+          "period": "2022",
+          "value": 1.41
+        },
+        {
+          "period": "2023",
+          "value": 1.4
+        },
+        {
+          "period": "2024",
+          "value": 1.44
+        },
+        {
+          "period": "2025",
+          "value": 1.48
+        }
+      ],
+      "known": 6,
+      "min": 1,
+      "max": 2.2,
+      "step": 0.01,
+      "tolerance": 0.06
+    },
+    "reveal": {
+      "headline": "Opp igjen – til 1,48 barn per kvinne.",
+      "explanation": "Etter bunnen på 1,40 i 2023 steg fruktbarheten til 1,44 i 2024 og 1,48 i 2025. Det ble født 55 400 barn i 2025.",
+      "caveats": [
+        "Samlet fruktbarhetstall er et beregnet mål: antall barn en kvinne vil få dersom årets fødselsmønster holder seg."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Fruktbarheten fortsetter å øke",
+        "url": "https://www.ssb.no/befolkning/fodte-og-dode/statistikk/fodte/artikler/fruktbarheten-fortsetter-a-oke",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2009–2025 (utvalgte år)",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Alle punkter kontrollert mot SSB-tekst; serien hopper over noen år."
+    },
+    "shareText": "Fortsetter barnetallet å falle? Spå hvor kurven ender!",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "forstegangsmodre-alder",
+    "category": "fun",
+    "topic": "familie",
+    "tags": [
+      "barn",
+      "alder"
+    ],
+    "difficulty": 2,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Første barn",
+    "prompt": "Hvor gamle var førstegangsmødre i Norge i snitt i 2025?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "år",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 30.4,
+      "min": 18,
+      "max": 45,
+      "scale": "linear",
+      "step": 0.1,
+      "tolerance": 1.8
+    },
+    "reveal": {
+      "headline": "30,4 år.",
+      "explanation": "Førstegangsmødre var i snitt 30,4 år i 2025, og førstegangsfedre 32,3. Etter mange år med stigende alder stoppet økningen opp i 2025.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Fruktbarheten fortsetter å øke",
+        "url": "https://www.ssb.no/befolkning/fodte-og-dode/statistikk/fodte/artikler/fruktbarheten-fortsetter-a-oke",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-artikkel."
+    },
+    "shareText": "Hvor gammel er en gjennomsnittlig førstegangsmor i Norge?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "giftealder-menn-trend",
+    "category": "fun",
+    "topic": "kjærlighet",
+    "tags": [
+      "ekteskap",
+      "alder",
+      "generasjoner"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Ja, jeg vil (etter hvert)",
+    "prompt": "Hvor gamle var menn i snitt da de giftet seg for første gang i 2024?",
+    "payload": {
+      "format": "trend",
+      "indicator": "Gjennomsnittsalder for menn ved første ekteskap",
+      "unit": {
+        "suffix": "år",
+        "prefix": "",
+        "decimals": 1
+      },
+      "series": [
+        {
+          "period": "2002",
+          "value": 32.2
+        },
+        {
+          "period": "2015",
+          "value": 34.4
+        },
+        {
+          "period": "2024",
+          "value": 37.2
+        }
+      ],
+      "known": 2,
+      "min": 25,
+      "max": 45,
+      "step": 0.1,
+      "tolerance": 1.5
+    },
+    "reveal": {
+      "headline": "37,2 år – høyere enn noen gang.",
+      "explanation": "Menn som giftet seg for første gang i 2024 var i snitt 37,2 år, kvinner 35,2. I 2002 var snittet 32,2 for menn og 29,5 for kvinner.",
+      "caveats": [
+        "Gjelder bare personer som ikke har vært gift før."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Fleire gifta seg i 2024",
+        "url": "https://www.ssb.no/befolkning/barn-familier-og-husholdninger/statistikk/ekteskap-og-skilsmisser/artikler/fleire-gifta-seg-i-2024",
+        "tableId": "05742",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2002, 2015 og 2024",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-artikler for de tre årene."
+    },
+    "shareText": "Hvor gamle er menn når de gifter seg for første gang?",
+    "seasonMonths": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "ekteskap-vs-brudd-2025",
+    "category": "fun",
+    "topic": "kjærlighet",
+    "tags": [
+      "ekteskap",
+      "skilsmisse"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Kjærlighetsregnskapet",
+    "prompt": "Tull eller tall?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "I 2025 ble det inngått flere ekteskap i Norge enn det ble registrert skilsmisser og separasjoner til sammen.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Tall! Kjærligheten vant regnskapet.",
+      "explanation": "Det ble inngått 21 574 ekteskap i 2025 – det høyeste siden 2017. Skilsmisser og separasjoner utgjorde til sammen 18 355.",
+      "caveats": [
+        "Separasjoner og skilsmisser kan gjelde de samme parene i ulike år, så tallene kan ikke sammenlignes som «andel som ryker»."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Fleire tok ut separasjon i 2025",
+        "url": "https://www.ssb.no/befolkning/barn-familier-og-husholdninger/statistikk/ekteskap-og-skilsmisser/artikler/fleire-tok-ut-separasjon-i-2025",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "Skilsmisser 8 583 + separasjoner 9 772 = 18 355, mot 21 574 inngåtte ekteskap.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "derived",
+      "note": "Tall fra SSB-artikkel (2025-tall rettet 10. juni 2026)."
+    },
+    "shareText": "Flere bryllup enn brudd i Norge? Tull eller tall?",
+    "seasonMonths": [
+      2,
+      6,
+      7
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "fodte-samboere-2025",
+    "category": "misconception",
+    "topic": "familie",
+    "tags": [
+      "barn",
+      "samliv"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Mor, far og papirer",
+    "prompt": "Tull eller tall?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Flertallet av barna som ble født i Norge i 2025, hadde gifte foreldre.",
+      "answer": false,
+      "correction": "53,4 prosent hadde samboende foreldre, 37,9 prosent gifte."
+    },
+    "reveal": {
+      "headline": "Tull. Samboerbarna er i flertall.",
+      "explanation": "Over halvparten (53,4 prosent) av barna født i 2025 hadde samboende foreldre. 37,9 prosent hadde gifte foreldre, og 8,8 prosent hadde en enslig forelder.",
+      "caveats": [
+        "Tallene er hentet fra en sekundærkilde som viser til SSB, og skal kontrolleres mot SSBs fødselsstatistikk."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Babyverden (gjengir SSB)",
+        "title": "Fødselstallene fortsetter å øke",
+        "url": "https://www.babyverden.no/familie-2/foreldre/fodselstallene-fortsetter-a-oke-trenden-har-snudd/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Fødte i 2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Sekundærkilde – høy prioritet for kontroll mot SSB."
+    },
+    "shareText": "Har de fleste nyfødte i Norge gifte foreldre? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 2
+  },
+  {
+    "id": "bor-alene-million",
+    "category": "fun",
+    "topic": "bolig",
+    "tags": [
+      "husholdning",
+      "samliv"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Alene hjemme",
+    "prompt": "Tull eller tall?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Ved inngangen til 2021 bodde det over én million personer alene i Norge.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Tall – for første gang over én million.",
+      "explanation": "1 005 600 personer bodde alene ved inngangen til 2021, 18,8 prosent av befolkningen. Fordi aleneboende er én person per husholdning, utgjør de en mye større andel av husholdningene.",
+      "caveats": [
+        "Nyere tall viser at antallet har fortsatt å øke."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Nå bor over 1 million nordmenn alene",
+        "url": "https://www.ssb.no/befolkning/barn-familier-og-husholdninger/statistikk/familier-og-husholdninger/artikler/na-bor-over-1-million-nordmenn-alene",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1. januar 2021",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "SSB-tall gjengitt av forskning.no."
+    },
+    "shareText": "Bor over én million nordmenn alene? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "kaffe-norge-finland",
+    "category": "fun",
+    "topic": "mat",
+    "tags": [
+      "kaffe",
+      "norden",
+      "rivalisering"
+    ],
+    "difficulty": 2,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Kaffekrigen",
+    "prompt": "Hvilket land importerte mest kaffe per innbygger i 2010?",
+    "payload": {
+      "format": "compare",
+      "indicator": "Kaffeimport per innbygger (kg, 2010)",
+      "unit": {
+        "suffix": "kg",
+        "prefix": "",
+        "decimals": 1
+      },
+      "pick": "highest",
+      "items": [
+        {
+          "id": "norge",
+          "label": "Norge",
+          "value": 9.5
+        },
+        {
+          "id": "finland",
+          "label": "Finland",
+          "value": 14
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Finland. Beklager, Norge.",
+      "explanation": "Finland importerte nesten 14 kilo kaffe per innbygger i 2010, Norge rundt 9,5. Begge ligger i verdenstoppen.",
+      "caveats": [
+        "Importtall, ikke målt forbruk – og fra 2010."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Uten kaffe stopper Norge",
+        "url": "https://www.ssb.no/utenriksokonomi/artikler-og-publikasjoner/uten-kaffe-stopper-norge",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2010",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-artikkel."
+    },
+    "shareText": "Hvem drikker mest kaffe – Norge eller Finland?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "grandiosa-per-ar",
+    "category": "fun",
+    "topic": "mat",
+    "tags": [
+      "mat",
+      "pizza",
+      "kultur"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Nasjonalretten?",
+    "prompt": "Hvor mange Pizza Grandiosa selges i Norge i løpet av et år?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "pizzaer",
+        "prefix": "",
+        "decimals": 0
+      },
+      "answer": 25000000,
+      "min": 100000,
+      "max": 1000000000,
+      "scale": "log",
+      "step": 100000,
+      "tolerance": 0.4
+    },
+    "reveal": {
+      "headline": "Over 25 millioner. Fem per innbygger.",
+      "explanation": "Det selges over 25 millioner Grandiosa i Norge hvert år, ifølge produsenten. Det er en dobling siden de første reklamefilmene.",
+      "caveats": [
+        "Produsentens egne tall, ikke offisiell statistikk."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Store norske leksikon",
+        "title": "Pizza Grandiosa",
+        "url": "https://snl.no/Pizza_Grandiosa",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Per år (2025)",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "SNL og Orkla oppgir samme tall."
+    },
+    "shareText": "Hvor mange Grandiosa spiser vi i året? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 2
+  },
+  {
+    "id": "sjomat-maltider",
+    "category": "fun",
+    "topic": "mat",
+    "tags": [
+      "fisk",
+      "eksport",
+      "økonomi"
+    ],
+    "difficulty": 4,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Fisk til verden",
+    "prompt": "Hvor mange måltider med norsk sjømat spises i verden hver dag, ifølge Sjømatrådet?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "måltider",
+        "prefix": "",
+        "decimals": 0
+      },
+      "answer": 38000000,
+      "min": 100000,
+      "max": 1000000000,
+      "scale": "log",
+      "step": 100000,
+      "tolerance": 0.45
+    },
+    "reveal": {
+      "headline": "38 millioner. Hver dag.",
+      "explanation": "Norge eksporterte sjømat for rekordhøye 181,2 milliarder kroner i 2025. Sjømatrådet har regnet det om til 38 millioner måltider hver dag.",
+      "caveats": [
+        "«Måltider» er Sjømatrådets egen omregning av eksportvolumet."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Norges sjømatråd",
+        "title": "Årsberetning og regnskap 2025",
+        "url": "https://www.seafood.no/globalassets/om-norges-sjomatrad/arsmeldinger-og-generalforsamlinger/arsmelding-2025/arsberetning-og-regnskap-2025.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot Sjømatrådets årsberetning."
+    },
+    "shareText": "Hvor mange måltider med norsk fisk spises hver dag?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "oljefondet-per-innbygger",
+    "category": "current",
+    "topic": "penger",
+    "tags": [
+      "oljefondet",
+      "økonomi"
+    ],
+    "difficulty": 4,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Din andel",
+    "prompt": "Hvor mye var oljefondet verdt per innbygger ved utgangen av 2025?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "mill. kr",
+        "prefix": "",
+        "decimals": 2
+      },
+      "answer": 3.78,
+      "min": 0.05,
+      "max": 50,
+      "scale": "log",
+      "step": 0.01,
+      "tolerance": 0.3
+    },
+    "reveal": {
+      "headline": "Rundt 3,8 millioner kroner per nordmann.",
+      "explanation": "Oljefondet var verdt 21 268 milliarder kroner ved utgangen av 2025. Delt på folketallet blir det om lag 3,78 millioner kroner per innbygger.",
+      "caveats": [
+        "Fondet eies av staten, ikke av hver enkelt – og verdien svinger med markedene."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Norges Bank Investment Management",
+        "title": "Sterk avkastning i 2025",
+        "url": "https://www.nbim.no/no/nyheter-og-innsikt/presserom/pressemeldinger/2026/sterk-avkastning-i-2025/",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "SSB",
+        "title": "Befolkning (kvartalsvis)",
+        "url": "https://www.ssb.no/befolkning/folketall/statistikk/befolkning",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "31. desember 2025",
+    "calculation": "21 268 milliarder kr / 5 633 770 innbyggere (SSB, 1. kvartal 2026) ≈ 3,78 millioner kr",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "derived",
+      "note": "Fondsverdi fra NBIM, folketall fra SSB."
+    },
+    "shareText": "Hvor mye er oljefondet verdt per nordmann? Gjett!",
+    "seasonMonths": [
+      1,
+      2
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "lonn-snitt-median",
+    "category": "misconception",
+    "topic": "penger",
+    "tags": [
+      "lønn",
+      "statistikk",
+      "gjennomsnitt-vs-median"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Snitt eller median?",
+    "prompt": "Tull eller tall?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "De fleste lønnstakere i Norge tjener mer enn gjennomsnittslønna.",
+      "answer": false,
+      "correction": "Medianlønna (55 800 kr) er lavere enn gjennomsnittet (62 070 kr)."
+    },
+    "reveal": {
+      "headline": "Tull. De fleste tjener mindre enn snittet.",
+      "explanation": "Gjennomsnittlig månedslønn var 62 070 kroner i 2025, mens medianen – midtpunktet – var 55 800. Noen få svært høye lønninger drar gjennomsnittet opp.",
+      "deepDive": "Når en fordeling har en lang hale av høye verdier, havner gjennomsnittet over medianen. Derfor er medianen ofte et bedre mål på hva som er «vanlig». Tallene er omregnet til heltidsekvivalenter og gjelder alle yrker.",
+      "caveats": [
+        "Omregnet til heltidsekvivalenter; inkluderer bonus og uregelmessige tillegg, ikke overtid."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Hva er vanlig lønn i Norge?",
+        "url": "https://www.ssb.no/arbeid-og-lonn/lonn-og-arbeidskraftkostnader/artikler/hva-er-vanlig-lonn-i-norge",
+        "tableId": "11418",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-artikkel og SSB skole."
+    },
+    "shareText": "Tjener de fleste mer enn gjennomsnittslønna? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 5
+  },
+  {
+    "id": "kontanter-trend",
+    "category": "fun",
+    "topic": "penger",
+    "tags": [
+      "betaling",
+      "kontanter",
+      "teknologi"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Hvem har kontanter?",
+    "prompt": "Hvor stor andel av betalingene i butikk og mellom personer ble gjort med kontanter i Norges Banks undersøkelse i 2026?",
+    "payload": {
+      "format": "trend",
+      "indicator": "Kontantandel av betalinger på utsalgssteder og mellom personer",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 0
+      },
+      "series": [
+        {
+          "period": "2013",
+          "value": 15
+        },
+        {
+          "period": "2017",
+          "value": 12
+        },
+        {
+          "period": "2026",
+          "value": 3
+        }
+      ],
+      "known": 2,
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "tolerance": 3
+    },
+    "reveal": {
+      "headline": "3 prosent. Lommeboka er blitt en telefon.",
+      "explanation": "Kontantandelen av betalingene har falt fra rundt 15 prosent i 2013 til 3 prosent i Norges Banks undersøkelse i 2026.",
+      "caveats": [
+        "Andel av antall betalinger, ikke av beløp. Finansdepartementet har oppgitt 2 prosent for mars 2025."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Norges Bank",
+        "title": "Brev om 1000-kroneseddelen (29.4.2026)",
+        "url": "https://www.norges-bank.no/aktuelt/nyheter/Brev-og-uttalelser/2026/26-04-29-1000-kroneseddel/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2013, 2017 og 2026",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "«Årets undersøkelse» i brevet fra april 2026 er tolket som 2026."
+    },
+    "shareText": "Hvor mange betalinger gjøres fortsatt med kontanter? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "nynorsk-elever-2025",
+    "category": "fun",
+    "topic": "språk",
+    "tags": [
+      "nynorsk",
+      "skole",
+      "språk"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Målformen",
+    "prompt": "Hvor stor andel av grunnskoleelevene hadde nynorsk som hovedmål i 2025?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 11.1,
+      "min": 0,
+      "max": 60,
+      "scale": "linear",
+      "step": 0.5,
+      "tolerance": 4.5
+    },
+    "reveal": {
+      "headline": "11,1 prosent – rundt én av ni elever.",
+      "explanation": "68 842 grunnskoleelever hadde nynorsk som hovedmål i 2025, 11,1 prosent. I 1992 var andelen 17,7 prosent.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Kor mange har nynorsk som hovudmål i Noreg?",
+        "url": "https://www.ssb.no/utdanning/grunnskoler/artikler/kor-mange-har-nynorsk-som-hovudmal-i-noreg",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-artikkel."
+    },
+    "shareText": "Hvor mange elever har nynorsk som hovedmål? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "papiravis-trend",
+    "category": "fun",
+    "topic": "medier",
+    "tags": [
+      "avis",
+      "medier",
+      "generasjoner"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Morgenavisen",
+    "prompt": "84 % leste papiravis en vanlig dag i 1991. Hva tror du andelen var i 2025?",
+    "payload": {
+      "format": "trend",
+      "indicator": "Andel som leser papiravis en gjennomsnittsdag",
+      "unit": {
+        "suffix": "%",
+        "prefix": "",
+        "decimals": 0
+      },
+      "series": [
+        {
+          "period": "1991",
+          "value": 84
+        },
+        {
+          "period": "2000",
+          "value": 77
+        },
+        {
+          "period": "2024",
+          "value": 15
+        },
+        {
+          "period": "2025",
+          "value": 15
+        }
+      ],
+      "known": 2,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "tolerance": 7
+    },
+    "reveal": {
+      "headline": "15 prosent. Avisa lever – men mest på skjermen.",
+      "explanation": "Andelen som leser papiravis en gjennomsnittsdag har falt fra 84 prosent i 1991 til 15 prosent i 2025. Blant de eldste er papiravisa fortsatt vanlig.",
+      "caveats": [
+        "Gjelder papiravis – ikke nettaviser."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Norsk mediebarometer 2025",
+        "url": "https://www.ssb.no/kultur-og-fritid/tids-og-mediebruk/artikler/norsk-mediebarometer-2025",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1991–2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Årstall tolket fra tabelloverskrift i SSB-publikasjonen."
+    },
+    "shareText": "Hvor mange leser fortsatt papiravis? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "sosiale-medier-kjonn",
+    "category": "misconception",
+    "topic": "medier",
+    "tags": [
+      "sosiale medier",
+      "kjønn",
+      "skjermtid"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Skjermtid",
+    "prompt": "Tull eller tall?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Menn bruker i snitt mer tid på sosiale medier enn kvinner.",
+      "answer": false,
+      "correction": "Kvinner brukte 2 t 9 min per dag i 2025, menn 1 t 40 min."
+    },
+    "reveal": {
+      "headline": "Tull. Kvinnene logger mest tid.",
+      "explanation": "I 2025 brukte kvinner i snitt 2 timer og 9 minutter på sosiale medier hver dag, menn 1 time og 40 minutter. 82 prosent av befolkningen var innom sosiale medier en gjennomsnittsdag.",
+      "caveats": [
+        "Snitt for hele befolkningen – variasjonen innad i hver gruppe er stor."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Norsk mediebarometer 2025",
+        "url": "https://www.ssb.no/kultur-og-fritid/tids-og-mediebruk/artikler/norsk-mediebarometer-2025",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-publikasjon."
+    },
+    "shareText": "Hvem bruker mest tid på sosiale medier – kvinner eller menn?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "fem-millioner",
+    "category": "fun",
+    "topic": "historie",
+    "tags": [
+      "befolkning",
+      "historie"
+    ],
+    "difficulty": 2,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Fem millioner",
+    "prompt": "Tull eller tall?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Norge passerte 5 millioner innbyggere allerede i år 2000.",
+      "answer": false,
+      "correction": "SSB beregnet at Norge passerte 5 millioner 19. mars 2012."
+    },
+    "reveal": {
+      "headline": "Tull. Det skjedde først i 2012.",
+      "explanation": "Ifølge SSBs beregning passerte Norge 5 millioner innbyggere mandag 19. mars 2012. Siden har folketallet økt med over 600 000.",
+      "caveats": [
+        "Datoen er en beregning – SSB oppga 85 prosent sikkerhet for at passeringen skjedde i mars."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Vi blir 5 millioner innbyggere 19. mars 2012",
+        "url": "https://www.ssb.no/befolkning/artikler-og-publikasjoner/vi-blir-5-millioner-innbyggere-19.mars-2012",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2012",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot SSB-artikkel."
+    },
+    "shareText": "Når passerte Norge 5 millioner innbyggere? Tull eller tall?",
+    "seasonMonths": [
+      3
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "antall-kommuner",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "kommune",
+      "nabokrigen"
+    ],
+    "difficulty": 2,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Nabokrigens slagmark",
+    "prompt": "Hvor mange kommuner har Norge?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "kommuner",
+        "prefix": "",
+        "decimals": 0
+      },
+      "answer": 357,
+      "min": 50,
+      "max": 1000,
+      "scale": "linear",
+      "step": 1,
+      "tolerance": 40
+    },
+    "reveal": {
+      "headline": "357 kommuner – og 15 fylker.",
+      "explanation": "Norge har hatt 357 kommuner siden 1. januar 2024, da Haram ble skilt ut fra Ålesund igjen. Kommunereformen slo tidligere sammen 119 kommuner til 47 nye.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "Regjeringen",
+        "title": "Fylkesinndelingen fra 2024",
+        "url": "https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/fylkesinndelingen-fra-2024/id2922222/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Fra 1. januar 2024",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "primary-publication",
+      "note": "Stemmer også med kommunelisten som brukes i Nabokrigen (357 kommunenummer)."
+    },
+    "shareText": "Hvor mange kommuner har Norge? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 5
+  },
+  {
+    "id": "ol-2026-medaljer",
+    "category": "current",
+    "topic": "sport",
+    "tags": [
+      "OL",
+      "sport"
+    ],
+    "difficulty": 3,
+    "risk": "low",
+    "tone": "playful",
+    "kicker": "Milano Cortina",
+    "prompt": "Hvor mange medaljer vant Norge i vinter-OL i Milano Cortina 2026?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "medaljer",
+        "prefix": "",
+        "decimals": 0
+      },
+      "answer": 41,
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "step": 1,
+      "tolerance": 7
+    },
+    "reveal": {
+      "headline": "41 medaljer – rekord.",
+      "explanation": "Norge ble beste nasjon med 41 medaljer: 18 gull, 12 sølv og 11 bronse. Både medaljetallet og gulltallet var norsk rekord.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "Olympiatoppen",
+        "title": "OL- og PL-rapport Milano Cortina 2026",
+        "url": "https://olympiatoppen.no/contentassets/f12b1cec03d64bfb9bb36711f7f26583/26_26_olt_milanocortina-2026_ol-og-pl-rapport.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Vinter-OL 2026",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Kontrollert mot Olympiatoppens rapport."
+    },
+    "shareText": "Hvor mange medaljer tok Norge i OL 2026? Gjett!",
+    "seasonMonths": [
+      1,
+      2,
+      3
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "temperaturrekorder",
+    "category": "fun",
+    "topic": "natur",
+    "tags": [
+      "vær",
+      "rekord"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Fra badetemperatur til bitende kulde",
+    "prompt": "Hvor mange grader skiller Norges varmerekord fra kulderekorden?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "grader",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 87,
+      "min": 20,
+      "max": 150,
+      "scale": "linear",
+      "step": 0.5,
+      "tolerance": 9
+    },
+    "reveal": {
+      "headline": "87 grader.",
+      "explanation": "Varmerekorden er 35,6 °C (Nesbyen, 20. juni 1970). Kulderekorden er −51,4 °C (Karasjok, 1. januar 1886).",
+      "caveats": [
+        "Meteorologisk institutt har vurdert den gamle kulderekorden på nytt og beholdt den."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Meteorologisk institutt",
+        "title": "MET report 19/2008",
+        "url": "https://www.met.no/publikasjoner/met-report/met-report-2008",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Rekorder per 2026",
+    "calculation": "35,6 °C − (−51,4 °C) = 87,0 grader",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "derived",
+      "note": "Rekordene kontrollert mot MET; dato for varmerekorden fra avisomtale."
+    },
+    "shareText": "Hvor mange grader skiller Norges varmeste og kaldeste dag?",
+    "seasonMonths": [
+      1,
+      2,
+      6,
+      7
+    ],
+    "dataQuality": 4
+  },
+  {
+    "id": "laerdalstunnelen",
+    "category": "fun",
+    "topic": "rekorder",
+    "tags": [
+      "tunnel",
+      "veg",
+      "rekord"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Verdensrekord under fjellet",
+    "prompt": "Lærdalstunnelen er verdens lengste vegtunnel. Hvor lang er den?",
+    "payload": {
+      "format": "estimate",
+      "unit": {
+        "suffix": "km",
+        "prefix": "",
+        "decimals": 1
+      },
+      "answer": 24.5,
+      "min": 1,
+      "max": 80,
+      "scale": "linear",
+      "step": 0.1,
+      "tolerance": 4
+    },
+    "reveal": {
+      "headline": "24,5 kilometer med fjell over hodet.",
+      "explanation": "Lærdalstunnelen på E16 er 24 509 meter lang og åpnet i november 2000. Den har tre store fjellhaller som skal bryte monotonien.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "Statens vegvesen",
+        "title": "E16 Lærdalstunnelen",
+        "url": "https://www.vegvesen.no/vegprosjekter/prosjekt/e16lardalstunnelen/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "24 509 meter ≈ 24,5 km",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "primary-publication",
+      "note": "Kontrollert mot Statens vegvesens prosjektside."
+    },
+    "shareText": "Hvor lang er verdens lengste vegtunnel? Gjett!",
+    "seasonMonths": [],
+    "dataQuality": 5
+  },
+  {
+    "id": "akershus-storre-enn-oslo",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "fylke",
+      "befolkning",
+      "nabokrigen",
+      "rivalisering"
+    ],
+    "difficulty": 4,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Fylkesduell",
+    "prompt": "Tull eller tall?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Etter fylkesdelingen i 2024 har Akershus flere innbyggere enn Oslo.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Tall! Akershus er landets mest folkerike fylke.",
+      "explanation": "Per 1. januar 2024 bodde det 728 803 personer i Akershus og 717 710 i Oslo. Oslo er landets største kommune, men ikke det største fylket.",
+      "caveats": [
+        "Fylkestallet er summen av folketallet i Akershus' 21 kommuner."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Befolkning, etter region (tabell 07459)",
+        "url": "https://www.ssb.no/statbank/table/07459",
+        "tableId": "07459",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1. januar 2024",
+    "calculation": "Summert folketall for kommunene med nummer 32xx (Akershus) = 728 803; Oslo (0301) = 717 710.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "derived",
+      "note": "Summert fra kommunetall per 1.1.2024; landssummen (5 550 203) stemmer med SSB. Kontrolleres automatisk mot 07459."
+    },
+    "shareText": "Har Akershus flere innbyggere enn Oslo? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "fylker-areal-rangering",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "fylke",
+      "areal",
+      "nabokrigen"
+    ],
+    "difficulty": 4,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Kjempefylkene",
+    "prompt": "Ranger fylkene etter areal – størst øverst.",
+    "payload": {
+      "format": "rank",
+      "indicator": "Totalareal (km²)",
+      "unit": {
+        "suffix": "km²",
+        "prefix": "",
+        "decimals": 0
+      },
+      "order": "desc",
+      "items": [
+        {
+          "id": "innlandet",
+          "label": "Innlandet",
+          "value": 52072
+        },
+        {
+          "id": "finnmark",
+          "label": "Finnmark",
+          "value": 48637
+        },
+        {
+          "id": "trondelag",
+          "label": "Trøndelag",
+          "value": 42202
+        },
+        {
+          "id": "nordland",
+          "label": "Nordland",
+          "value": 38155
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Innlandet slår Finnmark!",
+      "explanation": "Innlandet er Norges største fylke med 52 072 km². Finnmark, som mange tror er størst, har 48 637 km².",
+      "caveats": [
+        "Totalareal inkluderer ferskvann. Fylkestallene er summert fra kommunearealene."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "Kommuneareal",
+        "url": "https://www.ssb.no/kommuneareal/guovdageaidnu-kautokeino",
+        "accessed": "2026-11-01",
+        "note": "Kommunearealer per 2026 summert per fylke."
+      }
+    ],
+    "referencePeriod": "Areal 2026",
+    "calculation": "Summen av totalarealet til alle kommunene i hvert fylke (kommuneinndeling fra 2024).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "derived",
+      "note": "Kommunearealene stemmer med SSBs kommunearealsider (kontrollert for Kautokeino og Kvitsøy)."
+    },
+    "shareText": "Hvilket fylke er størst i areal? Det er ikke det du tror.",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "kart-antall-kommuner",
+    "category": "fun",
+    "topic": "geografi",
+    "tags": [
+      "fylke",
+      "kommune",
+      "kart",
+      "nabokrigen"
+    ],
+    "difficulty": 3,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Kartlesing",
+    "prompt": "Fylkene er farget etter ett bestemt tall. Hva viser kartet?",
+    "payload": {
+      "format": "map",
+      "indicator": "Antall kommuner i fylket",
+      "unit": {
+        "suffix": "kommuner",
+        "prefix": "",
+        "decimals": 0
+      },
+      "regions": [
+        {
+          "code": "03",
+          "value": 1
+        },
+        {
+          "code": "11",
+          "value": 23
+        },
+        {
+          "code": "15",
+          "value": 27
+        },
+        {
+          "code": "18",
+          "value": 41
+        },
+        {
+          "code": "31",
+          "value": 12
+        },
+        {
+          "code": "32",
+          "value": 21
+        },
+        {
+          "code": "33",
+          "value": 18
+        },
+        {
+          "code": "34",
+          "value": 46
+        },
+        {
+          "code": "39",
+          "value": 6
+        },
+        {
+          "code": "40",
+          "value": 17
+        },
+        {
+          "code": "42",
+          "value": 25
+        },
+        {
+          "code": "46",
+          "value": 43
+        },
+        {
+          "code": "50",
+          "value": 38
+        },
+        {
+          "code": "55",
+          "value": 21
+        },
+        {
+          "code": "56",
+          "value": 18
+        }
+      ],
+      "options": [
+        {
+          "id": "kommuner",
+          "label": "Antall kommuner",
+          "correct": true
+        },
+        {
+          "id": "folketall",
+          "label": "Folketall",
+          "correct": false
+        },
+        {
+          "id": "areal",
+          "label": "Areal",
+          "correct": false
+        }
+      ]
+    },
+    "reveal": {
+      "headline": "Antall kommuner – Innlandet topper med 46.",
+      "explanation": "Innlandet har 46 kommuner, Vestland 43 og Nordland 41. Oslo er både fylke og én kommune. Folketall ville gjort Oslo og Akershus mørkest, areal ville løftet Finnmark.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "Regjeringen",
+        "title": "Fylkesinndelingen fra 2024",
+        "url": "https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/fylkesinndelingen-fra-2024/id2922222/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Kommuneinndeling fra 1. januar 2024",
+    "calculation": "Antall kommunenummer per fylke i den gjeldende kommunelisten (357 kommuner).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "derived",
+      "note": "Talt fra den offisielle kommunelisten."
+    },
+    "shareText": "Et kart uten tegnforklaring. Hva viser det?",
+    "seasonMonths": [],
+    "dataQuality": 5
+  }
+]

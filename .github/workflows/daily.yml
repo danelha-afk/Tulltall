@@ -1,0 +1,22 @@
+name: Daglig runde og varsler
+
+# Publiserer dagens runde, planlegger neste uke og sender varsler til dem som har bedt om det.
+# Alternativ til Vercel Cron (se vercel.json). Krever SITE_URL og CRON_SECRET.
+on:
+  schedule:
+    - cron: "5 5 * * *" # 06:05/07:05 norsk tid
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Kall daglig endepunkt
+        run: |
+          curl --fail --show-error --silent --max-time 120 \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            "${{ vars.SITE_URL }}/api/cron/daily"
