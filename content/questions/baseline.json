@@ -7,7 +7,8 @@
       "likestilling",
       "internasjonalt",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -54,7 +55,8 @@
       "politikk",
       "storting",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -100,7 +102,8 @@
       "skole",
       "kjønn",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "medium",
@@ -147,7 +150,8 @@
       "unge",
       "utenforskap",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -194,7 +198,8 @@
       "foreldrepermisjon",
       "fedre",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -247,7 +252,8 @@
       "arbeid",
       "deltid",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "medium",
@@ -292,7 +298,8 @@
       "ledelse",
       "arbeid",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "medium",
@@ -337,7 +344,8 @@
       "barnløshet",
       "kjønn",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -384,7 +392,8 @@
       "sykefravær",
       "kjønn",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "medium",
@@ -429,7 +438,8 @@
       "utdanning",
       "kjønn",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "medium",
@@ -474,7 +484,8 @@
       "vold",
       "voldtekt",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -521,7 +532,8 @@
       "voldtekt",
       "politi",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -568,7 +580,8 @@
       "drap",
       "partnervold",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -619,7 +632,8 @@
       "hatkriminalitet",
       "politi",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -666,7 +680,8 @@
       "fastlege",
       "kjønn",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "medium",
@@ -711,7 +726,8 @@
       "uføretrygd",
       "kjønn",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "medium",
@@ -756,7 +772,8 @@
       "innvandring",
       "unge",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -803,7 +820,8 @@
       "diskriminering",
       "arbeidsliv",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -850,7 +868,8 @@
       "religion",
       "kirke",
       "enkel",
-      "samfunnsbaseline"
+      "samfunnsbaseline",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "high",

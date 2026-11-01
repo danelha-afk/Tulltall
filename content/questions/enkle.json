@@ -99,7 +99,8 @@
     "tags": [
       "innvandring",
       "sysselsetting",
-      "enkel"
+      "enkel",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "high",
@@ -146,7 +147,8 @@
     "tags": [
       "innvandring",
       "definisjon",
-      "enkel"
+      "enkel",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "high",
@@ -627,7 +629,8 @@
     "tags": [
       "utdanning",
       "doktorgrad",
-      "enkel"
+      "enkel",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "medium",
@@ -674,7 +677,8 @@
     "tags": [
       "foreldrepermisjon",
       "fedrekvote",
-      "enkel"
+      "enkel",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",

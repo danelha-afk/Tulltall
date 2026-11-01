@@ -62,6 +62,10 @@ Spillerne er fra 9 til 90 år. Derfor:
 - Sensitive temaer (kriminalitet, innvandring, helse, død) har alltid manuell godkjenning. Spørsmålene i `enkle.json`, `baseline.json` og `forskning.json` starter i køen uansett risiko, fordi tallene er kontrollert mot søkeresultater og ikke mot kildenes egne tabeller (`verification.method = secondary-snippet`).
 - Nye spørsmål i `content/questions/` legges inn i den kjørende databasen ved neste oppstart. Spørsmål som allerede finnes (også avviste og arkiverte) røres aldri.
 
+### Temabalanse: bare ett likestillings-/mangfoldsspørsmål per dag
+
+**Fast regel:** Høyst ett av dagens spørsmål handler om likestilling/mangfold (kjønn, etnisitet, innvandring, diskriminering, funksjonsnedsettelse, skeive). Resten er andre ting folk kanskje eller kanskje ikke vet: dyr, penger, geografi, historie, helse, teknologi, mat, sport og lignende. Rotasjonen håndhever det (`maxEquality = 1`, aldri lempet), og spørsmål merkes med taggen `likestilling-mangfold` (se `src/lib/game/themes.ts`). Nytt innhold skal derfor være bredt, ikke mer av samme tema.
+
 ### Forskningsfunn («visste du»)
 
 Spørsmålene i `forskning.json` deler funn folk bør kjenne, uten å lage noe nummer av det: samme format og tone som andre spørsmål, ingen «myte»-merking, og ikke noe moralisering. Svaret forteller hva forskningen viser, med forbehold under «Hva sier tallene egentlig?». Både påstander som brukes mot og for mangfold og likestilling er tatt med, for eksempel «mangfold gir bevist høyere lønnsomhet» og «kvotekrav ga mindre kvalifiserte styremedlemmer».

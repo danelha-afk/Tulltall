@@ -78,4 +78,17 @@ describe("rotasjon", () => {
     const r = composeDailyGame(p, "2026-11-01");
     expect(r.questionIds.some((id) => ["q0", "q1", "q2", "q3", "q4"].includes(id))).toBe(false);
   });
+
+  it("tar med høyst ett spørsmål om likestilling/mangfold per runde, uansett hvor mange det er i banken", () => {
+    // Halvparten av banken handler om likestilling/mangfold.
+    const p = pool(120).map((q, i) => ({ ...q, equality: i % 2 === 0 }));
+    for (let d = 0; d < 30; d++) {
+      const date = addDays("2026-11-01", d);
+      const r = composeDailyGame(p, date);
+      const byId = new Map(p.map((q) => [q.id, q]));
+      const n = r.questionIds.filter((id) => byId.get(id)!.equality).length;
+      expect(n, date).toBeLessThanOrEqual(1);
+      expect(r.questionIds).toHaveLength(10);
+    }
+  });
 });

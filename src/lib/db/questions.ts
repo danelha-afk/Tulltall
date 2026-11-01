@@ -4,6 +4,7 @@
 import type { Db } from "./client";
 import { parseQuestion, type QuestionContent, type QuestionStatus, type Scores } from "../game/schema";
 import type { PoolQuestion } from "../game/rotation";
+import { isEqualityTheme } from "../game/themes";
 
 export interface QuestionRow {
   id: string;
@@ -200,5 +201,6 @@ export async function rotationPool(db: Db): Promise<PoolQuestion[]> {
     seasonMonths: r.content.seasonMonths ?? [],
     lastVerified: r.content.lastVerified,
     priority: typeof r.scores?.priority === "number" ? r.scores.priority : undefined,
+    equality: isEqualityTheme({ topic: r.topic, tags: r.content.tags }),
   }));
 }

@@ -8,3 +8,5 @@
 - Syntetiske testdata (`src/lib/data/fixtures.ts`) skal aldri kunne publiseres.
 - Før commit: `npm run typecheck && npm test && npm run content:validate`. Ved UI-endringer også `npm run build && npm run test:e2e`.
 - Design: «Riso-arkade» (se `docs/designkonsept.md`). Bruk tokens i `src/app/globals.css`; korall som tekst på lys bakgrunn = `text-korall-dyp`.
+- Temabalanse: høyst ÉT av dagens spørsmål handler om likestilling/mangfold (tag `likestilling-mangfold`, se `src/lib/game/themes.ts`). Resten skal være varierte «vet du det?»-temaer. Merk nytt innhold riktig, og lag mest innhold utenfor dette temaet.
+

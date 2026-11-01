@@ -7,7 +7,8 @@
       "matematikk",
       "kjønn",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "medium",
@@ -61,7 +62,8 @@
       "arbeidsulykker",
       "kjønn",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 1,
     "risk": "medium",
@@ -115,7 +117,8 @@
       "evnetest",
       "sesjon",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -162,7 +165,8 @@
       "skole",
       "bakgrunn",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -210,7 +214,8 @@
       "barn",
       "ønsker",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -258,7 +263,8 @@
       "barn",
       "partnere",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -306,7 +312,8 @@
       "vikingtid",
       "kvinner",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -359,7 +366,8 @@
       "ledelse",
       "kjønn",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -405,7 +413,8 @@
       "drap",
       "kjønn",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -451,7 +460,8 @@
       "mangfold",
       "økonomi",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -499,7 +509,8 @@
       "kvoter",
       "styrer",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -545,7 +556,8 @@
       "mangfold",
       "kurs",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -591,7 +603,8 @@
       "krig",
       "ledere",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -639,7 +652,8 @@
       "holdninger",
       "unge menn",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -687,7 +701,8 @@
       "diskriminering",
       "innvandring",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -734,7 +749,8 @@
       "bolig",
       "navn",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -781,7 +797,8 @@
       "funksjonsnedsettelse",
       "jobbsøking",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -826,7 +843,8 @@
       "mangfold",
       "arbeidsgivere",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -874,7 +892,8 @@
       "alder",
       "ledere",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "medium",
@@ -921,7 +940,8 @@
       "legemidler",
       "kjønn",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -966,7 +986,8 @@
       "arbeid",
       "utdanning",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",
@@ -1011,7 +1032,8 @@
       "vold",
       "kjønn",
       "enkel",
-      "forskning"
+      "forskning",
+      "likestilling-mangfold"
     ],
     "difficulty": 2,
     "risk": "high",

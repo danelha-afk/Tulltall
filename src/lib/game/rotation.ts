@@ -25,6 +25,8 @@ export interface PoolQuestion {
   lastVerified: string;
   /** Intern prioritet 0–1 (fra redaksjonelle anslag, senere kalibrert med brukerdata). */
   priority?: number;
+  /** Handler om likestilling/mangfold (se themes.ts). Det er en hard grense per runde. */
+  equality?: boolean;
 }
 
 export interface ContentMix {
@@ -40,6 +42,8 @@ export interface RotationConfig {
   maxPerTopic: number;
   maxPerFormat: number;
   maxHighRisk: number;
+  /** Høyst så mange spørsmål per runde om likestilling/mangfold. Lempes aldri. */
+  maxEquality: number;
   /** Spørsmål som ikke er kontrollert på så mange dager, brukes ikke. */
   staleDays: number;
 }
@@ -51,6 +55,7 @@ export const DEFAULT_ROTATION: RotationConfig = {
   maxPerTopic: 2,
   maxPerFormat: 4,
   maxHighRisk: 1,
+  maxEquality: 1,
   staleDays: 548,
 };
 
@@ -135,9 +140,12 @@ export function composeDailyGame(
   const topicCount = new Map<string, number>();
   const formatCount = new Map<string, number>();
   let highRisk = 0;
+  let equality = 0;
 
   const fits = (q: PoolQuestion, level: number) => {
     if (picked.some((p) => p.id === q.id)) return false;
+    // Hard grense (aldri lempet): bare ett spørsmål om likestilling/mangfold per runde.
+    if (q.equality && equality >= config.maxEquality) return false;
     if (level < 3 && q.risk === "high" && highRisk >= config.maxHighRisk) return false;
     if (level < 2 && (topicCount.get(q.topic) ?? 0) >= config.maxPerTopic) return false;
     if (level < 1 && (formatCount.get(q.format) ?? 0) >= config.maxPerFormat) return false;
@@ -148,6 +156,7 @@ export function composeDailyGame(
     topicCount.set(q.topic, (topicCount.get(q.topic) ?? 0) + 1);
     formatCount.set(q.format, (formatCount.get(q.format) ?? 0) + 1);
     if (q.risk === "high") highRisk++;
+    if (q.equality) equality++;
   };
   const pickFrom = (cands: PoolQuestion[]) => {
     for (let level = 0; level <= 3; level++) {
