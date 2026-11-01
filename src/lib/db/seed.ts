@@ -72,6 +72,19 @@ export async function seedQuestionBank(db: Db): Promise<{ inserted: number; inva
   return { inserted, invalid };
 }
 
+/**
+ * Finnes det startspørsmål i koden som ikke ligger i databasen? Da legges de inn ved neste oppstart.
+ * Spørsmål som allerede finnes (også avvist eller arkivert av redaktøren) røres aldri.
+ */
+export async function hasMissingSeedQuestions(db: Db): Promise<boolean> {
+  const ids = seedQuestions.map((q) => (q as { id?: string })?.id).filter((id): id is string => typeof id === "string");
+  const row = await db.one<{ n: number }>(
+    `SELECT count(*)::int AS n FROM questions WHERE id IN (SELECT jsonb_array_elements_text($1::jsonb))`,
+    [JSON.stringify(ids)],
+  );
+  return (row?.n ?? 0) < new Set(ids).size;
+}
+
 export async function seedIfEmpty(db: Db): Promise<void> {
   const res = await db.tx(async (tx) => {
     await tx.query(`SELECT pg_advisory_xact_lock($1)`, [727_274_002]);

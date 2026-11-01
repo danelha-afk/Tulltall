@@ -189,9 +189,10 @@ export function getDb(): Promise<Db> {
       const counts = await db.one<{ k: number; q: number }>(
         `SELECT (SELECT count(*) FROM kommuner)::int AS k, (SELECT count(*) FROM questions)::int AS q`,
       );
-      // Seed bare når databasen er tom (eller når AUTO_MIGRATE=true tvinger en kontroll), ellers hopper vi over.
-      if (!counts || counts.k === 0 || counts.q === 0 || process.env.AUTO_MIGRATE === "true" || db.kind === "pglite") {
-        const { seedIfEmpty } = await import("./seed");
+      // Seed når databasen er tom, eller når det finnes nye startspørsmål i koden som mangler i databasen
+      // (seed er idempotent og rører aldri spørsmål som allerede finnes, heller ikke avviste).
+      const { seedIfEmpty, hasMissingSeedQuestions } = await import("./seed");
+      if (!counts || counts.k === 0 || counts.q === 0 || process.env.AUTO_MIGRATE === "true" || db.kind === "pglite" || (await hasMissingSeedQuestions(db))) {
         await seedIfEmpty(db);
       }
       return db;

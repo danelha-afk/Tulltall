@@ -71,6 +71,8 @@ Absolutte regler:
 - Kriminalitet, migrasjon, etnisitet, religion, helse, diskriminering, død og årsakssammenhenger er høy risiko: nøktern tone, needsManualReview=true.
 - Små tall og skjermede verdier krever forbehold.
 - Referanseperioden må stå i spørsmålet.
+- Skriv ENKELT: spillerne er alt fra 9 til 90 år. Påstander og spørsmål har maks 12 ord, én tanke, korte hverdagsord og ingen faguttrykk («anmeldte lovbrudd» → «lovbrudd som politiet har fått melding om» eller bare «kriminalitet»). Ingen innskutte bisetninger og ingen tall i selve påstanden med mindre spørsmålet handler om tallet. Forklaringen er maks to korte setninger, og nyansene hører hjemme under «Hva sier tallene egentlig?».
+- Ved sensitive temaer (kriminalitet, innvandring, skatt, helse, likestilling, barn): én enkel påstand som kan svares «stemmer»/«stemmer ikke», nøytral tone, aldri «spiss» eller som om svaret bekrefter en mening.
 - Delingsteksten skal vekke nysgjerrighet uten å avsløre svaret og uten lokketitler.
 - Score 1–5 er interne anslag, ikke spådommer om viralitet.
 Sett include=false hvis funnet er kjedelig, misvisende eller ikke egner seg som spill.`;

@@ -274,6 +274,9 @@ export function validateQuestion(q: QuestionContent, ctx: QaContext = {}): QaRes
   const avgWords = q.reveal.explanation.split(/\s+/).length / Math.max(1, sentences.length);
   if (avgWords > 32) warnings.push("Lange setninger i forklaringen – vurder å korte ned");
   if (q.prompt.length > 160) warnings.push("Spørsmålet er langt – vurder å korte ned");
+  if (q.payload.format === "truefalse" && q.payload.statement.split(/\s+/).length > 14) {
+    warnings.push("Påstanden er lang (over 14 ord) – gjør den enklere");
+  }
 
   // 7. Tall i tekst må kunne spores til data
   const allowed = [...payloadNumbers(q), ...(ctx.allowedNumbers ?? []), ...numbersInText(q.referencePeriod), ...numbersInText(q.calculation ?? "")];
