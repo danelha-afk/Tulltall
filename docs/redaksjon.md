@@ -36,10 +36,10 @@ Ingen KI-vurdering kan overstyre en feil herfra.
 
 ## Startbanken (seed)
 
-106 spørsmål i `content/questions/*.json`: 71 fra første runde, 15 enkle «tull eller tall»-påstander i `enkle.json` og 20 fra samfunnsbaselinen (Forsvaret, okt. 2026) i `baseline.json`.
+128 spørsmål i `content/questions/*.json`: 71 fra første runde, 15 enkle «tull eller tall»-påstander i `enkle.json`, 20 fra samfunnsbaselinen (Forsvaret, okt. 2026) i `baseline.json` og 22 overraskende forskningsfunn fra baselinen og notatet «Myter og fakta om kjønn og mangfold» i `forskning.json`.
 
 - **56** er godkjent (lav og middels risiko).
-- **50** ligger i godkjenningskøen og venter på din vurdering: 15 høyrisiko-spørsmål fra første runde og alle i `enkle.json` og `baseline.json`.
+- **72** ligger i godkjenningskøen og venter på din vurdering: 15 høyrisiko-spørsmål fra første runde og alle i `enkle.json`, `baseline.json` og `forskning.json`.
 
 **Ærlig om kontrollnivået:** Utviklingsmiljøet hadde ikke tilgang til ssb.no. Tallene ble derfor kontrollert mot kildenes publiserte tekst slik den gjengis i søkeresultater, ikke direkte mot statistikkbanken. Dette står åpent i spillet under «Hvor kommer tallet fra?» (*«Kontrollert mot kildens publiserte tekst – venter på automatisk tabellkontroll»*).
 
@@ -59,8 +59,12 @@ Spillerne er fra 9 til 90 år. Derfor:
 - Tallene hører hjemme i svaret og i «Hva sier tallene egentlig?», ikke i påstanden.
 - Forklaringen er maks to–tre korte setninger. Forbehold og nyanser står under «Hva sier tallene egentlig?».
 - Faktakontrollen advarer om påstander over 14 ord, og KI-redaktøren har fått samme regler (`SYSTEM_PROMPT`).
-- Sensitive temaer (kriminalitet, innvandring, helse, død) har alltid manuell godkjenning. Spørsmålene i `enkle.json` og `baseline.json` starter i køen uansett risiko, fordi tallene er kontrollert mot søkeresultater og ikke mot kildenes egne tabeller (`verification.method = secondary-snippet`).
+- Sensitive temaer (kriminalitet, innvandring, helse, død) har alltid manuell godkjenning. Spørsmålene i `enkle.json`, `baseline.json` og `forskning.json` starter i køen uansett risiko, fordi tallene er kontrollert mot søkeresultater og ikke mot kildenes egne tabeller (`verification.method = secondary-snippet`).
 - Nye spørsmål i `content/questions/` legges inn i den kjørende databasen ved neste oppstart. Spørsmål som allerede finnes (også avviste og arkiverte) røres aldri.
+
+### Forskningsfunn («visste du»)
+
+Spørsmålene i `forskning.json` deler funn folk bør kjenne, uten å lage noe nummer av det: samme format og tone som andre spørsmål, ingen «myte»-merking, og ikke noe moralisering. Svaret forteller hva forskningen viser, med forbehold under «Hva sier tallene egentlig?». Både påstander som brukes mot og for mangfold og likestilling er tatt med, for eksempel «mangfold gir bevist høyere lønnsomhet» og «kvotekrav ga mindre kvalifiserte styremedlemmer».
 
 ## Statuser og historikk
 

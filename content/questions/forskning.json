@@ -1,0 +1,1053 @@
+[
+  {
+    "id": "enkel-fk-matte-gutter",
+    "category": "misconception",
+    "topic": "utdanning",
+    "tags": [
+      "matematikk",
+      "kjønn",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Gutter er mye bedre i matematikk enn jenter.",
+      "answer": false,
+      "correction": "I PISA 2022 var det ingen forskjell i matematikk mellom norske jenter og gutter."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – forskjellen er liten.",
+      "explanation": "I PISA 2022 var det ingen forskjell i matematikk mellom norske jenter og gutter. I PISA 2025 lå guttene 6 poeng foran, mens jentene lå 39 poeng foran i lesing.",
+      "deepDive": "Forskere finner heller ingen forskjell i generell intelligens mellom kvinner og menn. Menn har noe større spredning, så de er litt overrepresentert både blant de høyeste og de laveste skårene.",
+      "caveats": [
+        "PISA måler 15-åringer."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Utdanningsdirektoratet",
+        "title": "PISA 2025: Kompetanse i naturfag, lesing og matematikk",
+        "url": "https://www.udir.no/tall-og-forskning/finn-forskning/rapporter/2026/pisa-2025-kompetanse-naturfag-lesing-matematikk",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "Cappelen Damm Akademisk",
+        "title": "PISA 2022. Norske elevers kompetanse i matematikk, naturfag og lesing",
+        "url": "https://doi.org/10.23865/noasp.205",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "PISA 2022 og 2025",
+    "calculation": "PISA 2022: ingen signifikant forskjell i matematikk. PISA 2025: gutter +6 poeng i matematikk, jenter +39 poeng i lesing.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Er gutter mye bedre i matematikk enn jenter? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-fk-arbeidsulykker",
+    "category": "misconception",
+    "topic": "arbeid",
+    "tags": [
+      "arbeidsulykker",
+      "kjønn",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 1,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Menn har mye flere arbeidsulykker enn kvinner.",
+      "answer": false,
+      "correction": "Menn hadde 12,6 og kvinner 10,9 arbeidsulykker per 1 000 ansatte i 2024."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – tallene ligger nær hverandre.",
+      "explanation": "I 2024 var det 12,6 arbeidsulykker per 1 000 ansatte for menn og 10,9 for kvinner. Kvinner sto for 43,5 prosent av ulykkene.",
+      "deepDive": "Forskjellen følger yrkene. Kvinnelige håndverkere har nesten samme ulykkesrisiko som mannlige, 19,4 mot 20,5 per 1 000. Menn står derimot for nesten alle dødsulykkene, mens kvinner oftere utsettes for vold og trusler på jobb.",
+      "caveats": [
+        "2024 er brukt fordi tallene for 2025 viser et fall som ennå ikke er forklart."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "10914: Rapporterte arbeidsulykker, etter kjønn, alder, fravær og næring 2014–2025",
+        "url": "https://www.ssb.no/statbank/table/10914",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "Arbeidstilsynet",
+        "title": "Arbeidsskadedødsfall i Norge 2010–2019",
+        "url": "https://inte.arbeidstilsynet.no/globalassets/om-oss/forskning-og-rapporter/kompass-tema-rapporter/2020/kompass-tema_nr3_2020-arbeidsskadedodsfall.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2024",
+    "calculation": "Arbeidsulykker per 1 000 ansatte 2024: menn 12,6, kvinner 10,9. Kvinneandel av ulykkene: 43,5 %. Håndverkere: kvinner 19,4, menn 20,5.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Har menn mye flere arbeidsulykker enn kvinner? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-fk-testskaar",
+    "category": "current",
+    "topic": "utdanning",
+    "tags": [
+      "evnetest",
+      "sesjon",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Norske menn født i 1989 skårer lavere enn de født i 1975.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 99,4 mot 102,3 poeng.",
+      "explanation": "Gjennomsnittsskåret på evneprøven ved sesjon steg fra 99,5 for kullet født i 1962 til 102,3 for kullet født i 1975. Deretter falt det til 99,4 for kullet født i 1989.",
+      "deepDive": "Hele svingningen finnes også mellom brødre i samme familie. Den kan derfor ikke skyldes endringer i befolkningens genetiske sammensetning, for eksempel innvandring. Testskår påvirkes sterkt av miljøet, og skåret har i snitt økt med omtrent 3 poeng per tiår gjennom hundre år på verdensbasis.",
+      "caveats": [
+        "Studien bygger på omtrent 730 000 testresultater fra norske menn."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "PNAS",
+        "title": "Flynn effect and its reversal are both environmentally caused",
+        "url": "https://doi.org/10.1073/pnas.1718793115",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Kull født 1962–1989",
+    "calculation": "Evneprøveskår norske menn: 99,5 (født 1962), 102,3 (1975), 99,4 (1989). Ca. 730 000 testresultater.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Skårer norske menn født i 1989 lavere enn de født i 1975? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-fk-pisa-bakgrunn",
+    "category": "misconception",
+    "topic": "utdanning",
+    "tags": [
+      "skole",
+      "bakgrunn",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Minoritetselever skårer mye lavere i matematikk selv med lik familiebakgrunn.",
+      "answer": false,
+      "correction": "Forskjellen på 36 poeng krymper til 9 poeng når en tar hensyn til foreldrenes sosioøkonomiske status."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – forskjellen krymper kraftig.",
+      "explanation": "I PISA 2022 skåret minoritetselever 36 poeng lavere i matematikk enn majoritetselever. Tar en hensyn til foreldrenes sosioøkonomiske status, er forskjellen 9 poeng.",
+      "deepDive": "54 prosent av minoritetselevene hadde lav sosioøkonomisk status, mot 19 prosent av majoritetselevene. Forskjeller i skoleresultater krymper også når språk og botid tas med.",
+      "caveats": [
+        "Forskjellen på 9 poeng er fortsatt der."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Cappelen Damm Akademisk",
+        "title": "PISA 2022. Norske elevers kompetanse i matematikk, naturfag og lesing",
+        "url": "https://doi.org/10.23865/noasp.205",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "PISA 2022",
+    "calculation": "Matematikk: minoritetselever 36 poeng lavere; 9 poeng etter kontroll for sosioøkonomisk status. Lav status: 54 % mot 19 %.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Skårer minoritetselever mye lavere i matematikk selv med lik familiebakgrunn? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 4
+  },
+  {
+    "id": "enkel-fk-barneonske",
+    "category": "misconception",
+    "topic": "barn og familie",
+    "tags": [
+      "barn",
+      "ønsker",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Flere unge kvinner enn menn sier de ikke vil ha barn.",
+      "answer": false,
+      "correction": "I 2022 sa omtrent 21 prosent av mennene og 18–19 prosent av kvinnene mellom 24 og 29 år at de ikke ønsket barn."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – menn sier det litt oftere.",
+      "explanation": "I 2022 sa omtrent 21 prosent av mennene og 18–19 prosent av kvinnene mellom 24 og 29 år at de ikke ønsket barn. Blant kvinner har andelen økt fra 12 prosent i 2019.",
+      "deepDive": "Ønsket antall barn er nesten likt for menn og kvinner: 2,1 for menn og 2,2 for kvinner i 2022.",
+      "caveats": [
+        "Gjelder 24–29-åringer."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Institutt for samfunnsforskning",
+        "title": "Vil vi ha barn? Barneønsker og fruktbarhetsintensjoner blant unge voksne i Norge (Rapport 2025:1)",
+        "url": "https://kudos.dfo.no/dokument/842a65d7-4145-49b4-939d-e6c248b6a5ec/filer/99ea5585-e250-4854-8c3f-e16ce416f460.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2019 og 2022",
+    "calculation": "24–29 år som ikke ønsker barn: menn ca. 21 % (2019 og 2022); kvinner 12 % (2019) og 18–19 % (2022). Ønsket antall barn 2,1 (menn) og 2,2 (kvinner).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Sier flere unge kvinner enn menn at de ikke vil ha barn? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-flere-partnere",
+    "category": "misconception",
+    "topic": "barn og familie",
+    "tags": [
+      "barn",
+      "partnere",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Menn får oftere barn med flere partnere enn kvinner.",
+      "answer": false,
+      "correction": "Svenske registerdata viser at kvinner litt oftere enn menn har barn med mer enn én partner."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – kvinner gjør det litt oftere.",
+      "explanation": "Svenske registerdata viser at kvinner litt oftere enn menn har barn med mer enn én partner. At noen få menn får barn med mange kvinner, forklarer lite av hvorfor flere menn er barnløse.",
+      "deepDive": "Overskuddet av menn i de aktuelle aldersgruppene forklarte 20 til 34 prosent av kjønnsforskjellen i barnløshet. Norske data viser at menns fruktbarhet i økende grad er konsentrert hos menn med høy inntekt og god helse.",
+      "caveats": [
+        "Svenske data. Norske data viser et annet mål, nemlig hvor fruktbarheten er konsentrert."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Journal of Biosocial Science",
+        "title": "Understanding the sex inequality in childlessness: An approach using Swedish register data",
+        "url": "https://doi.org/10.1017/S0021932021000638",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Svenske registerdata",
+    "calculation": "Kvinner litt oftere enn menn med barn med mer enn én partner. Overskudd av menn forklarte 20–34 % av kjønnsforskjellen i barnløshet.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Får menn oftere barn med flere partnere enn kvinner? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-birka-kriger",
+    "category": "fun",
+    "topic": "historie",
+    "tags": [
+      "vikingtid",
+      "kvinner",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "I en vikinggrav med full krigerutrustning lå en kvinne.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – DNA viste at det var en kvinne.",
+      "explanation": "Graven på Birka hadde full krigerutrustning. DNA-analyser viste at den døde var en kvinne, som forskerne tolker som kriger.",
+      "deepDive": "Hvor vanlig det var, vet vi ikke ut fra én grav.",
+      "caveats": [
+        "Gjelder én grav."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "American Journal of Physical Anthropology",
+        "title": "A female Viking warrior confirmed by genomics",
+        "url": "https://doi.org/10.1002/ajpa.23308",
+        "accessed": "2026-11-01"
+      },
+      {
+        "publisher": "Antiquity",
+        "title": "Viking warrior women? Reassessing Birka chamber grave Bj.581",
+        "url": "https://doi.org/10.15184/aqy.2018.258",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Vikingtid",
+    "calculation": "Birka-graven Bj.581: DNA viser kvinne; tolket som kriger.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Lå det en kvinne i en vikinggrav med full krigerutrustning? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-ledere-effektivitet",
+    "category": "misconception",
+    "topic": "likestilling",
+    "tags": [
+      "ledelse",
+      "kjønn",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Kvinnelige ledere vurderes som mindre effektive enn mannlige.",
+      "answer": false,
+      "correction": "En metaanalyse fant ingen samlet forskjell. Andre vurderte kvinner som noe mer effektive."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – ingen samlet forskjell.",
+      "explanation": "En stor oppsummering av studier fant ingen samlet forskjell i vurdert effektivitet. Andre vurderte kvinnelige ledere som noe mer effektive.",
+      "deepDive": "Resultatet gjelder hvordan lederne blir vurdert av andre.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "Journal of Applied Psychology",
+        "title": "Gender and perceptions of leadership effectiveness: A meta-analysis of contextual moderators",
+        "url": "https://doi.org/10.1037/a0036751",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Metaanalyse 2014",
+    "calculation": "Ingen samlet forskjell i vurdert effektivitet. Kvinner vurdert som noe mer effektive av andre.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Er kvinnelige ledere mindre effektive enn mannlige? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-drapsofre-menn",
+    "category": "misconception",
+    "topic": "kriminalitet",
+    "tags": [
+      "drap",
+      "kjønn",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "De fleste som blir drept i Norge, er menn.",
+      "answer": false,
+      "correction": "49 prosent av drapsofrene i Norge fra 2015 til 2024 var menn."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – 49 prosent var menn.",
+      "explanation": "49 prosent av drapsofrene i Norge fra 2015 til 2024 var menn. Kvinner blir oftest drept av en partner eller ekspartner.",
+      "deepDive": "Tallene gjelder drapsofre i perioden. Kvinner og menn blir drept i ulike sammenhenger.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "Kripos",
+        "title": "Nasjonal drapsoversikt 2025",
+        "url": "https://www.politiet.no/globalassets/tall-og-fakta/drap/nasjonal-drapsoversikt-2025.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2015–2024",
+    "calculation": "Menn: 49 % av drapsofrene 2015–2024 (Kripos).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Er de fleste som blir drept i Norge menn? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-mangfold-loensomhet",
+    "category": "misconception",
+    "topic": "arbeid",
+    "tags": [
+      "mangfold",
+      "økonomi",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Mangfold i ledelsen gir bevist høyere lønnsomhet.",
+      "answer": false,
+      "correction": "Et forsøk på å gjenskape McKinsey-funnene med offentlige data fant ingen signifikant sammenheng."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – det er ikke bevist.",
+      "explanation": "De mye siterte McKinsey-rapportene viste en sammenheng mellom etnisk mangfold i ledelsen og lønnsomhet. Et forsøk på å gjenskape funnene med offentlige data fant ingen signifikant sammenheng.",
+      "deepDive": "Forfatterne peker på at McKinsey kan ha forvekslet årsak og virkning. Mangfold kan likevel gi bedre beslutninger, men effekten avhenger av ledelse og inkludering.",
+      "caveats": [
+        "Forsøket gjaldt selskapene i S&P 500."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Econ Journal Watch",
+        "title": "McKinsey's diversity matters/delivers/wins results revisited",
+        "url": "https://econjwatch.org/articles/mckinsey-s-diversity-matters-delivers-wins-results-revisited",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2024",
+    "calculation": "Ingen signifikant sammenheng i gjenskapingsforsøk for S&P 500 (Green & Hand 2024).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Gir mangfold i ledelsen bevist høyere lønnsomhet? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-kvoter-kvalifikasjoner",
+    "category": "misconception",
+    "topic": "arbeid",
+    "tags": [
+      "kvoter",
+      "styrer",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Kvotekravet ga mindre kvalifiserte kvinner i norske styrer.",
+      "answer": false,
+      "correction": "Kvinnene som kom inn etter kvoteloven, var bedre kvalifisert enn kvinnene som satt der før."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – de var bedre kvalifisert.",
+      "explanation": "Kvinnene som kom inn i styrene etter kvoteloven, var bedre kvalifisert enn kvinnene som satt der før. Kvoten ga samtidig få ringvirkninger for kvinner lenger ned i selskapene.",
+      "deepDive": "Forskerne er uenige om hvordan loven påvirket selskapenes børsverdi. En studie fant en nedgang, mens en ny analyse ikke fant noen signifikant effekt.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "The Review of Economic Studies",
+        "title": "Breaking the glass ceiling? The effect of board quotas on female labour market outcomes in Norway",
+        "url": "https://doi.org/10.1093/restud/rdy032",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Etter kvoteloven",
+    "calculation": "Nye styrekvinner var bedre kvalifisert enn tidligere styrekvinner (Bertrand m.fl. 2019).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Ga kvotekravet mindre kvalifiserte kvinner i norske styrer? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-mangfoldskurs",
+    "category": "misconception",
+    "topic": "arbeid",
+    "tags": [
+      "mangfold",
+      "kurs",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Mangfoldskurs gir store og varige endringer i atferd.",
+      "answer": false,
+      "correction": "Effektene er små, nesten bare målt på kort sikt, og endrer i liten grad atferd."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – effektene er små.",
+      "explanation": "En oppsummering av 492 studier fant at tiltak kan endre implisitte holdninger. Effektene er likevel små, nesten bare målt på kort sikt, og de endrer i liten grad atferd.",
+      "deepDive": "Funnene gjelder kurs og andre tiltak som endrer holdninger, ikke bare mangfoldskurs.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "Journal of Personality and Social Psychology",
+        "title": "A meta-analysis of procedures to change implicit measures",
+        "url": "https://doi.org/10.1037/pspa0000160",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Metaanalyse 2019",
+    "calculation": "492 studier: små effekter, nesten bare kortsiktig, liten effekt på atferd.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Gir mangfoldskurs store og varige endringer i atferd? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-dronninger-krig",
+    "category": "fun",
+    "topic": "historie",
+    "tags": [
+      "krig",
+      "ledere",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "playful",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Stater styrt av dronninger gikk sjeldnere i krig enn de med konger.",
+      "answer": false,
+      "correction": "Stater ledet av dronninger var 27 prosent mer tilbøyelige til å delta i krig mellom stater."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – tvert imot.",
+      "explanation": "I europeiske monarkier fra 1480 til 1913 var stater ledet av dronninger 27 prosent mer tilbøyelige til å delta i krig mellom stater enn stater ledet av konger.",
+      "deepDive": "Resultatet gjelder historiske monarkier. Det sier ikke hvordan kvinner leder i dag.",
+      "caveats": [
+        "Gjelder europeiske monarkier 1480–1913."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Journal of Political Economy",
+        "title": "Queens",
+        "url": "https://doi.org/10.1086/707011",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "1480–1913",
+    "calculation": "Dronninger: 27 % mer tilbøyelige til å delta i krig mellom stater (Dube & Harish 2020).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Gikk stater styrt av dronninger sjeldnere i krig? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-unge-menn-likestilling",
+    "category": "misconception",
+    "topic": "likestilling",
+    "tags": [
+      "holdninger",
+      "unge menn",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "De fleste unge menn mener likestillingen er ført for langt.",
+      "answer": false,
+      "correction": "18 prosent av menn mellom 18 og 29 år mener likestillingen er ført for langt, og 36 prosent vil føre den videre."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – 18 prosent mener det.",
+      "explanation": "I 2025 mente 18 prosent av mennene mellom 18 og 29 år at likestillingen er ført for langt, og 36 prosent ville føre den videre. De fleste svarte verken eller.",
+      "deepDive": "Kjønnsgapet i holdninger er likevel blitt større, mest blant de yngste. Svarprosenten blant de yngste var lav.",
+      "caveats": [
+        "Svarprosenten blant de yngste var lav."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Institutt for samfunnsforskning",
+        "title": "Likestillingslandet i endring: Polariserte holdninger og oppfatninger (Rapport 2026:1)",
+        "url": "https://nva.sikt.no/registration/019d24650ee0-62b2ce58-6a63-49f6-9eb9-dc841fac1a8f",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "Menn 18–29 år: 36 % vil føre likestillingen videre, 18 % mener den er ført for langt. Flertallet verken eller.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Mener de fleste unge menn at likestillingen er ført for langt? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-diskriminering-norskfodte",
+    "category": "current",
+    "topic": "innvandring",
+    "tags": [
+      "diskriminering",
+      "innvandring",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Norskfødte med innvandrerforeldre opplever mer diskriminering enn innvandrere selv.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 50 mot 40 prosent.",
+      "explanation": "50 prosent av norskfødte med innvandrerforeldre og 40 prosent av innvandrerne sa at de var behandlet dårligere enn andre det siste året. I resten av befolkningen var andelen 19 prosent.",
+      "deepDive": "At andelen er høyest blant dem som er født og oppvokst i Norge, tyder på at opplevd diskriminering ikke forsvinner med botid.",
+      "caveats": [
+        "Selvopplevd, ikke målt."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "SSB",
+        "title": "En av fem opplever diskriminering (Livskvalitetsundersøkelsen 2021)",
+        "url": "https://www.ssb.no/sosiale-forhold-og-kriminalitet/levekar/artikler/en-av-fem-opplever-diskriminering",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2021",
+    "calculation": "Behandlet dårligere siste år: norskfødte med innvandrerforeldre 50 %, innvandrere 40 %, resten 19 % (SSB).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Opplever norskfødte med innvandrerforeldre mer diskriminering enn innvandrere? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-bolig-havard",
+    "category": "current",
+    "topic": "innvandring",
+    "tags": [
+      "bolig",
+      "navn",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Utleiere svarer oftere positivt til «Håvard» enn til «Mohammed».",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 77,8 mot 61,5 prosent.",
+      "explanation": "I et norsk forsøk med 2 853 henvendelser om utleieboliger fikk «Håvard» positivt svar i 77,8 prosent av tilfellene og «Mohammed» i 61,5 prosent. Begge oppga at de var i jobb.",
+      "deepDive": "En arbeidsledig «Håvard» fikk omtrent like ofte positivt svar som «Mohammed» i jobb.",
+      "caveats": [
+        "Felteksperiment med oppdiktede henvendelser."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "OsloMet Housing Lab",
+        "title": "Mohammed vs. Håvard in the Norwegian housing rental market: A field experiment",
+        "url": "https://housinglab.oslomet.no/wp-content/uploads/2025/01/WP2025-1.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "2 853 henvendelser: «Håvard» i jobb 77,8 % positivt svar, «Mohammed» i jobb 61,5 %, arbeidsledig «Håvard» omtrent som «Mohammed».",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Får «Håvard» oftere positivt svar enn «Mohammed» fra utleiere? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-rullestol",
+    "category": "current",
+    "topic": "arbeid",
+    "tags": [
+      "funksjonsnedsettelse",
+      "jobbsøking",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Søkere i rullestol får færre positive svar på jobbsøknader.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – omtrent halvparten så mange.",
+      "explanation": "I et norsk forsøk med 1 200 søknader fikk søkere som oppga at de brukte rullestol, omtrent halvparten så mange positive tilbakemeldinger som ellers like søkere.",
+      "deepDive": "Forsøket sendte ut like søknader der bare opplysningen om rullestol var ulik.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "European Sociological Review",
+        "title": "Disability disadvantage: Experimental evidence of hiring discrimination against wheelchair users",
+        "url": "https://doi.org/10.1093/esr/jcab004",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2021",
+    "calculation": "1 200 søknader: søkere i rullestol fikk omtrent halvparten så mange positive tilbakemeldinger.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Får søkere i rullestol færre positive svar på jobbsøknader? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-mangfoldsarbeidsgivere",
+    "category": "misconception",
+    "topic": "arbeid",
+    "tags": [
+      "mangfold",
+      "arbeidsgivere",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Arbeidsgivere som sier de satser på mangfold, diskriminerer mindre.",
+      "answer": false,
+      "correction": "I en svensk studie diskriminerte arbeidsgivere som erklærte at de satset på mangfold, ikke mindre enn andre."
+    },
+    "reveal": {
+      "headline": "Stemmer ikke – ikke i en svensk studie.",
+      "explanation": "I en svensk studie om funksjonsnedsettelse diskriminerte arbeidsgivere som erklærte at de satset på mangfold, ikke mindre enn andre.",
+      "deepDive": "Resultatet gjelder Sverige og diskriminering av personer med funksjonsnedsettelse.",
+      "caveats": [
+        "Svensk studie."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "IZA",
+        "title": "Disability discrimination and diversity policies (IZA DP No. 16217)",
+        "url": "https://repec.iza.org/dp16217.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2023–2025",
+    "calculation": "Svensk felteksperiment: arbeidsgivere med mangfoldserklæring diskriminerte ikke mindre.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Diskriminerer arbeidsgivere som satser på mangfold mindre? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-aldersgrense-laere",
+    "category": "current",
+    "topic": "arbeid",
+    "tags": [
+      "alder",
+      "ledere",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "medium",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Halvparten av norske ledere mener 60-åringer lærer dårligere.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – halvparten mener det.",
+      "explanation": "I en undersøkelse blant ledere sa halvparten at 60-åringer har dårligere evne til å lære og fornye seg. I snitt nøler lederne med å kalle inn en kvalifisert søker fra 59,3 års alder.",
+      "deepDive": "Tallene beskriver holdninger, ikke hvor flinke eldre faktisk er.",
+      "caveats": [
+        "Holdninger hos ledere, ikke fakta om eldre."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Ipsos / Kunnskapssenter for lengre arbeidsliv",
+        "title": "Norsk seniorpolitisk barometer 2025: Ledere i arbeidslivet",
+        "url": "https://lengrearbeidsliv.no/content/uploads/2025/10/Seniorpolitisk-barometer-2025-endelig-rapport-221025.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2025",
+    "calculation": "Ledere nøler fra 59,3 år (offentlig sektor 61,9); halvparten mener 60-åringer har dårligere evne til å lære og fornye seg.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Mener halvparten av norske ledere at 60-åringer lærer dårligere? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-legemidler-kvinner",
+    "category": "current",
+    "topic": "helse",
+    "tags": [
+      "legemidler",
+      "kjønn",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Mange legemidler gir høyere konsentrasjon i blodet hos kvinner enn menn.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 76 av 86 legemidler.",
+      "explanation": "I en gjennomgang av 86 legemidler ga 76 høyere konsentrasjon i blodet hos kvinner. For 96 prosent av disse fikk kvinner oftere bivirkninger enn menn.",
+      "deepDive": "Mye av kunnskapen om legemidler bygger på studier der kvinner har vært underrepresentert. I USA kom det først i 1993 krav om at kvinner skulle inkluderes i studier finansiert av de nasjonale helseinstituttene.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "Biology of Sex Differences",
+        "title": "Sex differences in pharmacokinetics predict adverse drug reactions in women",
+        "url": "https://doi.org/10.1186/s13293-020-00308-5",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "Gjennomgang 2020",
+    "calculation": "86 legemidler: 76 ga høyere konsentrasjon hos kvinner; for 96 % av disse hadde kvinner oftere bivirkninger.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Gir mange legemidler høyere konsentrasjon i blodet hos kvinner? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-overkvalifisert",
+    "category": "current",
+    "topic": "innvandring",
+    "tags": [
+      "arbeid",
+      "utdanning",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "neutral",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Høyt utdannede innvandrere er oftere overkvalifisert for jobben sin.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – 40 mot 14 prosent.",
+      "explanation": "I 2021 var 40 prosent av høyt utdannede innvandrere overkvalifisert for jobben sin, mot 14 prosent i resten av befolkningen.",
+      "deepDive": "Overkvalifisert betyr at utdanningen er høyere enn jobben krever.",
+      "caveats": []
+    },
+    "sources": [
+      {
+        "publisher": "IMDi",
+        "title": "Etnisk mangfold og inkludering i arbeidslivet: Indikatorer, status og utviklingstrekk",
+        "url": "https://imdi.no/contentassets/d1032d608ab344a8a5e183edfebea868/rapport-etnisk-mangfold-og-inkludering-i-arbeidslivet.pdf",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "2021",
+    "calculation": "Overkvalifiserte blant høyt utdannede: innvandrere 40 %, resten 14 % (2021).",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Er høyt utdannede innvandrere oftere overkvalifisert for jobben sin? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  },
+  {
+    "id": "enkel-fk-vold-menn",
+    "category": "current",
+    "topic": "kriminalitet",
+    "tags": [
+      "vold",
+      "kjønn",
+      "enkel",
+      "forskning"
+    ],
+    "difficulty": 2,
+    "risk": "high",
+    "tone": "serious",
+    "kicker": "Tull eller tall?",
+    "prompt": "Stemmer det eller ikke?",
+    "payload": {
+      "format": "truefalse",
+      "statement": "Flere menn enn kvinner har opplevd alvorlig fysisk vold.",
+      "answer": true
+    },
+    "reveal": {
+      "headline": "Stemmer – nesten halvparten av mennene.",
+      "explanation": "Nær halvparten av mennene har opplevd alvorlig fysisk vold etter fylte 18 år, mot 29 prosent av kvinnene. For omtrent tre av fire utsatte menn var gjerningspersonen ukjent.",
+      "deepDive": "Menn er mer utsatt enn kvinner for fysisk vold fra ukjente, ofte på offentlig sted.",
+      "caveats": [
+        "Gjelder alvorlig fysisk vold etter fylte 18 år."
+      ]
+    },
+    "sources": [
+      {
+        "publisher": "Kultur- og likestillingsdepartementet",
+        "title": "NOU 2024: 8 Likestillingens neste steg",
+        "url": "https://www.regjeringen.no/no/dokumenter/nou-2024-8/id3035815/",
+        "accessed": "2026-11-01"
+      }
+    ],
+    "referencePeriod": "NOU 2024",
+    "calculation": "Alvorlig fysisk vold etter fylte 18: menn nær halvparten, kvinner 29 %. Tre av fire utsatte menn: ukjent gjerningsperson.",
+    "lastVerified": "2026-11-01",
+    "verification": {
+      "method": "secondary-snippet",
+      "note": "Tall hentet fra samfunnsbaselinen og notatet «Myter og fakta om kjønn og mangfold» (Forsvaret, okt. 2026), som oppgir kilden. Ikke kontrollert mot primærkilden (nettverksblokkering i utviklingsmiljøet); kontrolleres før godkjenning."
+    },
+    "shareText": "Har flere menn enn kvinner opplevd alvorlig fysisk vold? Tull eller tall?",
+    "seasonMonths": [],
+    "dataQuality": 3
+  }
+]
