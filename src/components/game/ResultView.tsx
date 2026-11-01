@@ -27,7 +27,6 @@ export function ResultView({ session, result, review, single }: { session: Start
   const best = personalBest(history, session.game.id);
   const isRecord = session.game.kind === "daily" && best !== null && s.score > best;
   const streak = computeStreak(history, localDate());
-  const holes = pattern.map((h) => (h ? "●" : "○")).join("");
 
   return (
     <div className="mx-auto max-w-xl px-4 pt-8 pb-16">
@@ -59,7 +58,7 @@ export function ResultView({ session, result, review, single }: { session: Start
 
       {result.challenge ? <HeadToHead result={result} /> : null}
 
-      {!single ? <ChallengeBox session={session} holes={holes} title={title} hits={s.hits} total={s.total} /> : null}
+      {!single ? <ChallengeBox session={session} title={title} hits={s.hits} total={s.total} /> : null}
 
       {single ? (
         <div className="mt-8 text-center">
@@ -134,7 +133,7 @@ function Row({ label, pattern, hits }: { label: string; pattern: boolean[]; hits
   );
 }
 
-function ChallengeBox({ session, holes, title, hits, total }: { session: StartResponse; holes: string; title: string; hits: number; total: number }) {
+function ChallengeBox({ session, title, hits, total }: { session: StartResponse; title: string; hits: number; total: number }) {
   const [nickname, setNickname] = useState(() => store.getNickname());
   const [link, setLink] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
@@ -157,12 +156,12 @@ function ChallengeBox({ session, holes, title, hits, total }: { session: StartRe
       <p className="mt-2 text-lg">{t("result.challengeText")}</p>
       {link ? (
         <div className="mt-4 grid gap-3">
-          <ShareButton kind="challenge" url={link} text={`${shareText}\n${holes}`} label={t("result.share")} variant="primary" sessionId={session.sessionId} />
+          <ShareButton kind="challenge" url={link} text={shareText} label={t("result.share")} variant="primary" sessionId={session.sessionId} />
           <button
             type="button"
             className="btn btn-ghost"
             onClick={async () => {
-              if (await copyText(`${shareText}\n${holes}\n${link}`)) {
+              if (await copyText(`${shareText}\n${link}`)) {
                 setCopied(true);
                 track("share_success", { kind: "challenge", via: "copy" }, { sessionId: session.sessionId });
                 setTimeout(() => setCopied(false), 2000);

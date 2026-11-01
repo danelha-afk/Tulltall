@@ -26,7 +26,7 @@ export function ShareButton({
   const absolute = url.startsWith("http") ? url : shareUrl(url);
   const onClick = async () => {
     track("share_click", { kind }, { sessionId });
-    const data = { title: "TULL ELLER TALL?", text, url: absolute };
+    const data = { title: "Tull eller tall?", text, url: absolute };
     try {
       if (navigator.share && (!navigator.canShare || navigator.canShare(data))) {
         await navigator.share(data);
