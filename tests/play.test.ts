@@ -141,7 +141,7 @@ describe("venneduell", () => {
   it("lager utfordring, mottaker spiller samme spørsmål, og får sammenligning", async () => {
     const creator = await playThrough(null, "perfect");
     const ch = await createChallenge(ctx, { sessionId: creator.start.sessionId, token: creator.start.token, nickname: "Kari <script>" });
-    expect(ch.code).toMatch(/^[a-z0-9]{8}$/);
+    expect(ch.code).toMatch(/^[a-z0-9]{6}$/);
     const view = await getChallengeView(db, ch.code);
     expect(view?.creator.nickname).toBe("Kari script");
     expect(view?.creator.hits).toBe(10);

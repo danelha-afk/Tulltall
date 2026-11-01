@@ -11,8 +11,16 @@ export function ClientBoot() {
 
   useEffect(() => {
     const ref = params.get("ref");
-    if (ref && /^[a-z0-9:_-]{1,80}$/i.test(ref)) store.setRef(ref);
-  }, [params]);
+    if (ref && /^[a-z0-9:_-]{1,80}$/i.test(ref)) {
+      store.setRef(ref);
+      return;
+    }
+    // Delelenkene er rene (tulltall.no/u/kode og /s/spørsmål), så henvisningen leses fra stien.
+    const fromPath = pathname.match(/^\/u\/([a-z0-9]{6,12})$/) ?? null;
+    const fromQuestion = pathname.match(/^\/s\/([a-z0-9][a-z0-9-]{2,80})$/) ?? null;
+    if (fromPath) store.setRef(`ch:${fromPath[1]}`);
+    else if (fromQuestion) store.setRef(`q:${fromQuestion[1]}`);
+  }, [params, pathname]);
 
   useEffect(() => {
     track("page_view");

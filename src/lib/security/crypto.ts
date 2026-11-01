@@ -21,8 +21,8 @@ export function newId(): string {
 
 const ALPHABET = "abcdefghjkmnpqrstuvwxyz23456789"; // uten forvekslbare tegn
 
-/** Kort, lesbar kode for utfordringslenker, f.eks. "k7m2xq9p". */
-export function shortCode(length = 8): string {
+/** Kort, lesbar kode for utfordringslenker, f.eks. "k7m2xq". */
+export function shortCode(length = 6): string {
   const bytes = randomBytes(length);
   let out = "";
   for (let i = 0; i < length; i++) out += ALPHABET[bytes[i] % ALPHABET.length];

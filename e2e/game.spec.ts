@@ -27,9 +27,11 @@ test.describe("spillet", () => {
     // Lag utfordring
     await page.getByPlaceholder("f.eks. Kari").fill("Testkari");
     await page.getByRole("button", { name: "Lag lenke" }).click();
-    const link = await page.locator("text=/\\/u\\/[a-z0-9]{8}/").first().textContent();
-    expect(link).toMatch(/\/u\/[a-z0-9]{8}/);
-    const path = new URL(link!.trim()).pathname;
+    const link = (await page.getByTestId("challenge-link").textContent())!.trim();
+    // Pen lenke: ingen vercel.app, ingen sporingsparametre, kort kode.
+    expect(link).toMatch(/\/u\/[a-z0-9]{6}$/);
+    expect(link).not.toContain("?");
+    const path = new URL(link.startsWith("http") ? link : `http://${link}`).pathname;
 
     // Venn åpner lenken i en ny nettleser
     const friendCtx = await browser.newContext();

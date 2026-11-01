@@ -6,6 +6,7 @@ import { t, formatNumber } from "@/lib/i18n";
 import { api, type StartResponse } from "@/lib/client/api";
 import { computeStreak, personalBest, store } from "@/lib/client/storage";
 import { track } from "@/lib/client/track";
+import { shareUrl, prettyUrl } from "@/lib/client/links";
 import type { FinishResult } from "@/lib/play/service";
 import { localDate, msUntilNextRound } from "@/lib/game/dates";
 import { Ticket, PunchHoles } from "@/components/ui/Ticket";
@@ -143,7 +144,7 @@ function ChallengeBox({ session, holes, title, hits, total }: { session: StartRe
     try {
       store.setNickname(nickname);
       const res = await api.challenge({ sessionId: session.sessionId, token: session.token, nickname: nickname || null });
-      setLink(`${window.location.origin}/u/${res.code}?ref=ch:${res.code}`);
+      setLink(shareUrl(`/u/${res.code}`));
       track("challenge_create", {}, { sessionId: session.sessionId });
     } finally {
       setBusy(false);
@@ -170,7 +171,7 @@ function ChallengeBox({ session, holes, title, hits, total }: { session: StartRe
           >
             {copied ? t("result.copied") : t("result.copyLink")}
           </button>
-          <p className="text-sm break-all font-mono bg-papir/70 rounded-lg px-2 py-1">{link}</p>
+          <p data-testid="challenge-link" className="text-base break-all font-mono bg-papir/70 rounded-lg px-3 py-2">{prettyUrl(link)}</p>
         </div>
       ) : (
         <form

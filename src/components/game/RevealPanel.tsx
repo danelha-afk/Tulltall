@@ -92,7 +92,7 @@ export function RevealPanel({
           </details>
           <ShareButton
             kind="question"
-            url={`/s/${questionId}?ref=q:${questionId}`}
+            url={`/s/${questionId}`}
             text={t("game.shareQuestionText", { text: shareText ?? "" })}
             label={t("result.share")}
             sessionId={sessionId}

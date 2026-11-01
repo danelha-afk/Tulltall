@@ -41,6 +41,10 @@ Enhetstestene fordeler seg slik:
 - Admin: «Navn og lister» for å skjule spillere eller nullstille navn.
 - E-postinnlogging (konto som følger deg mellom enheter) er ikke bygget ennå.
 
+## Delelenker
+
+Delte lenker bruker alltid hoveddomenet (`NEXT_PUBLIC_SITE_URL`, standard `https://tulltall.no`), ikke vercel.app, og er rene: `tulltall.no/u/k7m2xq` (utfordring, 6 tegn uten forvekslbare bokstaver) og `tulltall.no/s/<spørsmål>`. Ingen `?ref=`-hale. Henvisningen (for statistikk) leses fra stien i `ClientBoot`. Eldre lenker med åtte tegn og `?ref=` virker fortsatt. Lokalt bruker delingen adressen du sitter på (`src/lib/client/links.ts`).
+
 ## Tallspørsmål med svaralternativer
 
 «Gjett tallet» har fire svaralternativer (`src/lib/game/options.ts`), laget på serveren: fasit ligger på tilfeldig plass, alle tall rundes like grovt som fasit, og avstanden varierer. Poengene regnes som før (nærhet; 100 for riktig alternativ). For fasit nær kanten av skalaen (f.eks. 85 av 100 %) rommer ikke skalaen alle plasser; da brukes de plassene som finnes. Bare «Gjett tallet» er endret; «Hvor ender streken?» (Trend) har fortsatt bare dra-grafen.

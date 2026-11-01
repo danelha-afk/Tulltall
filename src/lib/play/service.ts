@@ -410,7 +410,7 @@ export async function createChallenge(
     return { code: existing.code, url: `${brand.url}/u/${existing.code}` };
   }
   for (let attempt = 0; attempt < 5; attempt++) {
-    const code = shortCode(8);
+    const code = shortCode(6);
     const row = await db.one<{ code: string }>(
       `INSERT INTO challenges (code, game_id, creator_session_id, creator_player_id, creator_nickname, kind, kommune_nr)
        VALUES ($1,$2,$3,$4,$5,$6,$7) ON CONFLICT (code) DO NOTHING RETURNING code`,

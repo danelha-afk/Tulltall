@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { t } from "@/lib/i18n";
 import { track } from "@/lib/client/track";
+import { shareUrl } from "@/lib/client/links";
 
 /** Deling via mobilens innebygde delemeny, med kopiering som reserve. Ingen tvang, ingen lokking. */
 export function ShareButton({
@@ -22,7 +23,7 @@ export function ShareButton({
   variant?: "ghost" | "hot" | "acid" | "primary";
 }) {
   const [copied, setCopied] = useState(false);
-  const absolute = url.startsWith("http") ? url : `${window.location.origin}${url}`;
+  const absolute = url.startsWith("http") ? url : shareUrl(url);
   const onClick = async () => {
     track("share_click", { kind }, { sessionId });
     const data = { title: "TULL ELLER TALL?", text, url: absolute };
