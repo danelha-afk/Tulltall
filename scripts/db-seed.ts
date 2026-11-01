@@ -1,9 +1,9 @@
 /** Legger inn kommuner og seed-spørsmål som mangler (overskriver aldri redaksjonelle endringer). */
-import { createPgliteDb, createPostgresDb, runMigrations } from "../src/lib/db/client";
+import { createPgliteDb, createPostgresDb, databaseUrl, runMigrations } from "../src/lib/db/client";
 import { seedKommuner, seedQuestionBank } from "../src/lib/db/seed";
 
 async function main() {
-  const url = process.env.DATABASE_URL;
+  const url = databaseUrl();
   const db = url ? await createPostgresDb(url) : await createPgliteDb(process.env.PGLITE_DIR ?? ".data/pglite");
   await runMigrations(db);
   const k = await seedKommuner(db);

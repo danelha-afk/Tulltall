@@ -1,10 +1,10 @@
 /** Planlegger daglige runder fremover (standard 14 dager). */
-import { createPgliteDb, createPostgresDb, runMigrations } from "../src/lib/db/client";
+import { createPgliteDb, createPostgresDb, databaseUrl, runMigrations } from "../src/lib/db/client";
 import { scheduleUpcoming } from "../src/lib/db/games";
 import { localDate } from "../src/lib/game/dates";
 
 async function main() {
-  const url = process.env.DATABASE_URL;
+  const url = databaseUrl();
   const db = url ? await createPostgresDb(url) : await createPgliteDb(process.env.PGLITE_DIR ?? ".data/pglite");
   await runMigrations(db);
   const days = Number(process.argv[2] ?? 14);

@@ -72,16 +72,22 @@ export async function createPostgresDb(connectionString: string): Promise<Db> {
   const pgLib = (pgMod as unknown as { default?: typeof pgMod }).default ?? pgMod;
   pgLib.types.setTypeParser(20, numberParsers[20]);
   pgLib.types.setTypeParser(1700, numberParsers[1700]);
+  // sslmode i URL-en ville overstyrt innstillingene under (node-postgres tolker «require» som full
+  // sertifikatverifisering, som feiler mot Supabase sin egen CA). Vi styrer TLS eksplisitt i stedet.
+  const parsed = new URL(connectionString);
+  parsed.searchParams.delete("sslmode");
+  const local = ["localhost", "127.0.0.1", "::1"].includes(parsed.hostname);
   const ssl =
-    process.env.PGSSL === "disable"
+    process.env.PGSSL === "disable" || local
       ? undefined
-      : process.env.PGSSL === "no-verify"
-        ? { rejectUnauthorized: false }
-        : connectionString.includes("localhost") || connectionString.includes("127.0.0.1")
-          ? undefined
-          : { rejectUnauthorized: true };
+      : process.env.PGSSL_CA
+        ? { ca: process.env.PGSSL_CA.replace(/\\n/g, "\n"), rejectUnauthorized: true }
+        : process.env.PGSSL === "verify"
+          ? { rejectUnauthorized: true }
+          : // Kryptert forbindelse uten CA-verifisering (standard for Supabase uten PGSSL_CA).
+            { rejectUnauthorized: false };
   const pool = new pgLib.Pool({
-    connectionString,
+    connectionString: parsed.toString(),
     max: Number(process.env.PG_POOL_MAX ?? 5),
     idleTimeoutMillis: 10_000,
     ssl,
@@ -112,33 +118,42 @@ export async function createPostgresDb(connectionString: string): Promise<Db> {
   return make(pool as unknown as Queryable, true);
 }
 
+/** Lås som hindrer at flere serverinstanser migrerer/seeder samtidig (f.eks. første oppstart på Vercel). */
+export const MIGRATION_LOCK = 727_274_001;
+
 export async function runMigrations(db: Db): Promise<string[]> {
   await db.exec(`CREATE TABLE IF NOT EXISTS schema_migrations (id text PRIMARY KEY, applied_at timestamptz NOT NULL DEFAULT now())`);
-  const done = new Set((await db.query<{ id: string }>(`SELECT id FROM schema_migrations`)).map((r) => r.id));
-  const applied: string[] = [];
-  for (const m of migrations) {
-    if (done.has(m.id)) continue;
-    await db.tx(async (tx) => {
+  return db.tx(async (tx) => {
+    await tx.query(`SELECT pg_advisory_xact_lock($1)`, [MIGRATION_LOCK]);
+    const done = new Set((await tx.query<{ id: string }>(`SELECT id FROM schema_migrations`)).map((r) => r.id));
+    const applied: string[] = [];
+    for (const m of migrations) {
+      if (done.has(m.id)) continue;
       await tx.exec(m.sql);
       await tx.query(`INSERT INTO schema_migrations (id) VALUES ($1)`, [m.id]);
-    });
-    applied.push(m.id);
-  }
-  return applied;
+      applied.push(m.id);
+    }
+    return applied;
+  });
+}
+
+/** Tilkoblingsstreng: DATABASE_URL, eller POSTGRES_URL som Vercels Supabase-integrasjon setter automatisk. */
+export function databaseUrl(): string | undefined {
+  return process.env.DATABASE_URL || process.env.POSTGRES_URL || undefined;
 }
 
 type GlobalWithDb = typeof globalThis & { __tulltallDb?: Promise<Db> };
 
 /**
  * Felles databaseforbindelse for prosessen.
- * - DATABASE_URL satt → PostgreSQL (produksjon/Supabase).
+ * - DATABASE_URL (eller POSTGRES_URL) satt → PostgreSQL (produksjon/Supabase).
  * - Ellers → PGlite i `PGLITE_DIR` (standard `.data/pglite`), med automatisk migrering og seed.
  */
 export function getDb(): Promise<Db> {
   const g = globalThis as GlobalWithDb;
   if (!g.__tulltallDb) {
     g.__tulltallDb = (async () => {
-      const url = process.env.DATABASE_URL;
+      const url = databaseUrl();
       const db = url ? await createPostgresDb(url) : await createPgliteDb(process.env.PGLITE_DIR ?? ".data/pglite");
       const autoMigrate = !url || process.env.AUTO_MIGRATE === "true";
       if (autoMigrate) {

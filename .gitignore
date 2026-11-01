@@ -13,3 +13,4 @@ next-env.d.ts
 .vercel
 reports/
 .DS_Store
+demo/

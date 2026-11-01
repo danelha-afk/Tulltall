@@ -4,13 +4,13 @@
  *   npm run pipeline:weekly -- --force – hent og analyser alt på nytt
  */
 import { mkdirSync, writeFileSync } from "node:fs";
-import { createPgliteDb, createPostgresDb, runMigrations } from "../src/lib/db/client";
+import { createPgliteDb, createPostgresDb, databaseUrl, runMigrations } from "../src/lib/db/client";
 import { seedIfEmpty } from "../src/lib/db/seed";
 import { alert, runWeekly } from "../src/lib/pipeline/weekly";
 import { localDate } from "../src/lib/game/dates";
 
 async function main() {
-  const url = process.env.DATABASE_URL;
+  const url = databaseUrl();
   const db = url ? await createPostgresDb(url) : await createPgliteDb(process.env.PGLITE_DIR ?? ".data/pglite");
   await runMigrations(db);
   await seedIfEmpty(db);

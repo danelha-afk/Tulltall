@@ -8,7 +8,33 @@ Bygget som en Progressive Web App med Next.js 16, TypeScript, Tailwind CSS 4, Mo
 
 > **Status:** Spillbar MVP med komplett spill, vennedueller, Nabokrigen, datamotor, KI-redaksjon, administrasjon, analyse og PWA. **Ikke produksjonsklar ennå.** Se [docs/status.md](docs/status.md) for nøyaktig hva som er testet og hva som gjenstår.
 
-## Kom i gang lokalt
+## Se og klikk deg gjennom
+
+**A) På din egen maskin (5 minutter, ingen kontoer):** Installer [Node.js](https://nodejs.org) (versjon 20 eller nyere). Kjør så i Terminal:
+
+```bash
+git clone https://github.com/danelha-afk/Tulltall.git
+cd Tulltall
+git checkout claude/tulltall-mvp
+npm install
+npm run build && SESSION_SECRET=lokal-test-lokal-test-lokal-test ADMIN_PASSWORD=velg-et-passord npm start
+```
+
+Åpne http://localhost:3000, eller http://<maskinens-IP>:3000 fra mobilen på samme nett. Administrasjonen ligger på `/admin`.
+
+**B) På nett med egen lenke (ca. 15 minutter, gratisnivåer):**
+
+1. Lag en konto på [vercel.com](https://vercel.com) med GitHub-brukeren din, og velg **Add New → Project → Import** `danelha-afk/Tulltall` (grenen `claude/tulltall-mvp`).
+2. Under **Environment Variables** legger du inn:
+   - `SESSION_SECRET` – en lang, tilfeldig tekst (minst 24 tegn)
+   - `ADMIN_PASSWORD` – minst 10 tegn
+   - `AUTO_MIGRATE` = `true`
+3. Etter første deploy: åpne prosjektet → **Storage → Create/Connect Database → Supabase** (gratis). Vercel legger da inn `POSTGRES_URL` automatisk. Har du allerede en Supabase-database, kan du i stedet sette `DATABASE_URL` til «Transaction pooler»-adressen.
+4. Velg **Redeploy**. Ved første besøk lager appen tabellene og legger inn startbanken. Lenken (`…vercel.app`) kan åpnes og deles fra mobilen.
+
+> Vercel trenger en ekte database. Den innebygde testdatabasen (PGlite) virker bare på én maskin.
+
+## Kom i gang lokalt (utvikling)
 
 Krever Node.js 20.9+ (testet med 22). Ingen database å installere: uten `DATABASE_URL` brukes PGlite (Postgres i WebAssembly) i `.data/pglite`. Databasen migreres og seedes automatisk.
 

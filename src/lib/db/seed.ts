@@ -73,8 +73,11 @@ export async function seedQuestionBank(db: Db): Promise<{ inserted: number; inva
 }
 
 export async function seedIfEmpty(db: Db): Promise<void> {
-  await seedKommuner(db);
-  const res = await seedQuestionBank(db);
+  const res = await db.tx(async (tx) => {
+    await tx.query(`SELECT pg_advisory_xact_lock($1)`, [727_274_002]);
+    await seedKommuner(tx);
+    return seedQuestionBank(tx);
+  });
   if (res.invalid.length) {
     console.warn(`[seed] ${res.invalid.length} ugyldige seed-spørsmål:\n${res.invalid.join("\n")}`);
   }

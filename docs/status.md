@@ -17,6 +17,7 @@
 | `npm run test:e2e` (Playwright, Pixel 7-emulering, produksjonsbygg) | 8/8 bestått, ingen serverfeil i loggen. Dekker forsiden og axe-sjekk (WCAG 2.2 A/AA, ingen alvorlige funn), hel runde, utfordringslenke i ny nettleser med sammenligning, enkeltspørsmål, PWA-manifest og service worker, Nabokrigen med kommunevalg og telling, API-misbruk (falsk token, feil rekkefølge, cron uten nøkkel), admin-innlogging, godkjenning av høyrisiko-spørsmål og alle adminsider |
 | `npm run content:validate` | 71 spørsmål, 0 feil (56 godkjent, 15 til manuell godkjenning) |
 | `npm run build` | OK |
+| Produksjonsdriveren (node-postgres over TCP) | Migrering, seed og planlegging kjørt med `pg`. Alle 8 ende-til-ende-testene er kjørt mot denne driveren (via PGlite-socket), også automatisk migrering ved oppstart. |
 | `npm run pipeline:demo` | Hele løpet tabell → funn → utkast → faktakontroll → kø → planlagte runder → rapport (syntetiske data) |
 | Visuell gjennomgang | Skjermbilder av alle seks formater, avsløringer, resultat, kart, Nabokrigen og forside. Funn er rettet (se designkonsept.md). |
 
