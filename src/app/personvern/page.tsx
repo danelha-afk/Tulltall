@@ -36,7 +36,7 @@ export default function Privacy() {
         <p>
           Alle får et tilfeldig spillernavn, for eksempel «Modig Elg 42». Når du har spilt dagens runde, vises spillernavnet og poengene dine på
           topplistene for alle. Ingenting annet om deg vises. Du kan skjule deg når som helst under «Min profil» eller på resultatsiden, og du kan slette
-          profilen din der. Velger du et eget navn, går det gjennom et filter, og vises på samme måte. Du bør ikke bruke ditt eget navn.
+          profilen din der. Velger du et eget navn, går det gjennom et filter, og vises på samme måte. Du bør ikke bruke ditt eget navn. Vil du ta med profilen din til en ny telefon, kan du lage en gjenopprettingskode under «Min profil». Vi lagrer bare en hash av koden, og kan ikke se den.
         </p>
 
         <h2>Statistikk</h2>

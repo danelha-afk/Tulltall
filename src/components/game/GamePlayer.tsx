@@ -221,7 +221,7 @@ export function GamePlayer({ gameId, challengeCode, single = false }: { gameId?:
       {session.questions.length > 1 ? (
         <div className="flex items-center justify-between gap-3 mb-3" aria-label={t("game.progressLabel", { n: index, total: session.questions.length })}>
           <PunchHoles pattern={pattern} current={index} size={14} />
-          <span className="font-bold tabular text-blekk-2">{t("game.progressShort", { n: index + 1, total: session.questions.length })}</span>
+          <span data-testid="progress" className="font-bold tabular text-blekk-2">{t("game.progressShort", { n: index + 1, total: session.questions.length })}</span>
         </div>
       ) : null}
 

@@ -66,8 +66,9 @@ export const api = {
   player: (b: { playerId?: string | null; kommuneNr?: string | null; relation?: "bor" | "heier" | null; nickname?: string | null }) =>
     post<{ playerId: string }>("/api/player", b),
   deletePlayer: (playerId: string) => post<{ ok: boolean }>("/api/player", { playerId }, "DELETE"),
-  profile: (b: { playerId: string; action: "get" | "update"; showOnLists?: boolean; customName?: string | null }) =>
-    post<{ profile: Profile }>("/api/profile", b),
+  profile: (b: { playerId: string; action: "get" | "update" | "recovery"; showOnLists?: boolean; customName?: string | null }) =>
+    post<{ profile: Profile; code?: string }>("/api/profile", b),
+  restoreProfile: (code: string) => post<{ playerId: string; profile: Profile }>("/api/profile/restore", { code }),
   toplist: async (period: "day" | "week", fresh = false): Promise<TopRow[]> => {
     // no-store: nettleseren skal aldri vise en gammel liste. `fresh` hopper også over delt mellomlager (etter «Vis meg på listen»).
     const res = await fetch(`/api/toplist?period=${period}${fresh ? `&_=${Date.now()}` : ""}`, { cache: "no-store" });

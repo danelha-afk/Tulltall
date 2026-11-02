@@ -28,7 +28,8 @@ export async function answerCurrent(page: Page) {
 
 export async function playRound(page: Page) {
   for (let i = 0; i < 15; i++) {
-    await expect(page.getByText(new RegExp(`^${i + 1} av \\d+$`))).toBeVisible({ timeout: 15_000 });
+    // «1 av 10» finnes også i Topp 10 på forsiden, så fremdriften har egen test-id.
+    await expect(page.getByTestId("progress")).toHaveText(new RegExp(`^${i + 1} av \\d+$`), { timeout: 15_000 });
     // Vent til forrige spørsmål har animert ut før vi svarer.
     await expect(page.getByRole("button", { name: /Neste spørsmål|Se resultatet/ })).toHaveCount(0, { timeout: 15_000 });
     await answerCurrent(page);

@@ -43,3 +43,33 @@ test("profilsiden: filter mot upassende navn, og eget navn kan lagres", async ({
   await page.getByRole("button", { name: "Lagre" }).click();
   await expect(page.getByTestId("profile-handle")).toHaveText(unique);
 });
+
+test("profilen kan tas med til en ny nettleser med gjenopprettingskode", async ({ page, browser }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: /^Start/ }).click();
+  await playRound(page);
+  await page.goto("/profil");
+  const handle = ((await page.getByTestId("profile-handle").textContent()) ?? "").trim();
+  await page.getByRole("button", { name: "Lag gjenopprettingskode" }).click();
+  const code = ((await page.getByTestId("recovery-code").textContent()) ?? "").trim();
+  expect(code).toMatch(/^[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}$/);
+
+  // Ny nettleser uten noe lagret: samme profil kommer tilbake med koden.
+  const ctx = await browser.newContext();
+  const page2 = await ctx.newPage();
+  await page2.goto("/profil");
+  await page2.getByLabel("Gjenopprettingskode").fill(code);
+  await page2.getByRole("button", { name: "Hent profilen min" }).click();
+  await expect(page2.getByTestId("profile-handle")).toHaveText(handle);
+  await expect(page2.getByText("Profilen er hentet")).toBeVisible();
+
+  // Feil kode gir en tydelig melding.
+  const ctx3 = await browser.newContext();
+  const page3 = await ctx3.newPage();
+  await page3.goto("/profil");
+  await page3.getByLabel("Gjenopprettingskode").fill("aaaa-aaaa-aaaa");
+  await page3.getByRole("button", { name: "Hent profilen min" }).click();
+  await expect(page3.getByText("Fant ingen profil med den koden")).toBeVisible();
+  await ctx.close();
+  await ctx3.close();
+});

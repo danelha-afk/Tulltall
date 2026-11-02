@@ -300,4 +300,12 @@ ALTER TABLE players ALTER COLUMN show_on_lists SET DEFAULT true;
 UPDATE players SET show_on_lists = true WHERE NOT handle_custom AND NOT show_on_lists;
 `,
   },
+  {
+    id: "0004_recovery",
+    sql: /* sql */ `
+-- Gjenopprettingskode: lar en spiller ta med profilen til ny enhet eller adresse (bare en hash lagres).
+ALTER TABLE players ADD COLUMN recovery_hash text;
+CREATE UNIQUE INDEX players_recovery_idx ON players (recovery_hash) WHERE recovery_hash IS NOT NULL;
+`,
+  },
 ];

@@ -41,6 +41,10 @@ Enhetstestene fordeler seg slik:
 - Admin: «Navn og lister» for å skjule spillere eller nullstille navn.
 - E-postinnlogging (konto som følger deg mellom enheter) er ikke bygget ennå.
 
+## Gjenopprettingskode for profil
+
+Spillerprofilen følger nettleseren (localStorage på hver adresse), så den forsvinner når man bytter telefon, tømmer nettleseren eller appen bytter adresse (f.eks. fra vercel.app til tulltall.no). Under «Min profil» kan man lage en gjenopprettingskode (`xxxx-xxxx-xxxx`, bare hash lagres, migrasjon 0004) og bruke den på en ny enhet eller adresse. Mister noen profilen uten kode, kan redaksjonen nullstille det gamle navnet under «Navn og lister» i admin.
+
 ## Delelenker
 
 Delte lenker bruker alltid hoveddomenet (`NEXT_PUBLIC_SITE_URL`, standard `https://tulltall.no`), ikke vercel.app, og er rene: `tulltall.no/u/k7m2xq` (utfordring, 6 tegn uten forvekslbare bokstaver) og `tulltall.no/s/<spørsmål>`. Ingen `?ref=`-hale. Henvisningen (for statistikk) leses fra stien i `ClientBoot`. Eldre lenker med åtte tegn og `?ref=` virker fortsatt. Lokalt bruker delingen adressen du sitter på (`src/lib/client/links.ts`).

@@ -4,13 +4,14 @@ import { getDb } from "@/lib/db/client";
 import { guardRate, handleError, jsonError, readJson, sameOrigin } from "@/lib/http";
 import { ensurePlayer } from "@/lib/play/service";
 import { getProfile, updateProfile } from "@/lib/profile/service";
+import { createRecoveryCode } from "@/lib/profile/recovery";
 import { localDate } from "@/lib/game/dates";
 
 export const dynamic = "force-dynamic";
 
 const Body = z.object({
   playerId: z.string().uuid(),
-  action: z.enum(["get", "update"]),
+  action: z.enum(["get", "update", "recovery"]),
   showOnLists: z.boolean().optional(),
   /** Tekst = selvvalgt navn (filtreres), null = nytt tilfeldig navn. */
   customName: z.string().max(40).nullable().optional(),
@@ -38,8 +39,9 @@ export async function POST(req: Request) {
       const res = await updateProfile(db, id, { showOnLists: body.showOnLists, customName: body.customName });
       if (!res.ok) return jsonError(400, res.error, MESSAGES[res.error] ?? "Kunne ikke lagre");
     }
+    const code = body.action === "recovery" ? await createRecoveryCode(db, id) : undefined;
     const profile = await getProfile(db, id, localDate());
-    return NextResponse.json({ profile }, { headers: { "Cache-Control": "no-store" } });
+    return NextResponse.json({ profile, code }, { headers: { "Cache-Control": "no-store" } });
   } catch (err) {
     return handleError(err);
   }

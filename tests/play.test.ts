@@ -87,7 +87,9 @@ describe("spillflyt", () => {
     const json = JSON.stringify(s.questions);
     expect(json).not.toMatch(/"answer"/);
     expect(json).not.toMatch(/"correct"/);
-    expect(json).not.toMatch(/"value":\s*\d/); // ingen råverdier for compare/rank
+    // Ingen råverdier for compare/rank. (Trend viser bevisst de kjente årene, så de tas ikke med i sjekken.)
+    const withoutKnown = s.questions.map((q) => (q.payload.format === "trend" ? { ...q, payload: { ...q.payload, known: [] } } : q));
+    expect(JSON.stringify(withoutKnown)).not.toMatch(/"value":\s*\d/);
   });
 
   it("gir alle spillere samme runde samme dag (deterministisk)", async () => {
